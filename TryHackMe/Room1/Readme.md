@@ -13,3 +13,7 @@ above image shows the first commit
 
 above image shows *2nd commit* `by me` 
 with _italic_
+
+### This image takes absolute path
+
+![[TryHackMe/Room1/Pasted image 20241018033703.png]]
