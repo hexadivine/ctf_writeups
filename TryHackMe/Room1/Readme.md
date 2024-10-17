@@ -17,3 +17,6 @@ with _italic_
 ### This image takes absolute path
 
 ![[TryHackMe/Room1/Pasted image 20241018033703.png]]
+
+Let's see if this can generate md image
+![](Pasted%20image%2020241018034340.png)
