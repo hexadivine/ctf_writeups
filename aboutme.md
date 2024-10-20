@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/-I-red" alt="I">
+    <img src="https://img.shields.io/badge/-l-red" alt="I">
     <img src="https://img.shields.io/badge/-%27-orange" alt="'">
     <img src="https://img.shields.io/badge/-M-yellow" alt="M">
     <img src="https://img.shields.io/badge/--blue" alt=" ">
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/-U-purple" alt="U">
     <img src="https://img.shields.io/badge/-S-pink" alt="S">
     <img src="https://img.shields.io/badge/-H-cyan" alt="H">
-    <img src="https://img.shields.io/badge/-I-lime" alt="I">
+    <img src="https://img.shields.io/badge/-l-lime" alt="I">
     <img src="https://img.shields.io/badge/-K-brown" alt="K">
     <img src="https://img.shields.io/badge/-E-teal" alt="E">
     <img src="https://img.shields.io/badge/-S-magenta" alt="S">
