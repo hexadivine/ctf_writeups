@@ -1,5 +1,6 @@
 
-[![](Pasted%20image%2020241020223114.png)](https://app.hackthebox.com/machines/Sightless)
+![](Pasted%20image%2020241020223114.png)
+[more](https://app.hackthebox.com/machines/Sightless)
 
 # Recon
 
