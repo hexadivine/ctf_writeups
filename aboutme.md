@@ -3,26 +3,27 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/-l-red" alt="I">
-    <img src="https://img.shields.io/badge/-%27-orange" alt="'">
-    <img src="https://img.shields.io/badge/-M-yellow" alt="M">
-    <img src="https://img.shields.io/badge/--blue" alt=" ">
-    <img src="https://img.shields.io/badge/-H-green" alt="H">
-    <img src="https://img.shields.io/badge/-R-blue" alt="R">
-    <img src="https://img.shields.io/badge/-U-purple" alt="U">
-    <img src="https://img.shields.io/badge/-S-pink" alt="S">
-    <img src="https://img.shields.io/badge/-H-cyan" alt="H">
-    <img src="https://img.shields.io/badge/-l-lime" alt="I">
-    <img src="https://img.shields.io/badge/-K-brown" alt="K">
-    <img src="https://img.shields.io/badge/-E-teal" alt="E">
-    <img src="https://img.shields.io/badge/-S-magenta" alt="S">
-    <img src="https://img.shields.io/badge/--blue" alt=" ">
-    <img src="https://img.shields.io/badge/-D-salmon" alt="D">
-    <img src="https://img.shields.io/badge/-O-gold" alt="O">
-    <img src="https://img.shields.io/badge/-L-navy" alt="L">
-    <img src="https://img.shields.io/badge/-A-turquoise" alt="A">
-    <img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
+    <img src="https://img.shields.io/badge/-l-8B0000" alt="I"> <!-- Dark Red -->
+    <img src="https://img.shields.io/badge/-%27-FF8C00" alt="'"> <!-- Dark Orange -->
+    <img src="https://img.shields.io/badge/-M-FFD700" alt="M"> <!-- Dark Gold -->
+    <img src="https://img.shields.io/badge/--000000" alt=" "> <!-- Black -->
+    <img src="https://img.shields.io/badge/-H-006400" alt="H"> <!-- Dark Green -->
+    <img src="https://img.shields.io/badge/-R-00008B" alt="R"> <!-- Dark Blue -->
+    <img src="https://img.shields.io/badge/-U-4B0082" alt="U"> <!-- Indigo -->
+    <img src="https://img.shields.io/badge/-S-FF1493" alt="S"> <!-- Deep Pink -->
+    <img src="https://img.shields.io/badge/-H-00CED1" alt="H"> <!-- Dark Turquoise -->
+    <img src="https://img.shields.io/badge/-l-32CD32" alt="I"> <!-- Lime Green -->
+    <img src="https://img.shields.io/badge/-K-8B4513" alt="K"> <!-- Saddle Brown -->
+    <img src="https://img.shields.io/badge/-E-008B8B" alt="E"> <!-- Dark Cyan -->
+    <img src="https://img.shields.io/badge/-S-8B008B" alt="S"> <!-- Dark Magenta -->
+    <img src="https://img.shields.io/badge/--000000" alt=" "> <!-- Black -->
+    <img src="https://img.shields.io/badge/-D-FA8072" alt="D"> <!-- Light Salmon -->
+    <img src="https://img.shields.io/badge/-O-FFD700" alt="O"> <!-- Gold -->
+    <img src="https://img.shields.io/badge/-L-000080" alt="L"> <!-- Navy -->
+    <img src="https://img.shields.io/badge/-A-40E0D0" alt="A"> <!-- Turquoise -->
+    <img src="https://img.shields.io/badge/-S-D3D3D3" alt="S"> <!-- Light Grey -->
 </p>
+
 
 
 **CURRENTLY**
