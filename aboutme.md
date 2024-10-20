@@ -23,8 +23,6 @@
 <img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
 
    </h1> 
-<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Changa&duration=800&pause=3000&color=FFFFFF&center=true&random=true&width=1100&lines=Full+Stack+Web+Developer;Student+-+pursuing+Master+in+Information+Technology+-+Extension+%40+University+of+Technology+Sydney;ex-Release+Analyst+%40+Blue+Cross+Blue+Shield;ex-Programmer+Analyst+%40+Cognizant;Open+Source+Enthusiast" alt="Typing SVG" /> </p>
-
 <!-- Description -->
 
 <b> NOW</b>
@@ -36,7 +34,7 @@
 
 - 🔭 Area of interest is in <img src="https://img.shields.io/badge/Web Development-purple"> and <img src="https://img.shields.io/badge/Cybersecurity-ff0000">
 - 🎯 Specifically interested in <img src="https://img.shields.io/badge/MERN Stack-blue"> and <img src="https://img.shields.io/badge/Pentesting-e9404c">
-- 🌱 Learning all about <img alt="Reactjs" src="https://img.shields.io/badge/ReactJS-black?logo=react"> and <img src="https://img.shields.io/badge/Offensive Security-008080">
+- 🌱 Learning all about <img alt="Reactjs" src="https://img.shields.io/badge/ReactJS-black?logo=react"> and <img src="https://img.shields.io/badge/Offensive Security-red">
 - 🤝 Looking for:
 	- Junior roles in <img src="https://img.shields.io/badge/Cybersecurity-ff0000"> 
 	- Collaboration on <img src="https://img.shields.io/badge/Open%20Source%20Projects-purple"> in <img src="https://img.shields.io/badge/Web%20Development-purple">
@@ -56,7 +54,6 @@
 | Cognizant | Student Intern     | • Built and deployed **Splunk architecture** to **fetch, store, and visualise**<br>machine data on **AWS EC2 instances**.<br>• Learnt • Dev-Ops tools • Linux & Windows Server Administration •<br>Cloud, CI/CD, AWS Fundamentals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Jan 2021 – July 2021 |  Remote  |
 
 </details>
-<hr>
 
 <!-- Education -->
 
