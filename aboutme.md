@@ -25,14 +25,14 @@
 </p>
 
 
-**CURRENTLY**
+**CURRENTLY I'M**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
 - Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/NodeJs-darkyellow?)
 
 <details>
 <summary><samp>&#9776;</samp> BIO </summary>
 
-- 🔭 Area of interest is in ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
+- 🔭 I like ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
 - 🎯 Specifically interested in ![MERN Stack](https://img.shields.io/badge/MERN_Stack-blue) and ![Pentesting](https://img.shields.io/badge/Pentesting-e9404c)
 - 🌱 Learning all about ![ReactJS](https://img.shields.io/badge/ReactJS-black?logo=react) and ![Offensive Security](https://img.shields.io/badge/Offensive_Security-red)
 - 🤝 Looking for:
