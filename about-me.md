@@ -1,5 +1,5 @@
 <div style="text-align:center">
-	<h1>Hey! Nice to see you <img src="./wave.gif"/></h1> 
+	<h1>Hey! Nice to see you</h1> 
 </div>
 <p align="center">
     <img src="https://img.shields.io/badge/-I-8B0000" alt="I"> <!-- Dark Red -->
