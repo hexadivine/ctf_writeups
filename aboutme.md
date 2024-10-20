@@ -33,7 +33,7 @@
 <details>
 <summary><samp>&#9776;</samp> BIO </summary>
 
-- 🔭 Area of interest is in ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
+- 🔭 I like ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
 - 🎯 Specifically interested in ![MERN Stack](https://img.shields.io/badge/MERN_Stack-blue) and ![Pentesting](https://img.shields.io/badge/Pentesting-e9404c)
 - 🌱 Learning all about ![ReactJS](https://img.shields.io/badge/ReactJS-black?logo=react) and ![Offensive Security](https://img.shields.io/badge/Offensive_Security-red)
 - 🤝 Looking for:
