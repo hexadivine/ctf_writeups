@@ -1,4 +1,7 @@
-<h3 align="center">Hey! Nice to see you</h3>
+<div align="center">
+	<h1>Hey! Nice to see you</h1> 
+</div>
+
 <p align="center">
     <img src="https://img.shields.io/badge/-I-red" alt="I">
     <img src="https://img.shields.io/badge/-%27-orange" alt="'">
