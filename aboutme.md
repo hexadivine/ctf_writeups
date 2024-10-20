@@ -1,27 +1,26 @@
-<div style="text-align: center;">
-    <h3>Hey! Nice to see you</h3>
-    <h1>
-        <img src="https://img.shields.io/badge/-I-red" alt="I">
-        <img src="https://img.shields.io/badge/-%27-orange" alt="'">
-        <img src="https://img.shields.io/badge/-M-yellow" alt="M">
-        <img src="https://img.shields.io/badge/--blue" alt=" ">
-        <img src="https://img.shields.io/badge/-H-green" alt="H">
-        <img src="https://img.shields.io/badge/-R-blue" alt="R">
-        <img src="https://img.shields.io/badge/-U-purple" alt="U">
-        <img src="https://img.shields.io/badge/-S-pink" alt="S">
-        <img src="https://img.shields.io/badge/-H-cyan" alt="H">
-        <img src="https://img.shields.io/badge/-I-lime" alt="I">
-        <img src="https://img.shields.io/badge/-K-brown" alt="K">
-        <img src="https://img.shields.io/badge/-E-teal" alt="E">
-        <img src="https://img.shields.io/badge/-S-magenta" alt="S">
-        <img src="https://img.shields.io/badge/--blue" alt=" ">
-        <img src="https://img.shields.io/badge/-D-salmon" alt="D">
-        <img src="https://img.shields.io/badge/-O-gold" alt="O">
-        <img src="https://img.shields.io/badge/-L-navy" alt="L">
-        <img src="https://img.shields.io/badge/-A-turquoise" alt="A">
-        <img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
-    </h1>
-</div>
+<h3 align="center">Hey! Nice to see you</h3>
+<p align="center">
+    <img src="https://img.shields.io/badge/-I-red" alt="I">
+    <img src="https://img.shields.io/badge/-%27-orange" alt="'">
+    <img src="https://img.shields.io/badge/-M-yellow" alt="M">
+    <img src="https://img.shields.io/badge/--blue" alt=" ">
+    <img src="https://img.shields.io/badge/-H-green" alt="H">
+    <img src="https://img.shields.io/badge/-R-blue" alt="R">
+    <img src="https://img.shields.io/badge/-U-purple" alt="U">
+    <img src="https://img.shields.io/badge/-S-pink" alt="S">
+    <img src="https://img.shields.io/badge/-H-cyan" alt="H">
+    <img src="https://img.shields.io/badge/-I-lime" alt="I">
+    <img src="https://img.shields.io/badge/-K-brown" alt="K">
+    <img src="https://img.shields.io/badge/-E-teal" alt="E">
+    <img src="https://img.shields.io/badge/-S-magenta" alt="S">
+    <img src="https://img.shields.io/badge/--blue" alt=" ">
+    <img src="https://img.shields.io/badge/-D-salmon" alt="D">
+    <img src="https://img.shields.io/badge/-O-gold" alt="O">
+    <img src="https://img.shields.io/badge/-L-navy" alt="L">
+    <img src="https://img.shields.io/badge/-A-turquoise" alt="A">
+    <img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
+</p>
+
 
 **CURRENTLY**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
