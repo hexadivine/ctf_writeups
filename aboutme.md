@@ -1,33 +1,31 @@
-<!-- Heading -->
-
-<h3 align="center"> Hey! Nice to see you </h3>
-<h1 align="center">  
-<img src="https://img.shields.io/badge/-I-red" alt="I">
-<img src="https://img.shields.io/badge/-%27-orange" alt="'">
-<img src="https://img.shields.io/badge/-M-yellow" alt="M">
-<img src="https://img.shields.io/badge/--blue" alt=" ">
-<img src="https://img.shields.io/badge/-H-green" alt="H">
-<img src="https://img.shields.io/badge/-R-blue" alt="R">
-<img src="https://img.shields.io/badge/-U-purple" alt="U">
-<img src="https://img.shields.io/badge/-S-pink" alt="S">
-<img src="https://img.shields.io/badge/-H-cyan" alt="H">
-<img src="https://img.shields.io/badge/-I-lime" alt="I">
-<img src="https://img.shields.io/badge/-K-brown" alt="K">
-<img src="https://img.shields.io/badge/-E-teal" alt="E">
-<img src="https://img.shields.io/badge/-S-magenta" alt="S">
-<img src="https://img.shields.io/badge/--blue" alt=" ">
-<img src="https://img.shields.io/badge/-D-salmon" alt="D">
-<img src="https://img.shields.io/badge/-O-gold" alt="O">
-<img src="https://img.shields.io/badge/-L-navy" alt="L">
-<img src="https://img.shields.io/badge/-A-turquoise" alt="A">
-<img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
-
-   </h1> 
-<!-- Description -->
+<div style="text-align: center;">
+    <h3>Hey! Nice to see you</h3>
+    <h1>
+        <img src="https://img.shields.io/badge/-I-red" alt="I">
+        <img src="https://img.shields.io/badge/-%27-orange" alt="'">
+        <img src="https://img.shields.io/badge/-M-yellow" alt="M">
+        <img src="https://img.shields.io/badge/--blue" alt=" ">
+        <img src="https://img.shields.io/badge/-H-green" alt="H">
+        <img src="https://img.shields.io/badge/-R-blue" alt="R">
+        <img src="https://img.shields.io/badge/-U-purple" alt="U">
+        <img src="https://img.shields.io/badge/-S-pink" alt="S">
+        <img src="https://img.shields.io/badge/-H-cyan" alt="H">
+        <img src="https://img.shields.io/badge/-I-lime" alt="I">
+        <img src="https://img.shields.io/badge/-K-brown" alt="K">
+        <img src="https://img.shields.io/badge/-E-teal" alt="E">
+        <img src="https://img.shields.io/badge/-S-magenta" alt="S">
+        <img src="https://img.shields.io/badge/--blue" alt=" ">
+        <img src="https://img.shields.io/badge/-D-salmon" alt="D">
+        <img src="https://img.shields.io/badge/-O-gold" alt="O">
+        <img src="https://img.shields.io/badge/-L-navy" alt="L">
+        <img src="https://img.shields.io/badge/-A-turquoise" alt="A">
+        <img src="https://img.shields.io/badge/-S-lightgrey" alt="S">
+    </h1>
+</div>
 
 **CURRENTLY**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
-- Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?logo=mongodb&logoColor=white)![Express](https://img.shields.io/badge/Express-darkorange?logo=express&logoColor=white)![React](https://img.shields.io/badge/ReactJS-darkblue?logo=react&logoColor=white)![NodeJS](https://img.shields.io/badge/Node.js-darkyellow?logo=node.js&logoColor=white)
+- Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Node.js-darkyellow?)
 
 <details>
 <summary><samp>&#9776;</samp> BIO </summary>
@@ -43,8 +41,6 @@
   <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> 
   <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
 </details>
-
-<hr>
 
 <details>
 <summary><samp>&#9776;</samp> Languages, Tools & Technologies</summary>
@@ -81,3 +77,4 @@
 <a href="https://github.com/search?q=user%3Ahexadivine+language%3Amongodb"><img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248.svg?logo=mongodb&logoColor=white"></a>
 </p>
 </details>
+
