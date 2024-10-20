@@ -33,16 +33,16 @@
 <details>
 <summary><samp>&#9776;</samp> BIO </summary>
 
-- 🔭 I like ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
-- 🎯 Specifically interested in ![MERN Stack](https://img.shields.io/badge/MERN_Stack-blue) and ![Pentesting](https://img.shields.io/badge/Pentesting-e9404c)
-- 🌱 Learning all about ![ReactJS](https://img.shields.io/badge/ReactJS-black?logo=react) and ![Offensive Security](https://img.shields.io/badge/Offensive_Security-red)
+- 🔭 I like Web Development and Cybersecurity.
+- 🎯 Specifically interested in MERN Stack and Pentesting.
+- 🌱 Learning all about ReactJS and Offensive Security.
 - 🤝 Looking for:
-  - Junior roles in the field of ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000) 
-  - Collaboration on ![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-purple) in ![Web Development](https://img.shields.io/badge/Web%20Development-purple)
-- ✉️ Ping me about ![Javascript](https://img.shields.io/badge/Javascript-f6de37) and ![NodeJS](https://img.shields.io/badge/NodeJS-2ea043)
-- 🙋‍♂️ Reach out to me: 
-  <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> 
-  <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  - Junior roles in the field of Cybersecurity. 
+  - Collaboration on Open Source Projects in Web Development.
+- ✉️ Ping me about Javascript and NodeJS.
+- 🙋‍♂️ Reach out to me via: 
+  <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+
 </details>
 
 <details>
