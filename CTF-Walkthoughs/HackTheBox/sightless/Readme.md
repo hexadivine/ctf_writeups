@@ -1,4 +1,6 @@
 ![](Pasted%20image%2020241020223114.png)
+
+###### [more](https://app.hackthebox.com/machines/Sightless)
 # Recon
 
 - Nmap scan
