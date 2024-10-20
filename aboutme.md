@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/-l-8B0000" alt="I"> <!-- Dark Red -->
+    <img src="https://img.shields.io/badge/-l -8B0000" alt="I"> <!-- Dark Red -->
     <img src="https://img.shields.io/badge/-%27-FF8C00" alt="'"> <!-- Dark Orange -->
     <img src="https://img.shields.io/badge/-M-FFD700" alt="M"> <!-- Dark Gold -->
     <img src="https://img.shields.io/badge/--000000" alt=" "> <!-- Black -->
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/-U-4B0082" alt="U"> <!-- Indigo -->
     <img src="https://img.shields.io/badge/-S-FF1493" alt="S"> <!-- Deep Pink -->
     <img src="https://img.shields.io/badge/-H-00CED1" alt="H"> <!-- Dark Turquoise -->
-    <img src="https://img.shields.io/badge/-l-32CD32" alt="I"> <!-- Lime Green -->
+    <img src="https://img.shields.io/badge/-l -32CD32" alt="I"> <!-- Lime Green -->
     <img src="https://img.shields.io/badge/-K-8B4513" alt="K"> <!-- Saddle Brown -->
     <img src="https://img.shields.io/badge/-E-008B8B" alt="E"> <!-- Dark Cyan -->
     <img src="https://img.shields.io/badge/-S-8B008B" alt="S"> <!-- Dark Magenta -->
