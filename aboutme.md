@@ -25,24 +25,28 @@
    </h1> 
 <!-- Description -->
 
-**NOW**
+**CURRENTLY**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
 - Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?logo=mongodb&logoColor=white)![Express](https://img.shields.io/badge/Express-darkorange?logo=express&logoColor=white)![React](https://img.shields.io/badge/ReactJS-darkblue?logo=react&logoColor=white)![NodeJS](https://img.shields.io/badge/Node.js-darkyellow?logo=node.js&logoColor=white)
 
-**BIO** 
+<details>
+<summary><samp>&#9776;</samp> BIO </summary>
 
-- 🔭 Area of interest is in <img src="https://img.shields.io/badge/Web Development-purple"> and <img src="https://img.shields.io/badge/Cybersecurity-ff0000">
-- 🎯 Specifically interested in <img src="https://img.shields.io/badge/MERN_Stack-blue"> and <img src="https://img.shields.io/badge/Pentesting-e9404c">
-- 🌱 Learning all about <img alt="Reactjs" src="https://img.shields.io/badge/ReactJS-black?logo=react"> and <img src="https://img.shields.io/badge/Offensive_Security-red">
+- 🔭 Area of interest is in ![Web Development](https://img.shields.io/badge/Web%20Development-purple) and ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000)
+- 🎯 Specifically interested in ![MERN Stack](https://img.shields.io/badge/MERN_Stack-blue) and ![Pentesting](https://img.shields.io/badge/Pentesting-e9404c)
+- 🌱 Learning all about ![ReactJS](https://img.shields.io/badge/ReactJS-black?logo=react) and ![Offensive Security](https://img.shields.io/badge/Offensive_Security-red)
 - 🤝 Looking for:
-	- Junior roles in the field of <img src="https://img.shields.io/badge/Cybersecurity-ff0000"> 
-	- Collaboration on <img src="https://img.shields.io/badge/Open%20Source%20Projects-purple"> in <img src="https://img.shields.io/badge/Web%20Development-purple">
-- ✉️ Ping me about <img src="https://img.shields.io/badge/Javascript-f6de37"> and <img src="https://img.shields.io/badge/NodeJS-2ea043">
-- 🙋‍♂️ Reach out to me: <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  - Junior roles in the field of ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-ff0000) 
+  - Collaboration on ![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-purple) in ![Web Development](https://img.shields.io/badge/Web%20Development-purple)
+- ✉️ Ping me about ![Javascript](https://img.shields.io/badge/Javascript-f6de37) and ![NodeJS](https://img.shields.io/badge/NodeJS-2ea043)
+- 🙋‍♂️ Reach out to me: 
+  <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> 
+  <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+</details>
 
 <hr>
 
-<details open>
+<details>
 <summary><samp>&#9776;</samp> Languages, Tools & Technologies</summary>
 <br>
 
@@ -76,32 +80,4 @@
 <a href="https://github.com/search?q=user%3Ahexadivine+language%3Asql"><img alt="SQL" src="https://img.shields.io/badge/SQL-003B57.svg?logo=sql&logoColor=white"></a>
 <a href="https://github.com/search?q=user%3Ahexadivine+language%3Amongodb"><img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248.svg?logo=mongodb&logoColor=white"></a>
 </p>
-</details>
-
-<hr>
-<!-- Stats -->
-
-<!-- Activity Graph -->
-<img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph/?username=hexadivine&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"  />
-
-
-  <!-- Top Languages and Wakatime Stats -->
-  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/0f9dc64d-80bb-431f-93d4-2f6a1be65975.png"/>
-  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/d50bc9fa-ecb5-49cc-8266-08b2010cc661.png"/>
-
-
-<!-- Responsive Stats -->
-
-  <!-- Overview and Streak Stats -->
-  <img alt="Overview" src="https://github-readme-stats.vercel.app/api?username=hexadivine&theme=dracula&hide_border=true"  />  
-  <img src="https://streak-stats.demolab.com?user=hexadivine&theme=dracula&hide_border=true"  />
-
-
-
-<p align="center">
-  <!-- LeetCode Activity and Top Languages Stats -->
-  <img src="https://widgetbite.com/stats/hexadivine" alt="watching_count" width="47%"  style="max-width: 100%; object-fit: cover;" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hexadivine&theme=dracula&hide_border=true" width="47%" style="max-width: 100%; object-fit: cover;" />
-</p>
-
 </details>
