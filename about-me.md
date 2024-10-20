@@ -1,4 +1,3 @@
-![](matrix.gif)
 <div style="text-align:center">
 	<h1>Hey! Nice to see you</h1> 
 </div>
@@ -23,6 +22,8 @@
     <img src="https://img.shields.io/badge/-A-40E0D0" alt="A"> <!-- Turquoise -->
     <img src="https://img.shields.io/badge/-S-D3D3D3" alt="S"> <!-- Light Grey -->
 </p>
+
+![](matrix.gif)
 
 **CURRENTLY I'M**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
