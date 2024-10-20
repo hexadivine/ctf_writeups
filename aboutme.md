@@ -1,6 +1,6 @@
-<div align="center">
-	<h1>Hey! Nice to see you</h1> 
-</div>
+<p align="center">
+# Hey! Nice to see you
+</p>
 
 <p align="center">
     <img src="https://img.shields.io/badge/-I-red" alt="I">
@@ -27,7 +27,7 @@
 
 **CURRENTLY**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
-- Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Node.js-darkyellow?)
+- Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/NodeJs-darkyellow?)
 
 <details>
 <summary><samp>&#9776;</samp> BIO </summary>
