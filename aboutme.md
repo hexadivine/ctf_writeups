@@ -56,16 +56,17 @@
 <!-- Education -->
 
 <details>
-<summary><samp>&#9776;</samp> Education <i>(click to expand) 🔗 </i> </summary>
+<summary><samp>&#9776;</samp> Education <i>(click to expand) 🔗</i></summary>
 <br>
 
-|         **University/College**        |                    **Degree**                   |           **Status**          | **Graduation** |
-|:-------------------------------------:|:-----------------------------------------------:|:-----------------------------:|:--------------:|
-| University of Technology, Sydney      | Masters in Information Technology - Extension   |           GPA - 6.75/7        |     Dec 2025   |
-| Savitribai Phule Pune University      | Bachelors in Technology - Computer Engineering  |          CGPA - 8.17/10       |    July 2021   |
-| Asian College of Science and Commerce | Maharashtra Higher Secondary School Certificate |              Pass             |    May 2017    |
+| University/College                                | Degree                                                       | Status             | Graduation |
+|---------------------------------------------------|-------------------------------------------------------------|--------------------|------------|
+| University of Technology, Sydney                   | Masters in Information Technology - Extension               | GPA - 6.75/7       | Dec 2025   |
+| Savitribai Phule Pune University                   | Bachelors in Technology - Computer Engineering               | CGPA - 8.17/10     | July 2021  |
+| Asian College of Science and Commerce              | Maharashtra Higher Secondary School Certificate              | Pass               | May 2017   |
 
 </details>
+
 <!-- Languages & tools-->
 
 <details open>
