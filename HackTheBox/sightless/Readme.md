@@ -2,6 +2,7 @@
 >![](Pasted%20image%2020241020223114.png)
 
 # Recon
+
 - Nmap scan
 
 > nmap -sCSV -T4 $ip
