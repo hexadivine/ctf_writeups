@@ -25,53 +25,22 @@
    </h1> 
 <!-- Description -->
 
-<b> NOW</b>
+**NOW**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
 - Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?logo=mongodb&logoColor=white)![Express](https://img.shields.io/badge/Express-darkorange?logo=express&logoColor=white)![React](https://img.shields.io/badge/ReactJS-darkblue?logo=react&logoColor=white)![NodeJS](https://img.shields.io/badge/Node.js-darkyellow?logo=node.js&logoColor=white)
 
-
-<b> BIO </b>
+**BIO** 
 
 - 🔭 Area of interest is in <img src="https://img.shields.io/badge/Web Development-purple"> and <img src="https://img.shields.io/badge/Cybersecurity-ff0000">
-- 🎯 Specifically interested in <img src="https://img.shields.io/badge/MERN Stack-blue"> and <img src="https://img.shields.io/badge/Pentesting-e9404c">
-- 🌱 Learning all about <img alt="Reactjs" src="https://img.shields.io/badge/ReactJS-black?logo=react"> and <img src="https://img.shields.io/badge/Offensive Security-red">
+- 🎯 Specifically interested in <img src="https://img.shields.io/badge/MERN_Stack-blue"> and <img src="https://img.shields.io/badge/Pentesting-e9404c">
+- 🌱 Learning all about <img alt="Reactjs" src="https://img.shields.io/badge/ReactJS-black?logo=react"> and <img src="https://img.shields.io/badge/Offensive_Security-red">
 - 🤝 Looking for:
-	- Junior roles in <img src="https://img.shields.io/badge/Cybersecurity-ff0000"> 
+	- Junior roles in the field of <img src="https://img.shields.io/badge/Cybersecurity-ff0000"> 
 	- Collaboration on <img src="https://img.shields.io/badge/Open%20Source%20Projects-purple"> in <img src="https://img.shields.io/badge/Web%20Development-purple">
 - ✉️ Ping me about <img src="https://img.shields.io/badge/Javascript-f6de37"> and <img src="https://img.shields.io/badge/NodeJS-2ea043">
 - 🙋‍♂️ Reach out to me: <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
 
 <hr>
-<!-- Experience -->
-
-
-<details>
-<summary><samp>&#9776;</samp> Experience <i>(click to expand) 🔗</i></summary>
-<br>
-
-| Company   | Role             | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Period               | Location |
-|-----------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|----------|
-| Cognizant | Programmer Analyst| **Client: Health Care Service Corporation** (Role: Release Analyst)<br><br>**INNOVATION TEAM**<br>• **Aim**: Automation and making the release management process efficient<br>• Integrated **Jira** and **Service-Now** to **automate manual release management tasks** by **30%** using **Node JS** and **REST APIs.**<br>• Built Dashboards & Structures in **Jira** using **JQLs** and **Rich Filters** for the enterprise to monitor and manage changes, increasing release management efficiency exponentially.<br>(Node JS, Python, Bash, Jira)<br><br>**CORE TEAM**<br>• **Planned** and provided support for **implementation**, **verification**, and **rolling out** of **297 change requests** from **production and non-production** servers of **30 product teams**<br>• Out of which 294 changes closed successfully and 3 unsuccessful changes were **rolled out successfully.**<br>(Jira, Service Now, Planning, Team Management) | Aug 2021 - Dec 2023 | Remote   |
-| Cognizant | Student Intern    | • Built and deployed **Splunk architecture** to **fetch, store, and visualize** machine data on **AWS EC2 instances**.<br>• Learned DevOps tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals                                                                                                                                                                                                                                         | Jan 2021 – July 2021 | Remote   |
-
-</details>
-
-
-<!-- Education -->
-
-<details>
-<summary><samp>&#9776;</samp> Education <i>(click to expand) 🔗</i></summary>
-<br>
-
-| University/College                                | Degree                                                       | Status             | Graduation |
-|---------------------------------------------------|-------------------------------------------------------------|--------------------|------------|
-| University of Technology, Sydney                   | Masters in Information Technology - Extension               | GPA - 6.75/7       | Dec 2025   |
-| Savitribai Phule Pune University                   | Bachelors in Technology - Computer Engineering               | CGPA - 8.17/10     | July 2021  |
-| Asian College of Science and Commerce              | Maharashtra Higher Secondary School Certificate              | Pass               | May 2017   |
-
-</details>
-
-<!-- Languages & tools-->
 
 <details open>
 <summary><samp>&#9776;</samp> Languages, Tools & Technologies</summary>
@@ -111,25 +80,22 @@
 
 <hr>
 <!-- Stats -->
-<details open>
-<summary><samp>&#9776;</samp> Some Cool Stats</summary>
-<br/>
 
 <!-- Activity Graph -->
 <img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph/?username=hexadivine&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"  />
 
-<p align="center">
+
   <!-- Top Languages and Wakatime Stats -->
-  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/0f9dc64d-80bb-431f-93d4-2f6a1be65975.png" width="47%" style="max-width: 100%; height: auto; object-fit: cover;" />
-  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/d50bc9fa-ecb5-49cc-8266-08b2010cc661.png" width="47%" style="max-width: 100%; height: auto; object-fit: cover;" />
-</p>
+  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/0f9dc64d-80bb-431f-93d4-2f6a1be65975.png"/>
+  <img src="https://wakatime.com/share/@018d726e-439c-475c-b7d1-4ff05a11b2f1/d50bc9fa-ecb5-49cc-8266-08b2010cc661.png"/>
+
 
 <!-- Responsive Stats -->
-<p align="center">
+
   <!-- Overview and Streak Stats -->
-  <img alt="Overview" src="https://github-readme-stats.vercel.app/api?username=hexadivine&theme=dracula&hide_border=true" width="47%"  style="max-width: 100%; object-fit: cover;" />  
-  <img src="https://streak-stats.demolab.com?user=hexadivine&theme=dracula&hide_border=true" width="47%" style="max-width: 100%; object-fit: cover;" />
-</p>
+  <img alt="Overview" src="https://github-readme-stats.vercel.app/api?username=hexadivine&theme=dracula&hide_border=true"  />  
+  <img src="https://streak-stats.demolab.com?user=hexadivine&theme=dracula&hide_border=true"  />
+
 
 
 <p align="center">
