@@ -1,7 +1,7 @@
+![](matrix.gif)
 <div style="text-align:center">
 	<h1>Hey! Nice to see you</h1> 
 </div>
-
 <p align="center">
     <img src="https://img.shields.io/badge/-I-8B0000" alt="I"> <!-- Dark Red -->
     <img src="https://img.shields.io/badge/-%27-FF8C00" alt="'"> <!-- Dark Orange -->
@@ -24,9 +24,7 @@
     <img src="https://img.shields.io/badge/-S-D3D3D3" alt="S"> <!-- Light Grey -->
 </p>
 
-
-
-**CURRENTLY**
+**CURRENTLY I'M**
 - Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
 - Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
@@ -44,6 +42,7 @@
   <a href="mailto:hexadivine@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/hrushikeshdolas/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
 
 </details>
+
 
 <details>
 <summary><samp>&#9776;</samp> Languages, Tools & Technologies</summary>
