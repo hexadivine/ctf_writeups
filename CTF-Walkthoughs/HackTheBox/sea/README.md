@@ -1,4 +1,4 @@
-![](Pasted%20image%2020241021160851.png)
+![](banner.png)
 ###### [more](https://app.hackthebox.com/machines/Sea)
 
 # Recon
