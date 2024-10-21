@@ -1,4 +1,4 @@
-![](Pasted%20image%2020241021192647.png)
+![](banner.png)
 ###### [more](https://tryhackme.com/r/room/relevant)
 
 # Recon
@@ -94,4 +94,68 @@ getting file \passwords.txt of size 98 as passwords.txt (0.1 KiloBytes/sec) (ave
 Qm9iIC0gIVBAJCRXMHJEITEyMw==
 QmlsbCAtIEp1dzRubmFNNG40MjA2OTY5NjkhJCQk  
 ```
+
+- decoding via base64
+
+> echo Qm9iIC0gIVBAJCRXMHJEITEyMw== |  base64 -d 
+
+```
+Bob - !P@$$W0rD!123 
+```
+
+> echo QmlsbCAtIEp1dzRubmFNNG40MjA2OTY5NjkhJCQk |  base64 -d 
+
+```
+Bill - Juw4nnaM4n420696969!$$$   
+```
+
+- Tried password to smb and rdp but didn't work.
+-  looking for vulnerabilities
+
+# Vulnerability Discovery
+
+- using nmap scripts for vulnerability scanning
+
+> nmap --script vuln $ip 
+
+```
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-10-21 20:58 AEDT
+Nmap scan report for relevant.thm (10.10.183.232)
+Host is up (0.35s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+Host script results:
+|_smb-vuln-ms10-054: false
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|_smb-vuln-ms10-061: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 111.02 seconds
+```
+
+- learning about the CVE-2017-0143
+
 
