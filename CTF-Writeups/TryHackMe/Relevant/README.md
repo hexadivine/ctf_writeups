@@ -112,7 +112,7 @@ Bill - Juw4nnaM4n420696969!$$$
 - Tried password to smb and rdp but didn't work.
 -  looking for vulnerabilities
 
-# Vulnerability Discovery
+# [Vulnerability Discovery](#)
 
 - using nmap scripts for vulnerability scanning
 
