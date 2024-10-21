@@ -3,18 +3,18 @@
 		{"id":"ece971e4af704182","type":"text","text":"Recon","x":-170,"y":-584,"width":250,"height":60},
 		{"id":"64040e891ab2f0fd","type":"text","text":"Nmap Scan","x":231,"y":-640,"width":261,"height":60},
 		{"id":"630e7af7a312de49","type":"text","text":"Find dirs (gobuster)","x":231,"y":-552,"width":261,"height":60},
-		{"id":"745e5254b56d5481","type":"text","text":"Find CVE","x":231,"y":-388,"width":250,"height":60},
-		{"id":"d24afdeb2b90acb7","type":"text","text":"Use searchsploit","x":620,"y":-440,"width":261,"height":60},
-		{"id":"04b8e69545055949","type":"text","text":"web search","x":620,"y":-351,"width":261,"height":60},
 		{"id":"872300776210611a","type":"text","text":"Vulnerability Discovery","x":-171,"y":-381,"width":250,"height":60},
 		{"id":"337b0547df7c02c7","type":"text","text":"Exploitation","x":-170,"y":-20,"width":250,"height":60},
 		{"id":"4b7e9d02de2c1851","type":"text","text":"Post-Exploitation","x":-170,"y":113,"width":250,"height":60},
 		{"id":"bda2b11ebf5eb7cc","type":"text","text":"CTUF","x":-170,"y":246,"width":250,"height":60},
 		{"id":"27f2bf6a96c4a29d","type":"text","text":"Privilege Escalation","x":-170,"y":379,"width":250,"height":60},
 		{"id":"04f3ff67e7b72d4b","type":"text","text":"CTRF","x":-170,"y":514,"width":250,"height":60},
-		{"id":"0ee021d540c0d678","type":"text","text":"[SSTI](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection)","x":237,"y":-277,"width":250,"height":60},
-		{"id":"151d4a829832da52","x":230,"y":-20,"width":250,"height":60,"type":"text","text":"Exploit discovered vulnerability"},
-		{"id":"ab340a6a824e0fb3","x":242,"y":-167,"width":250,"height":60,"type":"text","text":"[XSS](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting)"}
+		{"id":"151d4a829832da52","type":"text","text":"Exploit discovered vulnerability","x":230,"y":-20,"width":250,"height":60},
+		{"id":"d24afdeb2b90acb7","type":"text","text":"Use searchsploit","x":1049,"y":-484,"width":261,"height":60},
+		{"id":"04b8e69545055949","type":"text","text":"web search","x":1049,"y":-395,"width":261,"height":60},
+		{"id":"0ee021d540c0d678","type":"text","text":"[SSTI](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection)","x":666,"y":-321,"width":250,"height":60},
+		{"id":"ab340a6a824e0fb3","type":"text","text":"[XSS](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting)","x":671,"y":-211,"width":250,"height":60},
+		{"id":"745e5254b56d5481","type":"text","text":"Find CVE","x":671,"y":-441,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"16deaaf34230220e","fromNode":"872300776210611a","fromSide":"bottom","toNode":"337b0547df7c02c7","toSide":"top"},
@@ -30,6 +30,7 @@
 		{"id":"2541e61f725ca0e8","fromNode":"745e5254b56d5481","fromSide":"right","toNode":"04b8e69545055949","toSide":"left"},
 		{"id":"efae0ad88ff48e05","fromNode":"872300776210611a","fromSide":"right","toNode":"0ee021d540c0d678","toSide":"left"},
 		{"id":"d195cab5dd801925","fromNode":"337b0547df7c02c7","fromSide":"right","toNode":"151d4a829832da52","toSide":"left"},
-		{"id":"3a3f467692dde01e","fromNode":"872300776210611a","fromSide":"right","toNode":"ab340a6a824e0fb3","toSide":"left"}
+		{"id":"3a3f467692dde01e","fromNode":"872300776210611a","fromSide":"right","toNode":"ab340a6a824e0fb3","toSide":"left"},
+		{"id":"8d279347a6e5a3c6","fromNode":"872300776210611a","fromSide":"left","toNode":"ece971e4af704182","toSide":"left"}
 	]
 }

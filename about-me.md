@@ -44,7 +44,6 @@
 
 </details>
 
-
 <details>
 <summary><samp>&#9776;</samp> Languages, Tools & Technologies</summary>
 <br>
