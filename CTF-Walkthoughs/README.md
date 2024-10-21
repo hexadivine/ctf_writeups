@@ -1,6 +1,3 @@
-# My Methodology
-
-![Methodology](Methodology.png)
 # Timeline
 
 ### 21st Oct 2024
