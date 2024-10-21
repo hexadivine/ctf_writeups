@@ -2,19 +2,25 @@
 	"nodes":[
 		{"id":"ece971e4af704182","type":"text","text":"Recon","x":-170,"y":-584,"width":250,"height":60},
 		{"id":"64040e891ab2f0fd","type":"text","text":"Nmap Scan","x":231,"y":-640,"width":261,"height":60},
-		{"id":"630e7af7a312de49","type":"text","text":"Find dirs (gobuster)","x":231,"y":-552,"width":261,"height":60},
-		{"id":"872300776210611a","type":"text","text":"Vulnerability Discovery","x":-171,"y":-381,"width":250,"height":60},
-		{"id":"337b0547df7c02c7","type":"text","text":"Exploitation","x":-170,"y":-20,"width":250,"height":60},
-		{"id":"4b7e9d02de2c1851","type":"text","text":"Post-Exploitation","x":-170,"y":113,"width":250,"height":60},
-		{"id":"bda2b11ebf5eb7cc","type":"text","text":"CTUF","x":-170,"y":246,"width":250,"height":60},
-		{"id":"27f2bf6a96c4a29d","type":"text","text":"Privilege Escalation","x":-170,"y":379,"width":250,"height":60},
-		{"id":"04f3ff67e7b72d4b","type":"text","text":"CTRF","x":-170,"y":514,"width":250,"height":60},
-		{"id":"151d4a829832da52","type":"text","text":"Exploit discovered vulnerability","x":230,"y":-20,"width":250,"height":60},
-		{"id":"d24afdeb2b90acb7","type":"text","text":"Use searchsploit","x":1049,"y":-484,"width":261,"height":60},
-		{"id":"04b8e69545055949","type":"text","text":"web search","x":1049,"y":-395,"width":261,"height":60},
-		{"id":"0ee021d540c0d678","type":"text","text":"[SSTI](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection)","x":666,"y":-321,"width":250,"height":60},
-		{"id":"ab340a6a824e0fb3","type":"text","text":"[XSS](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting)","x":671,"y":-211,"width":250,"height":60},
-		{"id":"745e5254b56d5481","type":"text","text":"Find CVE","x":671,"y":-441,"width":250,"height":60}
+		{"id":"43061844ec983ea1","x":580,"y":-640,"width":261,"height":60,"type":"text","text":"scan for ports only"},
+		{"id":"385763116ec29651","x":580,"y":-526,"width":261,"height":86,"type":"text","text":"dirb/common.txt\ndirb/small.txt\ndirb/big.txt"},
+		{"id":"1943c28f3bff9935","x":932,"y":-640,"width":250,"height":60,"type":"text","text":"scan -sCSV"},
+		{"id":"3973177197c0a0e0","x":1260,"y":-640,"width":250,"height":60,"type":"text","text":"scan vulnerability using nmap --script vuln"},
+		{"id":"4b7e9d02de2c1851","type":"text","text":"Post-Exploitation","x":-171,"y":313,"width":250,"height":60},
+		{"id":"bda2b11ebf5eb7cc","type":"text","text":"CTUF","x":-171,"y":446,"width":250,"height":60,"color":"4"},
+		{"id":"27f2bf6a96c4a29d","type":"text","text":"Privilege Escalation","x":-171,"y":579,"width":250,"height":60},
+		{"id":"04f3ff67e7b72d4b","type":"text","text":"CTRF","x":-171,"y":714,"width":250,"height":60,"color":"1"},
+		{"id":"337b0547df7c02c7","type":"text","text":"Exploitation","x":-171,"y":180,"width":250,"height":60},
+		{"id":"745e5254b56d5481","type":"text","text":"Find CVE","x":241,"y":-301,"width":250,"height":60},
+		{"id":"630e7af7a312de49","type":"text","text":"Find dirs (gobuster)","x":230,"y":-513,"width":261,"height":60},
+		{"id":"cbe2a0b40dd8fa72","x":927,"y":-526,"width":373,"height":86,"type":"text","text":"dirbuster/directory-list-2.3-small.txt\ndirbuster/directory-list-2.3-medium.txt"},
+		{"id":"04b8e69545055949","type":"text","text":"web search","x":580,"y":-248,"width":261,"height":60},
+		{"id":"d24afdeb2b90acb7","type":"text","text":"Use searchsploit","x":580,"y":-331,"width":261,"height":60},
+		{"id":"151d4a829832da52","type":"text","text":"Exploit discovered vulnerability","x":241,"y":180,"width":250,"height":60},
+		{"id":"872300776210611a","type":"text","text":"Vulnerability Discovery","x":-170,"y":-117,"width":250,"height":60},
+		{"id":"0ee021d540c0d678","type":"text","text":"[SSTI](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection)","x":242,"y":-188,"width":250,"height":60},
+		{"id":"ab340a6a824e0fb3","type":"text","text":"[XSS](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting)","x":242,"y":-87,"width":250,"height":60},
+		{"id":"0f9221df2d3f505c","x":242,"y":4,"width":250,"height":60,"type":"text","text":"smb"}
 	],
 	"edges":[
 		{"id":"16deaaf34230220e","fromNode":"872300776210611a","fromSide":"bottom","toNode":"337b0547df7c02c7","toSide":"top"},
@@ -31,6 +37,12 @@
 		{"id":"efae0ad88ff48e05","fromNode":"872300776210611a","fromSide":"right","toNode":"0ee021d540c0d678","toSide":"left"},
 		{"id":"d195cab5dd801925","fromNode":"337b0547df7c02c7","fromSide":"right","toNode":"151d4a829832da52","toSide":"left"},
 		{"id":"3a3f467692dde01e","fromNode":"872300776210611a","fromSide":"right","toNode":"ab340a6a824e0fb3","toSide":"left"},
-		{"id":"8d279347a6e5a3c6","fromNode":"872300776210611a","fromSide":"left","toNode":"ece971e4af704182","toSide":"left"}
+		{"id":"8d279347a6e5a3c6","fromNode":"872300776210611a","fromSide":"left","toNode":"ece971e4af704182","toSide":"left"},
+		{"id":"e95ec76d9fd9c343","fromNode":"64040e891ab2f0fd","fromSide":"right","toNode":"43061844ec983ea1","toSide":"left"},
+		{"id":"4f6e68fc24e9dbae","fromNode":"872300776210611a","fromSide":"right","toNode":"0f9221df2d3f505c","toSide":"left"},
+		{"id":"d92476a7e93e7fe0","fromNode":"43061844ec983ea1","fromSide":"right","toNode":"1943c28f3bff9935","toSide":"left"},
+		{"id":"e7717716b0e712f8","fromNode":"1943c28f3bff9935","fromSide":"right","toNode":"3973177197c0a0e0","toSide":"left"},
+		{"id":"267dfbe84c5c8e1d","fromNode":"630e7af7a312de49","fromSide":"right","toNode":"385763116ec29651","toSide":"left"},
+		{"id":"857916c4313d6d1d","fromNode":"385763116ec29651","fromSide":"right","toNode":"cbe2a0b40dd8fa72","toSide":"left"}
 	]
 }

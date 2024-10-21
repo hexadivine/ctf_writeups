@@ -30,3 +30,4 @@
 - Status - In process (Privilege Escalation)
 - Things learnt - 
 	- After exploitation look for hashes that can be cracked by john for ssh access to user.
+
