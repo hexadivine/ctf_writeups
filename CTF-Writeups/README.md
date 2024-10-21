@@ -4,7 +4,7 @@
 
 #### 21st Oct 2024
 
-![](HackTheBox/sea/banner.png)
+![](HackTheBox/Sea/banner.png)
 - Started sea - [README](https://hexadivine.gitbook.io/hd/ctf-walkthoughs/hackthebox/sea) [HTB](https://app.hackthebox.com/machines/Sea)
 - Status - In process (Exploitation)
 - Things learnt - 
@@ -12,7 +12,7 @@
 	
 #### 20th Oct 2024
 
-![](HackTheBox/sightless/Pasted%20image%2020241020223114.png)
+![](HackTheBox/Sightless/Pasted%20image%2020241020223114.png)
 
 - Started Sightless - [README](https://hexadivine.gitbook.io/hd/ctf-walkthoughs/hackthebox/sightless) [HTB](https://app.hackthebox.com/machines/Sea)
 - Status - In process (Privilege Escalation)
