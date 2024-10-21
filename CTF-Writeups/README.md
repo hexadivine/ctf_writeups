@@ -1,15 +1,16 @@
+# CTF-Writeups
+
 ## Timeline
 
-### 21st Oct 2024
+#### 21st Oct 2024
 
 ![](HackTheBox/sea/banner.png)
 - Started sea - [README](https://hexadivine.gitbook.io/hd/ctf-walkthoughs/hackthebox/sea) [HTB](https://app.hackthebox.com/machines/Sea)
 - Status - In process (Exploitation)
 - Things learnt - 
 	- It is important to perform through recon. Specially if it is a web app, get all possible/available/important **files/dirs**. This helps to move forward and find vulnerability. 
-
-
-### 20th Oct 2024
+	
+#### 20th Oct 2024
 
 ![](HackTheBox/sightless/Pasted%20image%2020241020223114.png)
 
