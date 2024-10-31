@@ -1,7 +1,7 @@
 ![](banner.png)
 ###### [more](https://tryhackme.com/r/room/relevant)
 
-# [Recon]()
+# Recon
 
 - nmap scan
 
@@ -112,7 +112,7 @@ Bill - Juw4nnaM4n420696969!$$$
 - Tried password to smb and rdp but didn't work.
 -  looking for vulnerabilities
 
-# [Vulnerability Discovery](#)
+# Vulnerability Discovery
 
 - using nmap scripts for vulnerability scanning
 
@@ -157,5 +157,66 @@ Nmap done: 1 IP address (1 host up) scanned in 111.02 seconds
 ```
 
 - learning about the CVE-2017-0143
+- After seeing next step solution, I got to know that I can see smb files on http://10.10.223.57:49663/nt4wrksv/passwords.txt (something I could never guess...)
 
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3A1aWpyMGRvdnRoNDV0bmY1ZXh3ZzFoMGd0aTI2NTRwMzVoaTd0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lXu72d4iKwqek/giphy.webp)
 
+- Back to ReCoN..!
+
+# Recon
+
+- Doing full port scan
+
+>nmap -p- 10.10.183.232
+
+```
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-10-21 21:33 AEDT
+Nmap scan report for relevant.thm (10.10.183.232)
+Host is up (0.30s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+49663/tcp open  unknown
+49666/tcp open  unknown
+49668/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 464.32 seconds
+```
+
+- From the hint I know I can see smb files on 49663 port.
+
+> curl http://10.10.223.57:49663/nt4wrksv/passwords.txt
+
+```
+[User Passwords - Encoded]
+Qm9iIC0gIVBAJCRXMHJEITEyMw==
+QmlsbCAtIEp1dzRubmFNNG40MjA2OTY5NjkhJCQk
+```
+
+- server is running ASP
+
+> curl -I http://10.10.223.57:49663/nt4wrksv/passwords.txt
+
+```
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: text/plain
+Last-Modified: Sat, 25 Jul 2020 15:15:33 GMT
+Accept-Ranges: bytes
+ETag: "65e151719662d61:0"
+Server: Microsoft-IIS/10.0
+X-Powered-By: ASP.NET
+Date: Mon, 21 Oct 2024 13:35:33 GMT
+```
+
+# Vulnerability Discovery
+
+- I have write access to /nt4wrksv smb folder so I can upload ASP rev shell (server running asp) and get connection
+
+# Exploit
+
+- Create asp payload
