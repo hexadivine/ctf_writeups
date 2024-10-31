@@ -1,5 +1,7 @@
 # About-me
 
+![HD](HD.gif)
+
 ## Hey! Nice to see you
 
 <div align="center">
@@ -80,7 +82,6 @@
 
 </div>
 
-![HD](HD.gif)
 
 **CURRENTLY I'M**
 
@@ -105,9 +106,6 @@
 <details>
 
 <summary>☰ Languages, Tools &#x26; Technologies</summary>
-
-\
-
 
 Programming Languages
 
