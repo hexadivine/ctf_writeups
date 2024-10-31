@@ -1,4 +1,5 @@
 ![](Pasted%20image%2020241031161256.png)
+- [more](https://tryhackme.com/r/room/searchskills)
 ## Learning Objectives
 
 - Evaluate information sources
