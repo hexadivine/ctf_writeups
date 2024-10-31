@@ -23,7 +23,8 @@
 	- **Vulnerabilities**: discovery, mitigation of vulnerabilities
 	- **Policy violations**: ex - if users upload confidential company data to an online storage service.
 	- **Unauthorized activity**: Consider the case where a user’s login name and password are stolen, and the attacker uses them to log into the network. A SOC must detect and block such an event as soon as possible before further damage is done.
-	- **Network intrusions**: No matter how good your security is, there is always a chance for an intrusion. An intrusion can occur when a user clicks on a malicious link or when an attacker exploits a public server. Either way, when an intrusion occurs, we must detect it as soon as possible to prevent further damage.
+	- **Network intrusions**: No matter how good your security is, there is always a chance for an intrusion. An intrusion can occur when a user clicks on a malicious link or when an attacker exploits a public server. Either way, when an intrusion occurs, we must detect it as soon as possible to prevent further damage.  
+
 ![](Pasted%20image%2020241031153632.png)
 
 ### Threat Intelligence
