@@ -1,4 +1,4 @@
-# CTF-Writeups
+# capture the flag - writeups
 
 ## Timeline
 
