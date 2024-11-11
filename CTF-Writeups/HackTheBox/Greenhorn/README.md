@@ -101,7 +101,93 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 ![](Pasted%20image%2020241111194432.png)
 
 ![](Pasted%20image%2020241111194418.png)
+
 - Found the source code at <http://greenhorn.htb:3000/GreenAdmin/GreenHorn>
 
 ![](Pasted%20image%2020241111194458.png)
 
+## Vulnerability Discovery
+
+- Found interesting code at <http://greenhorn.htb:3000/GreenAdmin/GreenHorn/src/branch/main/login.php>
+
+![](Pasted%20image%2020241111201634.png)
+
+- Found value of $ww at <http://greenhorn.htb:3000/GreenAdmin/GreenHorn/src/branch/main/data/settings/pass.php>
+
+![](Pasted%20image%2020241111201930.png)
+
+- Cracked the sha512 hash from <https://crackstation.net/> (value: iloveyou1)
+
+![](Pasted%20image%2020241111202121.png)
+
+- filling the password at login page <http://greenhorn.htb/login.php>
+
+![](Pasted%20image%2020241111202219.png)
+![](Pasted%20image%2020241111202240.png)
+
+- Searching for an exploit for [pluck 4.7.18](http://www.pluck-cms.org)
+- found [CVE-2023-50564](https://nvd.nist.gov/vuln/detail/CVE-2023-50564): allows arbitrary file upload
+
+## Exploit
+
+- Uploading zip file contain php rev shell
+
+![](Pasted%20image%2020241111204528.png)![](Pasted%20image%2020241111204651.png)
+
+- got reverse shell after uploading module
+
+![](Pasted%20image%2020241111204732.png)
+
+- checked junior user
+- used same password (iloveyou1) to login to "junior" user
+
+![](Pasted%20image%2020241111204937.png)
+
+- got user flag
+
+![](Pasted%20image%2020241111205118.png)
+
+## Privilege Escalation
+
+- checking pdf file - "Using OpenVAS.pdf"
+- starting python webserver to download file
+
+![](Pasted%20image%2020241111205650.png)
+
+![](Pasted%20image%2020241111205728.png)
+
+- need to de-pixalise password
+- extracting de-pixalised image from pdf
+
+![](0.png)
+
+- using depix tool - <https://github.com/spipm/Depix> (stenography tool to discover blurred text)
+
+> python3 depix.py -p ~/0.png -s images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png -o depixed.png
+
+```
+2024-11-11 21:03:21,505 - Loading pixelated image from /home/lnxuser/0.png
+2024-11-11 21:03:21,555 - Loading search image from images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png
+2024-11-11 21:03:22,079 - Finding color rectangles from pixelated space
+2024-11-11 21:03:22,080 - Found 252 same color rectangles
+2024-11-11 21:03:22,080 - 190 rectangles left after moot filter
+2024-11-11 21:03:22,080 - Found 1 different rectangle sizes
+2024-11-11 21:03:22,080 - Finding matches in search image
+2024-11-11 21:03:22,080 - Scanning 190 blocks with size (5, 5)
+2024-11-11 21:03:22,103 - Scanning in searchImage: 0/1674
+2024-11-11 21:04:01,936 - Removing blocks with no matches
+2024-11-11 21:04:01,936 - Splitting single matches and multiple matches
+2024-11-11 21:04:01,939 - [16 straight matches | 174 multiple matches]
+2024-11-11 21:04:01,939 - Trying geometrical matches on single-match squares
+2024-11-11 21:04:02,180 - [29 straight matches | 161 multiple matches]
+2024-11-11 21:04:02,180 - Trying another pass on geometrical matches
+2024-11-11 21:04:02,395 - [41 straight matches | 149 multiple matches]
+2024-11-11 21:04:02,395 - Writing single match results to output
+2024-11-11 21:04:02,396 - Writing average results for multiple matches to output
+2024-11-11 21:04:05,630 - Saving output image to: depixed.png
+```
+
+- got depixed image. 
+- got root password: "sidefromsidetheothersidesidefromsidetheotherside"
+
+![](depixed.png)
