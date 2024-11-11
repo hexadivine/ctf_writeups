@@ -1,7 +1,5 @@
 # About-me
 
-![HD](HD.gif)
-
 ## Hey! Nice to see you
 
 <div align="center">
@@ -81,6 +79,9 @@
 <img src="https://img.shields.io/badge/-S-D3D3D3" alt="S">
 
 </div>
+
+
+![HD](HD.gif)
 
 
 **CURRENTLY I'M**
