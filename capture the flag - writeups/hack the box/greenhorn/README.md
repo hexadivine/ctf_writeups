@@ -1,6 +1,6 @@
 ![](Pasted%20image%2020241111191207.png)
 
-## Enumeration
+# Enumeration
 
 - nmap scan
 
@@ -106,7 +106,7 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 
 ![](Pasted%20image%2020241111194458.png)
 
-## Vulnerability Discovery
+# Vulnerability Discovery
 
 - Found interesting code at <http://greenhorn.htb:3000/GreenAdmin/GreenHorn/src/branch/main/login.php>
 
@@ -128,7 +128,7 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 - Searching for an exploit for [pluck 4.7.18](http://www.pluck-cms.org)
 - found [CVE-2023-50564](https://nvd.nist.gov/vuln/detail/CVE-2023-50564): allows arbitrary file upload
 
-## Exploit
+# Exploit
 
 - Uploading zip file contain php rev shell
 
@@ -147,7 +147,7 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 
 ![](Pasted%20image%2020241111205118.png)
 
-## Privilege Escalation
+# Privilege Escalation
 
 - checking pdf file - "Using OpenVAS.pdf"
 - starting python webserver to download file
@@ -191,3 +191,7 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 - got root password: "sidefromsidetheothersidesidefromsidetheotherside"
 
 ![](depixed.png)
+
+# Personal Learnings
+
+- After finding exploit, don't just rely on exploit script, but understand its working and modify the methodology accordingly. Recon more on other found ports.

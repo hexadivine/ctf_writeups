@@ -123,3 +123,8 @@ Includes animations.
 ![](Pasted%20image%2020241021181807.png)
 
 ![](Pasted%20image%2020241021181729.png)
+
+
+# Personal Learnings
+
+- It is important to perform through recon. Specially if it is a web app, get all possible/available/important **files/dirs**. This helps to move forward and find vulnerability.

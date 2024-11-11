@@ -220,3 +220,7 @@ Date: Mon, 21 Oct 2024 13:35:33 GMT
 # Exploit
 
 - Create asp payload
+
+# Personal Leanings
+
+- nmap script for vuln scan is very powerful

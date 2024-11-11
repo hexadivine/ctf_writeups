@@ -139,3 +139,7 @@ michael@sightless:~$ cat user.txt
 # Privilege Escalation
 
 - TBD
+
+# Personal Learnings
+
+- After exploitation look for hashes that can be cracked by john for ssh access to user.
