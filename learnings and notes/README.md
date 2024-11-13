@@ -17,7 +17,7 @@
          </td>
          <td></td>
          <td>
-         ![](cross%20site%20scripting%20-%20xss/Pasted%20image%2020241112155322.png)
+         <a href="cross%20site%20scripting%20-%20xss/Pasted%20image%2020241112155322.png" />
          </td>
          <td><a href="cross site scripting - xss">xss</a></td>
       </tr>
@@ -26,7 +26,7 @@
          <td><strong>server side request forgery - ssrf</strong>
          <td></td>
          <td>
-         ![](server%20side%20request%20forgery%20-%20ssrf/Pasted%20image%2020241112023907.png)
+	     <a href="server%20side%20request%20forgery%20-%20ssrf/Pasted%20image%2020241112023907.png" />
          </td>
          <td><a href="server side request forgery - ssrf">server side request forgery - ssrf</a></td>
       </tr>
