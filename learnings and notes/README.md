@@ -1,0 +1,34 @@
+
+<table data-view="cards">
+   <thead>
+      <tr>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th data-hidden data-card-cover data-type="files"></th>
+         <th data-hidden data-card-target data-type="content-ref"></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td></td>
+         <td>
+            <p><strong>cross site scripting - xss</strong> </p>
+         </td>
+         <td></td>
+         <td>
+         ![](cross%20site%20scripting%20-%20xss/Pasted%20image%2020241112155322.png)
+         </td>
+         <td><a href="cross site scripting - xss">xss</a></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td><strong>server side request forgery - ssrf</strong>
+         <td></td>
+         <td>
+         ![](server%20side%20request%20forgery%20-%20ssrf/Pasted%20image%2020241112023907.png)
+         </td>
+         <td><a href="server side request forgery - ssrf">server side request forgery - ssrf</a></td>
+      </tr>
+   </tbody>
+</table>
