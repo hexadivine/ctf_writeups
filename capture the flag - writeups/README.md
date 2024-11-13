@@ -1,9 +1,3 @@
----
-description: Checkout below capture the flag boxes I solved.
-tags:
-  - index
----
-
 # capture the flag - writeups
 
 
