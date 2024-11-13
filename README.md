@@ -124,12 +124,4 @@ Database
 
 </details>
 
-<<<<<<< HEAD
-=======
-{% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
-
-{% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
->>>>>>> origin/main
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
