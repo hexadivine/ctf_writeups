@@ -10,7 +10,7 @@ SSRF stands for server side request forgery in which attacker makes modified req
 - Blind SSRF
 	- No response is provided to the attacker
 
-# Example 
+# POC
 
 Below is the workflow of SSRF.
 
