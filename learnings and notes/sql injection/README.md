@@ -1,3 +1,5 @@
+# [SQL Injection]()
+
 ![](Pasted%20image%2020241116223725.png)
 
 # [Introduction]()
@@ -55,7 +57,6 @@ use `'` or `"` to know if the input field is vulnerable to SQL injection.
 0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users
 ```
 ## Example 2: Blind SQL Injection: Bypass Auth
-
 - Inserting below will result `true` for any input
 
 ```sql
