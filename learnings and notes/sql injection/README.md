@@ -1,15 +1,15 @@
 ![](Pasted%20image%2020241116223725.png)
 
-# [Introduction]
+# [Introduction]()
 
 In this case attacker exploit vulnerable input field in the web page to gain access of the database. Attacker inserts SQL command in the input field that interact with the database.
-# [Example]
+# [Example]()
 
 ![](Pasted%20image%2020241116225912.png)
 
 ![](Pasted%20image%2020241116225956.png)
 
-# SQL Injection Snippets
+# [SQL Injection Snippets]()
 
 ## Example 0: Check SQL Injection Vulnarability
 
