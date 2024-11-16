@@ -6,16 +6,16 @@
 
 - [overview](writeups/overview.md)
 - [hack the box](writeups/hack-the-box)
-	- [greenhorn](writeups/hack-the-box/greenhorn)
-	- [sightless](writeups/hack-the-box/sightless)
-	- [sea](writeups/hack-the-box/sea)
+	- [greenhorn](writeups/hack-the-box/greenhorn/README.md)
+	- [sightless](writeups/hack-the-box/sightless/README.md)
+	- [sea](writeups/hack-the-box/sea/README.md)
 - [try hack me](writeups/try-hack-me)
-	- [relevant](writeups/hack-the-box/relevant)
+	- [relevant](writeups/hack-the-box/relevant/README.md)
 
 ## 📖 Notes
 
 - [common exploits](notes/common-exploits)
-	- [command injection](notes/common-exploits/command-injection)
-	- [cross site scripting - xss](notes/common-exploits/cross site scripting - xss)
-	- [server side request forgery - ssrf](notes/common-exploits/server side request forgery - ssrf)
-	- [sql injection](notes/common-exploits/sql injection)
+	- [command injection](notes/common-exploits/command-injection/README.md)
+	- [cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
+	- [server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
+	- [sql injection](notes/common-exploits/sql-injection/README.md)
