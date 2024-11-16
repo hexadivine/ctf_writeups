@@ -1,7 +1,7 @@
 ![](Pasted%20image%2020241115021456.png)
 # Introduction
 
-Command injection vulnerability allows attacker to inject a bash command allowing them to interact with shell. The types include
+Command injection vulnerability allows attacker to inject a bash commands; allowing them to interact with shell. The types include
 
 - Blind command injection
 	- No direct output. Requires investigation.
