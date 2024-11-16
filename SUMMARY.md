@@ -5,15 +5,8 @@
 ## Writeups
 
 - [overview](writeups/overview.md)
-- [hack the box](writeups/overview.md?id=1)
-	- [greenhorn](<writeups/hack the box/greenhorn/README.md>)
-    * [sea](<writeups/hack the box/sea/README.md>)
-    * [sightless](<writeups/hack the box/sightless/README.md>)
-  * [try hack me](writeups/overview.md)
-    * [relevant](<writeups/try hack me/relevant/README.md>)
-
+- [hack the box](writeups/hack-the-box)
+- [try hack me](writeups/try-hack-me)
 ## Notes
 
-* [learnings and notes](#)
-  * [cross site scripting - xss](<notes/common exploits/cross site scripting - xss/README.md>)
-  * [server side request forgery - ssrf](<notes/common exploits/server side request forgery - ssrf/README.md>)
+- [common exploits](notes/common-exploits)
