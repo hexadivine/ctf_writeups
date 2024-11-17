@@ -130,7 +130,7 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 - Searching for an exploit for [pluck 4.7.18](http://www.pluck-cms.org)
 - found [CVE-2023-50564](https://nvd.nist.gov/vuln/detail/CVE-2023-50564): allows arbitrary file upload
 
-## #Exploit
+## Exploit
 
 - Uploading zip file contain php rev shell
 
