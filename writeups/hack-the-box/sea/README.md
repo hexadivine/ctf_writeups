@@ -1,5 +1,5 @@
 ![](banner.png)
-###### [more](https://app.hackthebox.com/machines/Sea)
+###### [link](https://app.hackthebox.com/machines/Sea)
 
 # Recon
 

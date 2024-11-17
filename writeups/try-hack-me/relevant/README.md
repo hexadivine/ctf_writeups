@@ -1,5 +1,5 @@
 ![](banner.png)
-###### [more](https://tryhackme.com/r/room/relevant)
+###### [link](https://tryhackme.com/r/room/relevant)
 
 # Recon
 
