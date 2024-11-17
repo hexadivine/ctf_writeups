@@ -129,3 +129,5 @@ Database
 {% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
 
 </details>
+
+{% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
