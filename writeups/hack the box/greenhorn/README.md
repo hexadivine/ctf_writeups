@@ -194,6 +194,6 @@ Nmap done: 1 IP address (1 host up) scanned in 141.30 seconds
 
 ![](depixed.png)
 
-# Personal Learnings
+## Personal Learnings
 
 - After finding exploit, don't just rely on exploit script, but understand its working and modify the methodology accordingly. Recon more on other found ports.

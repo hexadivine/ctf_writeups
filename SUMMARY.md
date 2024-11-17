@@ -8,9 +8,9 @@
 - [hack the box](writeups/hack-the-box)
 	- [greenhorn](writeups/hack-the-box/greenhorn/README.md)
 	- [sightless](writeups/hack-the-box/sightless/README.md)
-	- [sea](writeups/hack-the-box/sea/README)
+	- [sea](writeups/hack-the-box/sea/README.md)
 - [try hack me](writeups/try-hack-me)
-	- [relevant](writeups/hack-the-box/relevant/README.md)
+	- [relevant](writeups/try-hack-me/relevant/README.md)
 
 ## 📖 Notes
 
