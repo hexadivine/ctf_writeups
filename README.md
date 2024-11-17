@@ -126,8 +126,7 @@ Database
 
 <summary>☰ MORE</summary>
 
-{% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
+![tryhackme](https://tryhackme-badges.s3.amazonaws.com/hexadivine.png)
 
 </details>
 
-{% embed url="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" %}
