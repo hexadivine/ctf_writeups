@@ -12,6 +12,7 @@ Some features include:
 - **Sequencer:** Assess the randomness of tokens, such as session cookie values or other supposedly randomly generated data.
 
 
+
 ## References
 
 - https://portswigger.net/burp/documentation/desktop/tools/proxy

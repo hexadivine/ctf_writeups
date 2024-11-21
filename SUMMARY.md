@@ -2,7 +2,7 @@
 
 *  [👋 aboutme](README.md)
 
-## 🪜 Writeups
+## 🪜 CTF Walkthroughs
 
 - [🔭 overview](writeups/overview.md)
 - [🏁 hack the box](writeups/hack-the-box)
@@ -20,4 +20,4 @@
 	- [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
 	- [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
 - 🧰 tools
-	- [👩‍👦‍👦 burp suit](tools/burp-suit/README.md)
+	- [👩‍👦‍👦 burp suit](notes/tools/burp-suit/README.md)
