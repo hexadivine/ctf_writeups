@@ -15,6 +15,6 @@ Some features include:
 
 ## References
 
-- https://portswigger.net/burp/documentation/desktop/tools/proxy
-- https://portswigger.net/burp/documentation/desktop/tools/intruder
-- https://tryhackme.com/r/room/burpsuitebasics
+- <https://portswigger.net/burp/documentation/desktop/tools/proxy>
+- <https://portswigger.net/burp/documentation/desktop/tools/intruder>
+- <https://tryhackme.com/r/room/burpsuitebasics>
