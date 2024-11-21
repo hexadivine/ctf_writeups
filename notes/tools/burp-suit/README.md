@@ -3,3 +3,5 @@
 
 ## Introduction
 
+Burp suit is used to test web & mobile apps. It allows us to view, and edit http/https traffic.
+
