@@ -1,6 +1,6 @@
 # aboutme
 
-## Hey! Nice To See You
+## Hey! Nice To See You 
 
 <div align="center">
 
@@ -129,5 +129,3 @@ Database
 ![tryhackme](https://tryhackme-badges.s3.amazonaws.com/hexadivine.png)
 
 </details>
-
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=531856" style='border:none;'></iframe>
