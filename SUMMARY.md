@@ -20,4 +20,4 @@
 	- [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
 	- [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
 - 🧰 tools
-	- [👩‍👦‍👦 burp suit](tools/burp-suit)
+	- [👩‍👦‍👦 burp suit](tools/burp-suit/README.md)
