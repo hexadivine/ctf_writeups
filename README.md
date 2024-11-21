@@ -124,8 +124,8 @@ Database
 
 <details>
 
-<summary>☰ MORE</summary>
+<summary>☰ Links</summary>
 
-![tryhackme](https://tryhackme-badges.s3.amazonaws.com/hexadivine.png)
+- [LinkedIn](https://www.linkedin.com/in/hrushikeshdolas)
 
 </details>
