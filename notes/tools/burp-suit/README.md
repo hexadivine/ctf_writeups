@@ -8,7 +8,7 @@ Some features include:
 - **Repeater:** Repeater allows for capturing, modifying, and re-sending the same request multiple times. This functionality is particularly useful when crafting payloads through trial and error (e.g., in SQLi - Structured Query Language Injection) or testing the functionality of an endpoint for vulnerabilities.
 - **Intruder:** It enables you to configure attacks that send the same HTTP request over and over again, inserting different payloads into predefined positions each time. 
 - **Decoder:** It performs data transformation. It can decode captured information or encode payloads before sending them to the target. 
-- **Comparer:**  
+- **Comparer:** Enables the comparison of two pieces of data at either the word or byte level. This allows to send potentially large data segments directly to a comparison tool  
 
 ## References
 
