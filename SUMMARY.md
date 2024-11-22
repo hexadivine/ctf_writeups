@@ -16,8 +16,8 @@
 
 - [🧑‍🔬 methodology]()
 	- [🔍 reconnaissance]() 
-		- [👀 passive recon]
-		- [⚡ active recon]
+		- [👀 passive recon](methodology/reconnaissance/passive-recon/README.md)
+		- [⚡ active recon](methodology/reconnaissance/active-recon/README.md)
 - [🐞 common exploits](notes/common-exploits)
 	- [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	- [💉 command injection](notes/common-exploits/command-injection/README.md)
