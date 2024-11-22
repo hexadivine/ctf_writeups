@@ -76,3 +76,26 @@ ETag: "611b9990-363"
 Accept-Ranges: bytes
 ```
 
+
+
+## nmap 
+
+`Nmap` (Network Mapper) is an open-source tool used for network discovery and security auditing. It can scan networks to detect devices, open ports, services, and potential vulnerabilities. More on nmap here
+
+```
+$ nmap -sV 10.10.62.190
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-22 17:48 IST
+Nmap scan report for 10.10.62.190
+Host is up (0.29s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+80/tcp  open  http    Apache httpd 2.4.61 ((Debian))
+111/tcp open  rpcbind 2-4 (RPC #100000)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.10 seconds
+
+```
