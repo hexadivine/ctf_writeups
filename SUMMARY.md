@@ -14,8 +14,8 @@
 
 ## 📖 Notes
 
-- [🧑‍🔬 methodology]()
-	- [🔍 reconnaissance]() 
+- [🧑‍🔬 methodology](#)
+	- [🔍 reconnaissance](#) 
 		- [👀 passive recon](methodology/reconnaissance/passive-recon/README.md)
 		- [⚡ active recon](methodology/reconnaissance/active-recon/README.md)
 - [🐞 common exploits](notes/common-exploits)
