@@ -27,4 +27,40 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 
 ## Nmap Host Discovery Using ARP
 
+```
+$ nmap  -sn -PR 10.10.210.6/24
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-22 20:32 IST
+Nmap scan report for 10.10.210.28
+Host is up (0.28s latency).
+Nmap scan report for 10.10.210.37
+Host is up (0.27s latency).
+Nmap scan report for 10.10.210.48
+Host is up (0.39s latency).
+Nmap scan report for 10.10.210.71
+Host is up (0.39s latency).
+Nmap scan report for 10.10.210.91
+Host is up (0.38s latency).
+Nmap scan report for 10.10.210.93
+Host is up (0.27s latency).
+Nmap scan report for 10.10.210.95
+Host is up (0.50s latency).
+Nmap scan report for 10.10.210.120
+Host is up (0.32s latency).
+Nmap scan report for 10.10.210.131
+Host is up (0.40s latency).
+Nmap scan report for 10.10.210.133
+Host is up (0.40s latency).
+Nmap scan report for 10.10.210.185
+Host is up (0.40s latency).
+Nmap scan report for 10.10.210.226
+Host is up (0.43s latency).
+Nmap scan report for 10.10.210.248
+Host is up (0.41s latency).
+Nmap done: 256 IP addresses (13 hosts up) scanned in 18.28 seconds
+
+```
+
+- **`-sn`** (Ping Scan): This tells Nmap to only check if hosts are alive by sending various ping probes (but without scanning ports).
+- **`-PR`** (ARP Ping): This specifically uses **ARP** requests to detect whether hosts are online in a local network. ARP is typically used in local networks (same subnet), and it’s very effective because it doesn’t rely on ICMP (ping) which might be blocked by firewalls.
 
