@@ -15,11 +15,13 @@
 ## 📖 Notes
 
 - [🧑‍🔬 methodology]()
-	- [🔍 reco 
+	- [🔍 reconnaissance]() 
+		- [👀 passive recon]
+		- [⚡ active recon]
 - [🐞 common exploits](notes/common-exploits)
 	- [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	- [💉 command injection](notes/common-exploits/command-injection/README.md)
 	- [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
 	- [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
-- [🧰 tools]()
+- [🛠️ tools]()
 	- [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
