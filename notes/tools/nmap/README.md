@@ -68,6 +68,7 @@ Nmap done: 256 IP addresses (13 hosts up) scanned in 18.28 seconds
 
 ### Nmap Host Discovery Using ICMP
 
+This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
 ![](Pasted%20image%2020241122210254.png)
 
