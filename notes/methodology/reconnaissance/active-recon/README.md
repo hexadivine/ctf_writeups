@@ -34,9 +34,7 @@ rtt min/avg/max/mdev = 0.396/0.475/0.636/0.086 m
 
 ## Traceroute 
 
-**Traceroute** is a network diagnostic tool that shows the path data takes from one device to another over the internet, identifying each hop and measuring the time it takes to reach each point.
-
-![](Pasted%20image%2020241122172929.png)
+`Traceroute` is a network diagnostic tool that shows the path data takes from one device to another over the internet, identifying each hop and measuring the time it takes to reach each point.
 
 ```
 $ traceroute google.com
