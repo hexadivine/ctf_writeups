@@ -39,7 +39,8 @@ rtt min/avg/max/mdev = 0.396/0.475/0.636/0.086 m
 ![](Pasted%20image%2020241122172929.png)
 
 ```
-$traceroute google.com
+$ traceroute google.com
+
 traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
  1  _gateway (192.168.0.1)  0.930 ms  1.378 ms  1.381 ms
  2  192.168.1.1 (192.168.1.1)  3.044 ms  4.044 ms  5.284 ms
@@ -51,5 +52,4 @@ traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
  8  192.178.110.123 (192.178.110.123)  28.072 ms  28.044 ms 192.178.110.221 (192.178.110.221)  28.751 ms
  9  216.239.46.137 (216.239.46.137)  30.186 ms 74.125.253.165 (74.125.253.165)  30.123 ms 216.239.46.137 (216.239.46.137)  31.537 ms
 10  bom12s09-in-f14.1e100.net (142.250.76.174)  32.646 ms  32.942 ms  33.265 ms
-
 ```
