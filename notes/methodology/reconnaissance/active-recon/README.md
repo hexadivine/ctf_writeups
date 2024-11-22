@@ -54,7 +54,7 @@ traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
 
 ## telnet
 
-
+`telnet` uses the TELNET protocol for remote administration. The default port used by telnet is 23. From a security perspective, `telnet` sends all the data, including usernames and passwords, in clear text. Sending in clear text makes it easy for anyone, who has access to the communication channel, to steal the login credentials.
 
 ```
 $ telnet 10.10.62.190 80
@@ -75,3 +75,4 @@ Connection: keep-alive
 ETag: "611b9990-363"
 Accept-Ranges: bytes
 ```
+
