@@ -25,3 +25,4 @@
 	- [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
 - 🛠️ tools
 	- [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
+	- [🔍 nmap](notes/tools/nmap/README.md)
