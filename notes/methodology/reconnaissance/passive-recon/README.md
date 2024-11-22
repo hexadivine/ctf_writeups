@@ -36,5 +36,48 @@ URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
 For more information on Whois status codes, please visit https://icann.org/epp
 ```
 
-## nslookup & dig
+## nslookup
 
+`nslookup` (Name Server Lookup) is  used for querying DNS (Domain Name System) servers to retrieve domain name or IP address information. It allows users to check and troubleshoot DNS records, such as A records (IP addresses), MX records (mail servers), and others.
+
+|Query type|Result|
+|---|---|
+|A|IPv4 Addresses|
+|AAAA|IPv6 Addresses|
+|CNAME|Canonical Name|
+|MX|Mail Servers|
+|SOA|Start of Authority|
+|TXT|TXT Records|
+
+```
+$ nslookup -type=A tryhackme.com 1.1.1.1
+
+Server:		1.1.1.1
+Address:	1.1.1.1#53
+
+Non-authoritative answer:
+Name:	tryhackme.com
+Address: 172.67.69.208
+Name:	tryhackme.com
+Address: 104.26.11.229
+Name:	tryhackme.com
+Address: 104.26.10.229
+```
+
+```
+$ nslookup -type=MX tryhackme.com
+
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+tryhackme.com	mail exchanger = 5 alt1.aspmx.l.google.com.
+tryhackme.com	mail exchanger = 1 aspmx.l.google.com.
+tryhackme.com	mail exchanger = 10 alt4.aspmx.l.google.com.
+tryhackme.com	mail exchanger = 10 alt3.aspmx.l.google.com.
+tryhackme.com	mail exchanger = 5 alt2.aspmx.l.google.com.
+```
+
+## dig
+
+`dig` (Domain Information Groper) is another command-line tool for querying DNS servers. It provides more detailed and customizable results compared to `nslookup`. `dig` allows users to query specific record types, set timeouts, and perform reverse lookups, making it a popular choice for network administrators and security professionals.
