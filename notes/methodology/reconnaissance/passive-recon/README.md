@@ -80,4 +80,30 @@ tryhackme.com	mail exchanger = 5 alt2.aspmx.l.google.com.
 
 ## dig
 
-`dig` (Domain Information Groper) is another command-line tool for querying DNS servers. It provides more detailed and customizable results compared to `nslookup`. `dig` allows users to query specific record types, set timeouts, and perform reverse lookups, making it a popular choice for network administrators and security professionals.
+`dig` (Domain Information Groper) is used to query DNS servers. It provides more detailed and customised results compared to `nslookup`. `dig` allows users to query specific record types, set timeouts, and perform reverse lookups.
+
+```
+$ dig thmlabs.com TXT
+
+; <<>> DiG 9.18.28-1~deb12u2-Debian <<>> thmlabs.com TXT
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26321
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 0
+;; QUESTION SECTION:
+;thmlabs.com.			IN	TXT
+
+;; ANSWER SECTION:
+thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
+
+;; Query time: 233 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1) (UDP)
+;; WHEN: Fri Nov 22 16:57:56 IST 2024
+;; MSG SIZE  rcvd: 90
+```
+
+## DNSDumpster
+
