@@ -5,7 +5,7 @@
 
 Below are some uses of nmap scan
 
-## Enumerating target
+### Enumerating target
 
 ```
 $ nmap -sL -n 10.10.12.13/29
@@ -25,7 +25,9 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-## Nmap Host Discovery Using ARP
+### Nmap Host Discovery Using ARP
+
+![](Pasted%20image%2020241122203954.png)
 
 ```
 $ nmap  -sn -PR 10.10.210.6/24
