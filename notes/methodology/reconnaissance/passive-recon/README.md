@@ -8,7 +8,7 @@
 The `whois` command is used to query domain registration information, providing details about the domain owner, registrar, and registration dates.
 
 ```
-whois tryhackme.com
+$ whois tryhackme.com
 
 [Querying whois.verisign-grs.com]
 [Redirected to whois.namecheap.com]
@@ -35,3 +35,4 @@ URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
 >>> Last update of WHOIS database: 2021-08-25T14:58:29.57Z <<<
 For more information on Whois status codes, please visit https://icann.org/epp
 ```
+
