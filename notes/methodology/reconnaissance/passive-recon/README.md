@@ -107,3 +107,8 @@ thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
 
 ## DNSDumpster
 
+[DNSDumpster](https://dnsdumpster.com/) is an online tool that helps gather DNS records and details about a domain, including subdomains, IP addresses, and associated infrastructure.
+
+![](Pasted%20image%2020241122170212.png)
+![](Pasted%20image%2020241122170249.png)
+
