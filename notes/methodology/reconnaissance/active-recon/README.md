@@ -37,3 +37,19 @@ rtt min/avg/max/mdev = 0.396/0.475/0.636/0.086 m
 **Traceroute** is a network diagnostic tool that shows the path data takes from one device to another over the internet, identifying each hop and measuring the time it takes to reach each point.
 
 ![](Pasted%20image%2020241122172929.png)
+
+```
+$traceroute google.com
+traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  0.930 ms  1.378 ms  1.381 ms
+ 2  192.168.1.1 (192.168.1.1)  3.044 ms  4.044 ms  5.284 ms
+ 3  183.87.210.10.broad-band.jprdigital.in (183.87.210.10)  30.308 ms  30.878 ms  33.311 ms
+ 4  * * *
+ 5  10.20.20.17 (10.20.20.17)  35.245 ms  35.431 ms  35.653 ms
+ 6  10.20.20.5 (10.20.20.5)  35.144 ms  36.137 ms  36.321 ms
+ 7  72.14.209.97 (72.14.209.97)  36.894 ms  7.371 ms  26.403 ms
+ 8  192.178.110.123 (192.178.110.123)  28.072 ms  28.044 ms 192.178.110.221 (192.178.110.221)  28.751 ms
+ 9  216.239.46.137 (216.239.46.137)  30.186 ms 74.125.253.165 (74.125.253.165)  30.123 ms 216.239.46.137 (216.239.46.137)  31.537 ms
+10  bom12s09-in-f14.1e100.net (142.250.76.174)  32.646 ms  32.942 ms  33.265 ms
+
+```
