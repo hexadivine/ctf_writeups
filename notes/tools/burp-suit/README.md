@@ -13,9 +13,22 @@ Some features include:
 ![](Pasted%20image%2020241122145618.png)
 
 - **Intruder:** It enables you to configure attacks that send the same HTTP request over and over again, inserting different payloads into predefined positions each time. It is commonly utilised for brute-force attacks or fuzzing endpoints.
+
+![](Pasted%20image%2020241122145744.png)
+![](Pasted%20image%2020241122145757.png)
+
 - **Decoder:** It performs data transformation. It can decode captured information or encode payloads before sending them to the target. 
+
+![](Pasted%20image%2020241122145829.png)
+
 - **Comparer:** Enables the comparison of two pieces of data at either the word or byte level. This allows to send potentially large data segments directly to a comparison tool.
+
+![](Pasted%20image%2020241122145849.png)
+![](Pasted%20image%2020241122145900.png)
+
 - **Sequencer:** Assess the randomness of tokens, such as session cookie values or other supposedly randomly generated data.
+
+![](Pasted%20image%2020241122145942.png)
 
 
 
