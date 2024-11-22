@@ -18,10 +18,10 @@
 	- 🔍 reconnaissance
 		- [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		- [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
-- [🐞 common exploits](notes/common-exploits)
+- 🐞 common exploits
 	- [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	- [💉 command injection](notes/common-exploits/command-injection/README.md)
 	- [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
 	- [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
-- [🛠️ tools](notes/tools)
+- 🛠️ tools
 	- [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
