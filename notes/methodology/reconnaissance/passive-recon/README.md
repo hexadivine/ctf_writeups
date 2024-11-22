@@ -112,3 +112,8 @@ thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
 ![](Pasted%20image%2020241122170212.png)
 ![](Pasted%20image%2020241122170249.png)
 
+## Shodan
+
+[Shodan](https://www.shodan.io/) is a search engine that allows users to discover internet-connected devices and services, providing insights into their vulnerabilities and security status.
+
+![](Pasted%20image%2020241122170549.png)
