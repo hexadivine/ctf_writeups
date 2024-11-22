@@ -26,4 +26,6 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets without actually scanning them, meaning it will resolve and display the hostnames and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
+## Nmap Host Discovery Using ARP
+
 
