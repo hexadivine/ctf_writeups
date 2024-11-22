@@ -36,3 +36,5 @@ URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
 For more information on Whois status codes, please visit https://icann.org/epp
 ```
 
+## nslookup & dig
+
