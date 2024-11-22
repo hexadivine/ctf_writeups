@@ -80,7 +80,7 @@ Accept-Ranges: bytes
 
 ## nmap 
 
-`Nmap` (Network Mapper) is an open-source tool used for network discovery and security auditing. It can scan networks to detect devices, open ports, services, and potential vulnerabilities. More on nmap here
+`Nmap` (Network Mapper) is an open-source tool used for network discovery and security auditing. It can scan networks to detect devices, open ports, services, and potential vulnerabilities. More on nmap [here](https://hexadivine.gitbook.io/hd/notes/tools/nmap)
 
 ```
 $ nmap -sV 10.10.62.190
