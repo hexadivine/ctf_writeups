@@ -76,7 +76,27 @@ ETag: "611b9990-363"
 Accept-Ranges: bytes
 ```
 
+## netcat
 
+`Netcat` (nc) is a versatile networking tool used for reading from and writing to network connections, useful for troubleshooting, security testing, and creating network-based applications.
+
+```
+$ nc 10.10.62.190 80
+
+GET / HTTP/1.1
+host: netcat
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Tue, 17 Aug 2021 11:39:49 GMT
+Content-Type: text/html
+Content-Length: 867
+Last-Modified: Tue, 17 Aug 2021 11:12:16 GMT
+Connection: keep-alive
+ETag: "611b9990-363"
+Accept-Ranges: bytes
+...
+```
 
 ## nmap 
 
