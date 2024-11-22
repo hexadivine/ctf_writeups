@@ -69,3 +69,36 @@ Nmap done: 256 IP addresses (13 hosts up) scanned in 18.28 seconds
 ### Nmap Host Discovery Using ICMP
 
 
+![](Pasted%20image%2020241122210254.png)
+
+```
+$ sudo nmap -PE -sn 10.10.68.220/24
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-02 10:16 BST
+Nmap scan report for ip-10-10-68-50.eu-west-1.compute.internal (10.10.68.50)
+Host is up (0.00017s latency).
+MAC Address: 02:95:36:71:5B:87 (Unknown)
+Nmap scan report for ip-10-10-68-52.eu-west-1.compute.internal (10.10.68.52)
+Host is up (0.00017s latency).
+MAC Address: 02:48:E8:BF:78:E7 (Unknown)
+Nmap scan report for ip-10-10-68-77.eu-west-1.compute.internal (10.10.68.77)
+Host is up (-0.100s latency).
+MAC Address: 02:0F:0A:1D:76:35 (Unknown)
+Nmap scan report for ip-10-10-68-110.eu-west-1.compute.internal (10.10.68.110)
+Host is up (-0.10s latency).
+MAC Address: 02:6B:50:E9:C2:91 (Unknown)
+Nmap scan report for ip-10-10-68-140.eu-west-1.compute.internal (10.10.68.140)
+Host is up (0.00021s latency).
+MAC Address: 02:58:59:63:0B:6B (Unknown)
+Nmap scan report for ip-10-10-68-142.eu-west-1.compute.internal (10.10.68.142)
+Host is up (0.00016s latency).
+MAC Address: 02:C6:41:51:0A:0F (Unknown)
+Nmap scan report for ip-10-10-68-220.eu-west-1.compute.internal (10.10.68.220)
+Host is up (0.00026s latency).
+MAC Address: 02:25:3F:DB:EE:0B (Unknown)
+Nmap scan report for ip-10-10-68-222.eu-west-1.compute.internal (10.10.68.222)
+Host is up (0.00025s latency).
+MAC Address: 02:28:B1:2E:B0:1B (Unknown)
+Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
+```
+
