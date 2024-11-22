@@ -52,3 +52,26 @@ traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
 10  bom12s09-in-f14.1e100.net (142.250.76.174)  32.646 ms  32.942 ms  33.265 ms
 ```
 
+## telnet
+
+
+
+```
+$ telnet 10.10.62.190 80
+
+Trying 10.10.62.190...
+Connected to 10.10.62.190.
+Escape character is '^]'.
+GET / HTTP/1.1
+host: telnet
+
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Tue, 17 Aug 2021 11:13:25 GMT
+Content-Type: text/html
+Content-Length: 867
+Last-Modified: Tue, 17 Aug 2021 11:12:16 GMT
+Connection: keep-alive
+ETag: "611b9990-363"
+Accept-Ranges: bytes
+```
