@@ -16,3 +16,18 @@ There are also plenty of add-ons for Firefox and Chrome that can help in penetra
 ## ping
 
 `ping` is used to check network connectivity. It sends an ICMP Echo packet to a remote system. If the remote system is online, and the ping packet was correctly routed and not blocked by any firewall, the remote system should send back an ICMP Echo Reply. Similarly, the ping reply should reach the first system if appropriately routed and not blocked by any firewall.
+
+```
+$ ping -c 5 10.10.62.190
+
+PING 10.10.62.190 (10.10.62.190) 56(84) bytes of data.
+64 bytes from 10.10.62.190: icmp_seq=1 ttl=64 time=0.636 ms
+64 bytes from 10.10.62.190: icmp_seq=2 ttl=64 time=0.483 ms
+64 bytes from 10.10.62.190: icmp_seq=3 ttl=64 time=0.396 ms
+64 bytes from 10.10.62.190: icmp_seq=4 ttl=64 time=0.416 ms
+64 bytes from 10.10.62.190: icmp_seq=5 ttl=64 time=0.445 ms
+
+--- 10.10.62.190 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4097ms
+rtt min/avg/max/mdev = 0.396/0.475/0.636/0.086 m
+```
