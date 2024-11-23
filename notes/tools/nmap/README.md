@@ -134,6 +134,8 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 
 ![](Pasted%20image%2020241123073205.png)
 
+#### Nmap Host Discovery Using ICMP Address Mask Request
+
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
 ![](Pasted%20image%2020241123072319.png)
@@ -151,5 +153,26 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 ![](Pasted%20image%2020241123073235.png)
 
 #### Nmap Host Discovery Using TCP SYN
+
+We can send a packet with the SYN (Synchronize) flag set to a TCP port, 80 by default, and wait for a response. An open port should reply with a SYN/ACK (Acknowledge); a closed port would result in an RST (Reset).
+
+
+
+```
+$ sudo nmap -PS -sn 10.10.68.220/24
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:45 EEST
+Nmap scan report for 10.10.68.52
+Host is up (0.10s latency).
+Nmap scan report for 10.10.68.121
+Host is up (0.16s latency).
+Nmap scan report for 10.10.68.125
+Host is up (0.089s latency).
+Nmap scan report for 10.10.68.134
+Host is up (0.13s latency).
+Nmap scan report for 10.10.68.220
+Host is up (0.11s latency).
+Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
+```
+
 
 
