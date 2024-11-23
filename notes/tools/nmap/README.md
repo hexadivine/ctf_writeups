@@ -58,7 +58,7 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
 
 ![](Pasted%20image%2020241123073028.png)
 
-#### Nmap Host Discovery Using ICMP
+#### Nmap Host Discovery Using ICMP Echo
 
 This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
@@ -100,6 +100,8 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 
 ![](Pasted%20image%2020241123073106.png)
 
+#### Nmap Host Discovery Using ICMP Timestamp
+
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
 ![](Pasted%20image%2020241123071959.png)
@@ -130,7 +132,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 - `-PP` option tells Nmap to use ICMP timestamp requests.
 - `-sn` option tells nmap to perform live host scan
 
-
+![](Pasted%20image%2020241123073205.png)
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
@@ -145,4 +147,9 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 
 - `-PM` sends ICMP address mask request
 - `-sn` performs live host scan
+
+![](Pasted%20image%2020241123073235.png)
+
+#### Nmap Host Discovery Using TCP SYN
+
 
