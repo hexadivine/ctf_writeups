@@ -105,7 +105,38 @@ MAC Address: 02:28:B1:2E:B0:1B (Unknown)
 Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 ```
 
+- `-PE` option tells Nmap to use ICMP echo requests.
+- `-sn` option tells nmap to perform live host scan
+
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
 ![](Pasted%20image%2020241123071959.png)
+
+```
+$ sudo nmap -PP -sn 10.10.68.220/24
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:06 EEST
+Nmap scan report for 10.10.68.50
+Host is up (0.13s latency).
+Nmap scan report for 10.10.68.52
+Host is up (0.25s latency).
+Nmap scan report for 10.10.68.77
+Host is up (0.14s latency).
+Nmap scan report for 10.10.68.110
+Host is up (0.14s latency).
+Nmap scan report for 10.10.68.140
+Host is up (0.15s latency).
+Nmap scan report for 10.10.68.209
+Host is up (0.14s latency).
+Nmap scan report for 10.10.68.220
+Host is up (0.14s latency).
+Nmap scan report for 10.10.68.222
+Host is up (0.14s latency).
+Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
+```
+
+- `-PP` option tells Nmap to use ICMP timestamp requests.
+- `-sn` option tells nmap to perform live host scan
+
+Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
