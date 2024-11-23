@@ -27,9 +27,8 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 
 ### Nmap Host Discovery 
 
-nmap per
-
-#### Using ARP
+`nmap` perform host discovery using `-sn` flag. By default it uses ping request.
+#### Nmap host discovery using ARP
 
 This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
 
@@ -72,7 +71,7 @@ Nmap done: 256 IP addresses (13 hosts up) scanned in 18.28 seconds
 - **`-sn`** (Ping Scan): This tells Nmap to only check if hosts are alive by sending various ping probes (but without scanning ports).
 - `-PR` (ARP Ping): This specifically uses **ARP** requests to detect whether hosts are online in a local network. ARP is typically used in local networks (same subnet), and it’s very effective because it doesn’t rely on ICMP (ping) which might be blocked by firewalls.
 
-### Nmap Host Discovery Using ICMP
+#### Nmap Host Discovery Using ICMP
 
 This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
