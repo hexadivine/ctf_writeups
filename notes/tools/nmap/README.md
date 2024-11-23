@@ -7,7 +7,7 @@ Below are some uses of nmap scan
 
 ### Nmap TCP Connect Scan
 
-
+The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
 
 ![](Pasted%20image%2020241123200003.png)
 
