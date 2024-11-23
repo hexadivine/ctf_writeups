@@ -7,6 +7,30 @@ Below are some uses of nmap scan
 
 ### Nmap TCP Connect Scan
 
+
+
+![](Pasted%20image%2020241123200003.png)
+
+```
+$ nmap -sT 10.10.153.107
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
+Nmap scan report for 10.10.153.107
+Host is up (0.0024s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
+```
+
+![](Pasted%20image%2020241123200014.png)
+
 ### Nmap Reverse-DNS Lookup
 
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
