@@ -179,6 +179,28 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 ![](Pasted%20image%2020241123073906.png)
 #### Nmap Host Discovery Using TCP ACK
 
-
+A TCP ACK Ping Nmap scan sends ACK (Acknowledgement) packets to a target, typically to determine whether a host is up and which ports are filtered, without establishing a full connection. It relies on the behaviour of firewalls or filtering devices, where unfiltered ports will respond with a RST (Reset) packet, while filtered ports will not respond.
 
 ![](Pasted%20image%2020241123074237.png)
+
+```
+$ sudo nmap -PA -sn 10.10.68.220/24
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:46 EEST
+Nmap scan report for 10.10.68.52
+Host is up (0.11s latency).
+Nmap scan report for 10.10.68.121
+Host is up (0.12s latency).
+Nmap scan report for 10.10.68.125
+Host is up (0.10s latency).
+Nmap scan report for 10.10.68.134
+Host is up (0.10s latency).
+Nmap scan report for 10.10.68.220
+Host is up (0.10s latency).
+Nmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds
+```
+
+`-PA` performs tcp ack packet
+
+![](Pasted%20image%2020241123193115.png)
+
