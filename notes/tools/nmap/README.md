@@ -25,7 +25,11 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-### Nmap Host Discovery Using ARP
+### Nmap Host Discovery 
+
+nmap per
+
+#### Using ARP
 
 This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
 
@@ -139,4 +143,16 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 - `-sn` option tells nmap to perform live host scan
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
+
+![](Pasted%20image%2020241123072319.png)
+
+```
+$ sudo nmap -PM -sn 10.10.68.220/24
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 12:13 EEST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
+```
+
+- `-PM` sends ICMP address mask request
+- `-sn` performs live host scan
 
