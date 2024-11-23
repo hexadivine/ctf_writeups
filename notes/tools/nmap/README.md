@@ -156,7 +156,7 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 
 We can send a packet with the SYN (Synchronize) flag set to a TCP port, 80 by default, and wait for a response. An open port should reply with a SYN/ACK (Acknowledge); a closed port would result in an RST (Reset).
 
-
+![](Pasted%20image%2020241123073827.png)
 
 ```
 $ sudo nmap -PS -sn 10.10.68.220/24
@@ -174,5 +174,8 @@ Host is up (0.11s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 ```
 
+- `-PS` performs TCP SYN flag
 
+![](Pasted%20image%2020241123073906.png)
+#### Nmap Host Discovery Using TCP ACK 
 
