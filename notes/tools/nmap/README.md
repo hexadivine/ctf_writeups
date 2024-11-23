@@ -27,6 +27,8 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 
 ### Nmap Host Discovery Using ARP
 
+This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
+
 ![](Pasted%20image%2020241122203954.png)
 
 ```
@@ -102,4 +104,8 @@ Host is up (0.00025s latency).
 MAC Address: 02:28:B1:2E:B0:1B (Unknown)
 Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 ```
+
+Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
+
+![](Pasted%20image%2020241123071959.png)
 
