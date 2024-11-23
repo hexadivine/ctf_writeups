@@ -35,41 +35,28 @@ This scan will send ARP request packets to every IP address on the subnet. We ex
 ![](Pasted%20image%2020241122203954.png)
 
 ```
-$ nmap  -sn -PR 10.10.210.6/24
+$ sudo nmap -PR -sn 10.10.210.6/24
 
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-22 20:32 IST
-Nmap scan report for 10.10.210.28
-Host is up (0.28s latency).
-Nmap scan report for 10.10.210.37
-Host is up (0.27s latency).
-Nmap scan report for 10.10.210.48
-Host is up (0.39s latency).
-Nmap scan report for 10.10.210.71
-Host is up (0.39s latency).
-Nmap scan report for 10.10.210.91
-Host is up (0.38s latency).
-Nmap scan report for 10.10.210.93
-Host is up (0.27s latency).
-Nmap scan report for 10.10.210.95
-Host is up (0.50s latency).
-Nmap scan report for 10.10.210.120
-Host is up (0.32s latency).
-Nmap scan report for 10.10.210.131
-Host is up (0.40s latency).
-Nmap scan report for 10.10.210.133
-Host is up (0.40s latency).
-Nmap scan report for 10.10.210.185
-Host is up (0.40s latency).
-Nmap scan report for 10.10.210.226
-Host is up (0.43s latency).
-Nmap scan report for 10.10.210.248
-Host is up (0.41s latency).
-Nmap done: 256 IP addresses (13 hosts up) scanned in 18.28 seconds
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-02 07:12 BST
+Nmap scan report for ip-10-10-210-75.eu-west-1.compute.internal (10.10.210.75)
+Host is up (0.00013s latency).
+MAC Address: 02:83:75:3A:F2:89 (Unknown)
+Nmap scan report for ip-10-10-210-100.eu-west-1.compute.internal (10.10.210.100)
+Host is up (-0.100s latency).
+MAC Address: 02:63:D0:1B:2D:CD (Unknown)
+Nmap scan report for ip-10-10-210-165.eu-west-1.compute.internal (10.10.210.165)
+Host is up (0.00025s latency).
+MAC Address: 02:59:79:4F:17:B7 (Unknown)
+Nmap scan report for ip-10-10-210-6.eu-west-1.compute.internal (10.10.210.6)
+Host is up.
+Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
 
 ```
 
 - **`-sn`** (Ping Scan): This tells Nmap to only check if hosts are alive by sending various ping probes (but without scanning ports).
 - `-PR` (ARP Ping): This specifically uses **ARP** requests to detect whether hosts are online in a local network. ARP is typically used in local networks (same subnet), and it’s very effective because it doesn’t rely on ICMP (ping) which might be blocked by firewalls.
+
+![](Pasted%20image%2020241123073028.png)
 
 #### Nmap Host Discovery Using ICMP
 
@@ -111,6 +98,8 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 - `-PE` option tells Nmap to use ICMP echo requests.
 - `-sn` option tells nmap to perform live host scan
 
+![](Pasted%20image%2020241123073106.png)
+
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
 ![](Pasted%20image%2020241123071959.png)
@@ -140,6 +129,8 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 
 - `-PP` option tells Nmap to use ICMP timestamp requests.
 - `-sn` option tells nmap to perform live host scan
+
+
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
