@@ -203,4 +203,25 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds
 `-PA` performs tcp ack packet
 
 ![](Pasted%20image%2020241123193115.png)
+#### Nmap Host Discovery Using UDP
 
+In Nmap, a UDP Ping scan for host discovery sends UDP packets (typically to common ports like 53 or 161) to determine if a host is online. If the host is responsive, it may reply with a corresponding ICMP "Port Unreachable" message, indicating the host is reachable, while a lack of response suggests the host may be offline or the port is filtered.
+
+![](Pasted%20image%2020241123193429.png)
+
+```
+$ sudo nmap -PU -sn 10.10.68.220/24
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-09-02 13:45 EEST
+Nmap scan report for 10.10.68.52
+Host is up (0.10s latency).
+Nmap scan report for 10.10.68.121
+Host is up (0.10s latency).
+Nmap scan report for 10.10.68.125
+Host is up (0.14s latency).
+Nmap scan report for 10.10.68.134
+Host is up (0.096s latency).
+Nmap scan report for 10.10.68.220
+Host is up (0.11s latency).
+Nmap done: 256 IP addresses (5 hosts up) scanned in 9.20 seconds
+```
