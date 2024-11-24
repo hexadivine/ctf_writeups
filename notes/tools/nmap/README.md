@@ -82,6 +82,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 ```
 
 ![](Pasted%20image%2020241124080807.png)
+### TCP ACK Scan
+
+
 
 ### UDP Scan
 
