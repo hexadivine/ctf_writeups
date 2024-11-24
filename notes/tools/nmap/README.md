@@ -29,171 +29,6 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-## Nmap Port Scan
-
-### TCP Connect Scan
-
-The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
-
-![](Pasted%20image%2020241123200003.png)
-
-```
-$ nmap -sT 10.10.153.107
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
-Nmap scan report for 10.10.153.107
-Host is up (0.0024s latency).
-Not shown: 995 closed ports
-PORT    STATE SERVICE
-22/tcp  open  ssh
-25/tcp  open  smtp
-80/tcp  open  http
-111/tcp open  rpcbind
-143/tcp open  imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
-```
-
-![](Pasted%20image%2020241123200014.png)
-### TCP SYN Scan
-
-Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it. SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server. Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
-
-![](Pasted%20image%2020241123202502.png)
-
-```
-$ sudo nmap -sS 10.10.67.204
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
-Nmap scan report for 10.10.67.204
-Host is up (0.0073s latency).
-Not shown: 994 closed ports
-PORT    STATE SERVICE
-22/tcp  open  ssh
-25/tcp  open  smtp
-80/tcp  open  http
-110/tcp open  pop3
-111/tcp open  rpcbind
-143/tcp open  imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
-```
-
-![](Pasted%20image%2020241124080807.png)
-### UDP Scan
-
-UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
-
-![](Pasted%20image%2020241124081432.png)
-![](Pasted%20image%2020241124081446.png)
-
-```
-$ sudo nmap -sU 10.10.104.145
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:54 BST
-Nmap scan report for 10.10.104.145
-Host is up (0.00061s latency).
-Not shown: 998 closed ports
-PORT    STATE         SERVICE
-68/udp  open|filtered dhcpc
-111/udp open          rpcbind
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
-```
-
-![](Pasted%20image%2020241124081500.png)
-
-### Null Scan
-
-The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet.
-
-![](Pasted%20image%2020241124085245.png)
-
-However, we expect the target server to respond with an RST packet if the port is closed. Consequently, we can use the lack of RST response to figure out the ports that are not closed: open or filtered.
-
-![](Pasted%20image%2020241124085310.png)
-
-```
-$ sudo nmap -sN 10.10.76.112
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:30 BST
-Nmap scan report for 10.10.76.112
-Host is up (0.00066s latency).
-Not shown: 994 closed ports
-PORT    STATE         SERVICE
-22/tcp  open|filtered ssh
-25/tcp  open|filtered smtp
-80/tcp  open|filtered http
-110/tcp open|filtered pop3
-111/tcp open|filtered rpcbind
-143/tcp open|filtered imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
-```
-
-### FIN Scan
-
-The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
-
-![](Pasted%20image%2020241124085607.png)
-
-However, the target system should respond with an RST if the port is closed. Consequently, we will be able to know which ports are closed and use this knowledge to infer the ports that are open or filtered. It's worth noting some firewalls will 'silently' drop the traffic without sending an RST.
-
-![](Pasted%20image%2020241124085629.png)
-
-```
-$ sudo nmap -sF 10.10.76.112
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:32 BST
-Nmap scan report for 10.10.76.112
-Host is up (0.0018s latency).
-Not shown: 994 closed ports
-PORT    STATE         SERVICE
-22/tcp  open|filtered ssh
-25/tcp  open|filtered smtp
-80/tcp  open|filtered http
-110/tcp open|filtered pop3
-111/tcp open|filtered rpcbind
-143/tcp open|filtered imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
-```
-### Xmas Scan
-
-The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
-
-![](Pasted%20image%2020241124085727.png)
-![](Pasted%20image%2020241124085740.png)
-
-```
-$ sudo nmap -sX 10.10.76.112
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:34 BST
-Nmap scan report for 10.10.76.112
-Host is up (0.00087s latency).
-Not shown: 994 closed ports
-PORT    STATE         SERVICE
-22/tcp  open|filtered ssh
-25/tcp  open|filtered smtp
-80/tcp  open|filtered http
-110/tcp open|filtered pop3
-111/tcp open|filtered rpcbind
-143/tcp open|filtered imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
-```
-
-### Custom scan
-
-If you want to experiment with a new TCP flag combination beyond the built-in TCP scan types, you can do so using `--scanflags`. For instance, if you want to set SYN, RST, and FIN simultaneously, you can do so using `--scanflags RSTSYNFIN`. As shown in the figure below, if you develop your custom scan, you need to know how the different ports will behave to interpret the results in different scenarios correctly.
-
-![](Pasted%20image%2020241124091422.png)
 ## Nmap Host Discovery Using
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
@@ -395,6 +230,172 @@ Host is up (0.11s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 9.20 seconds
 ```
 
+## Nmap Port Scan
+
+### TCP Connect Scan
+
+The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
+
+![](Pasted%20image%2020241123200003.png)
+
+```
+$ nmap -sT 10.10.153.107
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
+Nmap scan report for 10.10.153.107
+Host is up (0.0024s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
+```
+
+![](Pasted%20image%2020241123200014.png)
+### TCP SYN Scan
+
+Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it. SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server. Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
+
+![](Pasted%20image%2020241123202502.png)
+
+```
+$ sudo nmap -sS 10.10.67.204
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
+Nmap scan report for 10.10.67.204
+Host is up (0.0073s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
+```
+
+![](Pasted%20image%2020241124080807.png)
+### UDP Scan
+
+UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
+
+![](Pasted%20image%2020241124081432.png)
+![](Pasted%20image%2020241124081446.png)
+
+```
+$ sudo nmap -sU 10.10.104.145
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:54 BST
+Nmap scan report for 10.10.104.145
+Host is up (0.00061s latency).
+Not shown: 998 closed ports
+PORT    STATE         SERVICE
+68/udp  open|filtered dhcpc
+111/udp open          rpcbind
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
+```
+
+![](Pasted%20image%2020241124081500.png)
+
+### Null Scan
+
+The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet.
+
+![](Pasted%20image%2020241124085245.png)
+
+However, we expect the target server to respond with an RST packet if the port is closed. Consequently, we can use the lack of RST response to figure out the ports that are not closed: open or filtered.
+
+![](Pasted%20image%2020241124085310.png)
+
+```
+$ sudo nmap -sN 10.10.76.112
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:30 BST
+Nmap scan report for 10.10.76.112
+Host is up (0.00066s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
+```
+
+### FIN Scan
+
+The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
+
+![](Pasted%20image%2020241124085607.png)
+
+However, the target system should respond with an RST if the port is closed. Consequently, we will be able to know which ports are closed and use this knowledge to infer the ports that are open or filtered. It's worth noting some firewalls will 'silently' drop the traffic without sending an RST.
+
+![](Pasted%20image%2020241124085629.png)
+
+```
+$ sudo nmap -sF 10.10.76.112
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:32 BST
+Nmap scan report for 10.10.76.112
+Host is up (0.0018s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
+```
+### Xmas Scan
+
+The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
+
+![](Pasted%20image%2020241124085727.png)
+![](Pasted%20image%2020241124085740.png)
+
+```
+$ sudo nmap -sX 10.10.76.112
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:34 BST
+Nmap scan report for 10.10.76.112
+Host is up (0.00087s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
+```
+
+### Custom scan
+
+If you want to experiment with a new TCP flag combination beyond the built-in TCP scan types, you can do so using `--scanflags`. For instance, if you want to set SYN, RST, and FIN simultaneously, you can do so using `--scanflags RSTSYNFIN`. As shown in the figure below, if you develop your custom scan, you need to know how the different ports will behave to interpret the results in different scenarios correctly.
+
+![](Pasted%20image%2020241124091422.png)
+
 ## Spoofing and Decoys
 
 The following figure shows the attacker launching the command `nmap -S <spoofed ip> 10.10.76.112`. Consequently, Nmap will craft all the packets using the provided source IP address `SPOOFED_IP`. The target machine will respond to the incoming packets sending the replies to the destination IP address `SPOOFED_IP`. For this scan to work and give accurate results, the attacker needs to monitor the network traffic to analyse the replies.
@@ -427,34 +428,34 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 
 ## Summary
 
-| Example Command                                          | Purpose                                                                        |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `nmap -sT 10.10.67.57`                                   | non-sudo users to scan ports with 3 way handshake.                             |
-| `sudo nmap -sS <ip>`                                     | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
-| `sudo nmap -sU <ip>`                                     | unreliable port scan. Revives ICMP type 3 if port is closed                    |
-| `nmap -p- <ip>`                                          | scans all ports                                                                |
-| `nmap -p1-1023 <ip>`                                     | scan ports 1 to 1023                                                           |
-| `nmap -F <ip>`                                           | 100 most common ports                                                          |
-| `nmap -F -r <ip>`                                        | scan ports in consecutive order                                                |
-| `nmap -T<0-5> <ip>`                                      | `-T0` being the slowest and `-T5` the fastest                                  |
-| `nmap --max-rate 50 <ip>`                                | rate <= 50 packets/sec                                                         |
-| `nmap --min-rate 15 <ip>`                                | rate >= 15 packets/sec                                                         |
-| `nmap --min-parallelism 100 <ip>`                        | at least 100 probes in parallel                                                |
-| `sudo nmap -sN 10.10.249.146`                            | TCP Null Scan                                                                  |
-| `sudo nmap -sF 10.10.249.146`                            | TCP FIN Scan                                                                   |
-| `sudo nmap -sX 10.10.249.146`                            | TCP Xmas Scan                                                                  |
-| `sudo nmap -sM 10.10.249.146`                            | TCP Maimon Scan                                                                |
-| `sudo nmap -sA 10.10.249.146`                            | TCP ACK Scan                                                                   |
-| `sudo nmap -sW 10.10.249.146`                            | TCP Window Scan                                                                |
-| `sudo nmap --scanflags URGACKPSHRSTSYNFIN 10.10.249.146` | Custom TCP Scan                                                                |
-| `sudo nmap -S SPOOFED_IP 10.10.249.146`                  | Spoofed Source IP                                                              |
-| `--spoof-mac SPOOFED_MAC`                                | Spoofed MAC Address                                                            |
-| `nmap -D DECOY_IP,ME 10.10.249.146`                      | Decoy Scan                                                                     |
-| `sudo nmap -sI ZOMBIE_IP 10.10.249.146`                  | Idle (Zombie) Scan                                                             |
-| `-f`                                                     | Fragment IP data into 8 bytes                                                  |
-| `-ff`                                                    | Fragment IP data into 16 bytes                                                 |
-| `--reason`                                               | explains how Nmap made its conclusion                                          |
-| `-v`                                                     | verbose                                                                        |
-| `-vv`                                                    | very verbose                                                                   |
-| `-d`                                                     | debugging                                                                      |
-| `-dd`                                                    | more details for debugging                                                     |
+|                     Example Command                      |                                    Purpose                                     |
+| :------------------------------------------------------: | :----------------------------------------------------------------------------: |
+|                  `nmap -sT 10.10.67.57`                  |               non-sudo users to scan ports with 3 way handshake.               |
+|                   `sudo nmap -sS <ip>`                   | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+|                   `sudo nmap -sU <ip>`                   |          unreliable port scan. Revives ICMP type 3 if port is closed           |
+|                     `nmap -p- <ip>`                      |                                scans all ports                                 |
+|                   `nmap -p1-1023 <ip>`                   |                              scan ports 1 to 1023                              |
+|                      `nmap -F <ip>`                      |                             100 most common ports                              |
+|                    `nmap -F -r <ip>`                     |                        scan ports in consecutive order                         |
+|                   `nmap -T<0-5> <ip>`                    |                 `-T0` being the slowest and `-T5` the fastest                  |
+|                `nmap --max-rate 50 <ip>`                 |                             rate <= 50 packets/sec                             |
+|                `nmap --min-rate 15 <ip>`                 |                             rate >= 15 packets/sec                             |
+|            `nmap --min-parallelism 100 <ip>`             |                        at least 100 probes in parallel                         |
+|              `sudo nmap -sN 10.10.249.146`               |                                 TCP Null Scan                                  |
+|              `sudo nmap -sF 10.10.249.146`               |                                  TCP FIN Scan                                  |
+|              `sudo nmap -sX 10.10.249.146`               |                                 TCP Xmas Scan                                  |
+|              `sudo nmap -sM 10.10.249.146`               |                                TCP Maimon Scan                                 |
+|              `sudo nmap -sA 10.10.249.146`               |                                  TCP ACK Scan                                  |
+|              `sudo nmap -sW 10.10.249.146`               |                                TCP Window Scan                                 |
+| `sudo nmap --scanflags URGACKPSHRSTSYNFIN 10.10.249.146` |                                Custom TCP Scan                                 |
+|         `sudo nmap -S SPOOFED_IP 10.10.249.146`          |                               Spoofed Source IP                                |
+|                `--spoof-mac SPOOFED_MAC`                 |                              Spoofed MAC Address                               |
+|           `nmap -D DECOY_IP,ME 10.10.249.146`            |                                   Decoy Scan                                   |
+|         `sudo nmap -sI ZOMBIE_IP 10.10.249.146`          |                               Idle (Zombie) Scan                               |
+|                           `-f`                           |                         Fragment IP data into 8 bytes                          |
+|                          `-ff`                           |                         Fragment IP data into 16 bytes                         |
+|                        `--reason`                        |                     explains how Nmap made its conclusion                      |
+|                           `-v`                           |                                    verbose                                     |
+|                          `-vv`                           |                                  very verbose                                  |
+|                           `-d`                           |                                   debugging                                    |
+|                          `-dd`                           |                           more details for debugging                           |
