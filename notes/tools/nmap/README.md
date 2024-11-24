@@ -340,5 +340,5 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 | Consecutive scan      | `nmap -F -r <ip>`                 | scan ports in consecutive order                                                |
 | Speed customisation   | `nmap -T<0-5> <ip>`               | `-T0` being the slowest and `-T5` the fastest                                  |
 | Rate customisation    | `nmap --max-rate 50 <ip>`         | rate <= 50 packets/sec                                                         |
-|                       | `nmap --min-rate 15 <ip>`         |                                                                                |
-|                       | `nmap --min-parallelism 100 <ip>` |                                                                                |
+| Rate customisation    | `nmap --min-rate 15 <ip>`         | rate >= 15 packets/sec                                                         |
+| Probe customisation   | `nmap --min-parallelism 100 <ip>` | at least 100 probes in parallel                                                |
