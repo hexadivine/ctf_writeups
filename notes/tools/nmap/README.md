@@ -395,6 +395,12 @@ Host is up (0.11s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 9.20 seconds
 ```
 
+## Spoofing and Decoys
+
+The following figure shows the attacker launching the command `nmap -S <spoofed ip> 10.10.76.112`. Consequently, Nmap will craft all the packets using the provided source IP address `SPOOFED_IP`. The target machine will respond to the incoming packets sending the replies to the destination IP address `SPOOFED_IP`. For this scan to work and give accurate results, the attacker needs to monitor the network traffic to analyse the replies.
+
+![](Pasted%20image%2020241124091831.png)
+
 ## Fine-Tuning Scope and Performance
 
 You can specify the ports you want to scan instead of the default 1000 ports. Specifying the ports is intuitive by now. Let’s see some examples:
