@@ -285,7 +285,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 ![](Pasted%20image%2020241124080807.png)
 ## UDP Scan
 
-UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
+UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option. 
 
 ![](Pasted%20image%2020241124081432.png)
 ![](Pasted%20image%2020241124081446.png)
@@ -309,7 +309,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
 
 ## Null Scan
 
-The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet.
+The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet. This method can also **bypass some firewalls and intrusion detection systems** due to its unusual nature making it more stealthy.
 
 ![](Pasted%20image%2020241124085245.png)
 
@@ -338,7 +338,7 @@ Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
 
 ## FIN Scan
 
-The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
+The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Which makes this method to **bypass some firewalls and intrusion detection systems** due to its unusual nature making it more stealthy. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
 
 ![](Pasted%20image%2020241124085607.png)
 
@@ -366,7 +366,7 @@ Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
 ```
 ## Xmas Scan
 
-The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
+The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed. This method can also **bypass some firewalls and intrusion detection systems** due to its unusual nature making it more stealthy.
 
 ![](Pasted%20image%2020241124085727.png)
 ![](Pasted%20image%2020241124085740.png)
