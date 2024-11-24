@@ -339,6 +339,6 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 | Common port scan      | `nmap -F <ip>`                    | 100 most common ports                                                          |
 | Consecutive scan      | `nmap -F -r <ip>`                 | scan ports in consecutive order                                                |
 | Speed customisation   | `nmap -T<0-5> <ip>`               | `-T0` being the slowest and `-T5` the fastest                                  |
-|                       | `nmap --max-rate 50 <ip>`         |                                                                                |
+| Rate customisation    | `nmap --max-rate 50 <ip>`         | rate <= 50 packets/sec                                                         |
 |                       | `nmap --min-rate 15 <ip>`         |                                                                                |
 |                       | `nmap --min-parallelism 100 <ip>` |                                                                                |
