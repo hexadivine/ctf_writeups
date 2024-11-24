@@ -427,16 +427,45 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 
 ## Summary
 
-| Scan Type             | Example Command                   | Purpose                                                                        |
-| --------------------- | --------------------------------- | ------------------------------------------------------------------------------ |
-| TCP Connect Port Scan | `nmap -sT 10.10.67.57`            | non-sudo users to scan ports with 3 way handshake.                             |
-| TCP SYN Port Scan     | `sudo nmap -sS <ip>`              | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
-| UDP Port Scan         | `sudo nmap -sU <ip>`              | unreliable port scan. Revives ICMP type 3 if port is closed                    |
-| All port scan         | `nmap -p- <ip>`                   | scans all ports                                                                |
-| Limited port scan     | `nmap -p1-1023 <ip>`              | scan ports 1 to 1023                                                           |
-| Common port scan      | `nmap -F <ip>`                    | 100 most common ports                                                          |
-| Consecutive scan      | `nmap -F -r <ip>`                 | scan ports in consecutive order                                                |
-| Speed customisation   | `nmap -T<0-5> <ip>`               | `-T0` being the slowest and `-T5` the fastest                                  |
-| Rate customisation    | `nmap --max-rate 50 <ip>`         | rate <= 50 packets/sec                                                         |
-| Rate customisation    | `nmap --min-rate 15 <ip>`         | rate >= 15 packets/sec                                                         |
-| Probe customisation   | `nmap --min-parallelism 100 <ip>` | at least 100 probes in parallel                                                |
+| Scan Type                      | Example Command                                          | Purpose                                                                        |
+| ------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| TCP Connect Port Scan          | `nmap -sT 10.10.67.57`                                   | non-sudo users to scan ports with 3 way handshake.                             |
+| TCP SYN Port Scan              | `sudo nmap -sS <ip>`                                     | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+| UDP Port Scan                  | `sudo nmap -sU <ip>`                                     | unreliable port scan. Revives ICMP type 3 if port is closed                    |
+| All port scan                  | `nmap -p- <ip>`                                          | scans all ports                                                                |
+| Limited port scan              | `nmap -p1-1023 <ip>`                                     | scan ports 1 to 1023                                                           |
+| Common port scan               | `nmap -F <ip>`                                           | 100 most common ports                                                          |
+| Consecutive scan               | `nmap -F -r <ip>`                                        | scan ports in consecutive order                                                |
+| Speed customisation            | `nmap -T<0-5> <ip>`                                      | `-T0` being the slowest and `-T5` the fastest                                  |
+| Rate customisation             | `nmap --max-rate 50 <ip>`                                | rate <= 50 packets/sec                                                         |
+| Rate customisation             | `nmap --min-rate 15 <ip>`                                | rate >= 15 packets/sec                                                         |
+| Probe customisation            | `nmap --min-parallelism 100 <ip>`                        | at least 100 probes in parallel                                                |
+| TCP Null Scan                  | `sudo nmap -sN 10.10.249.146`                            |                                                                                |
+| TCP FIN Scan                   | `sudo nmap -sF 10.10.249.146`                            |                                                                                |
+| TCP Xmas Scan                  | `sudo nmap -sX 10.10.249.146`                            |                                                                                |
+| TCP Maimon Scan                | `sudo nmap -sM 10.10.249.146`                            |                                                                                |
+| TCP ACK Scan                   | `sudo nmap -sA 10.10.249.146`                            |                                                                                |
+| TCP Window Scan                | `sudo nmap -sW 10.10.249.146`                            |                                                                                |
+| Custom TCP Scan                | `sudo nmap --scanflags URGACKPSHRSTSYNFIN 10.10.249.146` |                                                                                |
+| Spoofed Source IP              | `sudo nmap -S SPOOFED_IP 10.10.249.146`                  |                                                                                |
+| Spoofed MAC Address            | `--spoof-mac SPOOFED_MAC`                                |                                                                                |
+| Decoy Scan                     | `nmap -D DECOY_IP,ME 10.10.249.146`                      |                                                                                |
+| Idle (Zombie) Scan             | `sudo nmap -sI ZOMBIE_IP 10.10.249.146`                  |                                                                                |
+| Fragment IP data into 8 bytes  | `-f`                                                     |                                                                                |
+| Fragment IP data into 16 bytes | `-ff`                                                    |                                                                                |
+
+| Port Scan Type                 | Example Command                                          |
+| ------------------------------ | -------------------------------------------------------- |
+| TCP Null Scan                  | `sudo nmap -sN 10.10.249.146`                            |
+| TCP FIN Scan                   | `sudo nmap -sF 10.10.249.146`                            |
+| TCP Xmas Scan                  | `sudo nmap -sX 10.10.249.146`                            |
+| TCP Maimon Scan                | `sudo nmap -sM 10.10.249.146`                            |
+| TCP ACK Scan                   | `sudo nmap -sA 10.10.249.146`                            |
+| TCP Window Scan                | `sudo nmap -sW 10.10.249.146`                            |
+| Custom TCP Scan                | `sudo nmap --scanflags URGACKPSHRSTSYNFIN 10.10.249.146` |
+| Spoofed Source IP              | `sudo nmap -S SPOOFED_IP 10.10.249.146`                  |
+| Spoofed MAC Address            | `--spoof-mac SPOOFED_MAC`                                |
+| Decoy Scan                     | `nmap -D DECOY_IP,ME 10.10.249.146`                      |
+| Idle (Zombie) Scan             | `sudo nmap -sI ZOMBIE_IP 10.10.249.146`                  |
+| Fragment IP data into 8 bytes  | `-f`                                                     |
+| Fragment IP data into 16 bytes | `-ff`                                                    |
