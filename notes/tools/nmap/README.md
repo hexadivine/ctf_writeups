@@ -7,6 +7,31 @@ Below are some uses of nmap scan
 
 ## Nmap Port Scan
 
+### TCP Connect Scan
+
+The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
+
+![](Pasted%20image%2020241123200003.png)
+
+```
+$ nmap -sT 10.10.153.107
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
+Nmap scan report for 10.10.153.107
+Host is up (0.0024s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
+```
+
+![](Pasted%20image%2020241123200014.png)
 ### TCP SYN Scan
 
 Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it. SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server. Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
@@ -34,31 +59,6 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 
 ![](Pasted%20image%2020241124080807.png)
 
-### TCP Connect Scan
-
-The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
-
-![](Pasted%20image%2020241123200003.png)
-
-```
-$ nmap -sT 10.10.153.107
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
-Nmap scan report for 10.10.153.107
-Host is up (0.0024s latency).
-Not shown: 995 closed ports
-PORT    STATE SERVICE
-22/tcp  open  ssh
-25/tcp  open  smtp
-80/tcp  open  http
-111/tcp open  rpcbind
-143/tcp open  imap
-MAC Address: 02:45:BF:8A:2D:6B (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
-```
-
-![](Pasted%20image%2020241123200014.png)
 
 ## Nmap Reverse-DNS Lookup
 
