@@ -82,10 +82,6 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 ```
 
 ![](Pasted%20image%2020241124080807.png)
-### TCP ACK Scan
-
-
-
 ### UDP Scan
 
 UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
@@ -193,7 +189,11 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
 ```
 
+### Custom scan
 
+If you want to experiment with a new TCP flag combination beyond the built-in TCP scan types, you can do so using `--scanflags`. For instance, if you want to set SYN, RST, and FIN simultaneously, you can do so using `--scanflags RSTSYNFIN`. As shown in the figure below, if you develop your custom scan, you need to know how the different ports will behave to interpret the results in different scenarios correctly.
+
+![](Pasted%20image%2020241124091422.png)
 ## Nmap Host Discovery Using
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
