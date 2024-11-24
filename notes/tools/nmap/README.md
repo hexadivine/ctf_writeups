@@ -511,6 +511,31 @@ MAC Address: 02:A0:E7:B5:B6:C5 (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 2.21 seconds
 ```
 
+You can also specify the script by name using `--script "SCRIPT-NAME"` or a pattern such as `--script "ftp*"`, which would include `ftp-brute`
+
+Let’s consider a benign script, `http-date`, which we guess would retrieve the http server date and time, and this is indeed confirmed in its description: “Gets the date from HTTP-like services. Also, it prints how much the date differs from local time…” On the AttackBox, we execute `sudo nmap -sS -n --script "http-date" 10.10.49.151` as shown in the console below.
+
+```
+$ sudo nmap -sS -n --script "http-date" 10.10.49.151
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-10 08:04 BST
+Nmap scan report for 10.10.49.151
+Host is up (0.0011s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+|_http-date: Fri, 10 Sep 2021 07:04:26 GMT; 0s from local time.
+110/tcp open  pop3
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:44:87:82:AC:83 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.78 seconds
+```
+
+
 ## Spoofing and Decoys
 
 The following figure shows the attacker launching the command `nmap -S <spoofed ip> 10.10.76.112`. Consequently, Nmap will craft all the packets using the provided source IP address `SPOOFED_IP`. The target machine will respond to the incoming packets sending the replies to the destination IP address `SPOOFED_IP`. For this scan to work and give accurate results, the attacker needs to monitor the network traffic to analyse the replies.
