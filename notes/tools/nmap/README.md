@@ -327,3 +327,10 @@ Alternatively, you can choose to control the packet rate using `--min-rate <numb
 
 Moreover, you can control probing parallelization using `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`. For instance, `--min-parallelism=512` pushes Nmap to maintain at least 512 probes in parallel; these 512 probes are related to host discovery and open ports.
 
+## Summary
+
+| Scan Type             | Example Command             | Purpose                                                                        |
+| --------------------- | --------------------------- | ------------------------------------------------------------------------------ |
+| TCP Connect Port Scan | `nmap -sT 10.10.67.57`      | Non-sudo users to scan ports with 3 way handshake.                             |
+| TCP SYN Port Scan     | `sudo nmap -sS 10.10.67.57` | Sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+| UDP Port Scan         | `sudo nmap -sU 10.10.67.57` | Unreliable port scan                                                           |
