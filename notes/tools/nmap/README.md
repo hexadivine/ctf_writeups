@@ -401,6 +401,10 @@ The following figure shows the attacker launching the command `nmap -S <spoofed 
 
 ![](Pasted%20image%2020241124091831.png)
 
+You can launch a decoy scan by specifying a specific or random IP address after `-D`. For example, `nmap -D 10.10.0.1,10.10.0.2,ME 10.10.76.112` will make the scan of 10.10.76.112 appear as coming from the IP addresses 10.10.0.1, 10.10.0.2, and then `ME` to indicate that your IP address should appear in the third order. Another example command would be `nmap -D 10.10.0.1,10.10.0.2,RND,RND,ME 10.10.76.112`, where the third and fourth source IP addresses are assigned randomly, while the fifth source is going to be the attacker’s IP address. In other words, each time you execute the latter command, you would expect two new random IP addresses to be the third and fourth decoy sources.
+
+![](Pasted%20image%2020241124092055.png)
+
 ## Fine-Tuning Scope and Performance
 
 You can specify the ports you want to scan instead of the default 1000 ports. Specifying the ports is intuitive by now. Let’s see some examples:
