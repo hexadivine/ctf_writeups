@@ -452,9 +452,64 @@ Nmap done: 1 IP address (1 host up) scanned in 3.91 seconds
 
 ## Nmap Scripting Engine (NSE)
 
-Nmap provides support for scripts using the Lua language. Nmap default installation contain close to 600 scripts stored at `/usr/share/nmap/scripts`
+Nmap provides support for scripts using the Lua language. Nmap default installation contain close to 600 scripts stored at `/usr/share/nmap/scripts`.
 
+You can choose to run the scripts in the **default category** using `--script=default` or **simply adding `-sC`**. In addition to [default](https://nmap.org/nsedoc/categories/default.html), categories include auth, broadcast, brute, default, discovery, dos, exploit, external, fuzzer, intrusive, malware, safe, version, and vuln. A brief description is shown in the following table.
 
+| Script Category |                              Description                               |
+| :-------------: | :--------------------------------------------------------------------: |
+|     `auth`      |                     Authentication related scripts                     |
+|   `broadcast`   |              Discover hosts by sending broadcast messages              |
+|     `brute`     |         Performs brute-force password auditing against logins          |
+|    `default`    |                     Default scripts, same as `-sC`                     |
+|   `discovery`   | Retrieve accessible information, such as database tables and DNS names |
+|      `dos`      |         Detects servers vulnerable to Denial of Service (DoS)          |
+|    `exploit`    |            Attempts to exploit various vulnerable services             |
+|   `external`    |  Checks using a third-party service, such as Geoplugin and Virustotal  |
+|    `fuzzer`     |                         Launch fuzzing attacks                         |
+|   `intrusive`   |     Intrusive scripts such as brute-force attacks and exploitation     |
+|    `malware`    |                          Scans for backdoors                           |
+|     `safe`      |                Safe scripts that won’t crash the target                |
+|    `version`    |                       Retrieve service versions                        |
+|     `vuln`      |       Checks for vulnerabilities or exploit vulnerable services        |
+
+```
+$ sudo nmap -sS -sC 10.10.49.151
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-10 05:08 BST
+Nmap scan report for ip-10-10-161-170.eu-west-1.compute.internal (10.10.161.170)
+Host is up (0.0011s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   1024 d5:80:97:a3:a8:3b:57:78:2f:0a:78:ae:ad:34:24:f4 (DSA)
+|   2048 aa:66:7a:45:eb:d1:8c:00:e3:12:31:d8:76:8e:ed:3a (RSA)
+|   256 3d:82:72:a3:07:49:2e:cb:d9:87:db:08:c6:90:56:65 (ECDSA)
+|_  256 dc:f0:0c:89:70:87:65:ba:52:b1:e9:59:f7:5d:d2:6a (EdDSA)
+25/tcp  open  smtp
+|_smtp-commands: debra2.thm.local, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+| ssl-cert: Subject: commonName=debra2.thm.local
+| Not valid before: 2021-08-10T12:10:58
+|_Not valid after:  2031-08-08T12:10:58
+|_ssl-date: TLS randomness does not represent time
+80/tcp  open  http
+|_http-title: Welcome to nginx on Debian!
+110/tcp open  pop3
+|_pop3-capabilities: RESP-CODES CAPA TOP SASL UIDL PIPELINING AUTH-RESP-CODE
+111/tcp open  rpcbind
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100024  1          38099/tcp  status
+|_  100024  1          54067/udp  status
+143/tcp open  imap
+|_imap-capabilities: LITERAL+ capabilities IMAP4rev1 OK Pre-login ENABLE have LOGINDISABLEDA0001 listed SASL-IR ID more post-login LOGIN-REFERRALS IDLE
+MAC Address: 02:A0:E7:B5:B6:C5 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.21 seconds
+```
 
 ## Spoofing and Decoys
 
