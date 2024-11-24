@@ -329,8 +329,11 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 
 ## Summary
 
-| Scan Type             | Example Command             | Purpose                                                                        |
-| --------------------- | --------------------------- | ------------------------------------------------------------------------------ |
-| TCP Connect Port Scan | `nmap -sT 10.10.67.57`      | Non-sudo users to scan ports with 3 way handshake.                             |
-| TCP SYN Port Scan     | `sudo nmap -sS 10.10.67.57` | Sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
-| UDP Port Scan         | `sudo nmap -sU 10.10.67.57` | Unreliable port scan                                                           |
+| Scan Type             | Example Command                  | Purpose                                                                        |
+| --------------------- | -------------------------------- | ------------------------------------------------------------------------------ |
+| TCP Connect Port Scan | `nmap -sT 10.10.67.57`           | Non-sudo users to scan ports with 3 way handshake.                             |
+| TCP SYN Port Scan     | `sudo nmap -sS 10.10.67.57`      | Sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+| UDP Port Scan         | `sudo nmap -sU 10.10.67.57`      | Unreliable port scan. Revives ICMP type 3 if port is closed                    |
+| All port scan         | `sudo nmap -p- 10.10.67.57`      | scans all ports                                                                |
+| Limited port scan     | `sudo nmap -p1-1023 10.10.67.57` | scan ports 1 to 1023                                                           |
+|                       |                                  |                                                                                |
