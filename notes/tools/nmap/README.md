@@ -106,6 +106,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
 ```
 
 ![](Pasted%20image%2020241124081500.png)
+
+### Null Scan
+
 ## Nmap Host Discovery 
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
