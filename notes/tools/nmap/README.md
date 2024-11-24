@@ -566,7 +566,7 @@ Alternatively, you can choose to control the packet rate using `--min-rate <numb
 
 Moreover, you can control probing parallelisation using `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`. For instance, `--min-parallelism=512` pushes Nmap to maintain at least 512 probes in parallel; these 512 probes are related to host discovery and open ports.
 
-## Summary
+# Summary
 
 |                     Example Command                      |                Purpose                |
 | :------------------------------------------------------: | :-----------------------------------: |
@@ -601,5 +601,4 @@ Moreover, you can control probing parallelisation using `--min-parallelism <nump
 |                          `-vv`                           |             very verbose              |
 |                           `-d`                           |               debugging               |
 |                          `-dd`                           |      more details for debugging       |
-|                                                          |                                       |
-|                                                          |                                       |
+
