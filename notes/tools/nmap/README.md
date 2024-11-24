@@ -329,13 +329,16 @@ Moreover, you can control probing parallelization using `--min-parallelism <nump
 
 ## Summary
 
-| Scan Type             | Example Command        | Purpose                                                                        |
-| --------------------- | ---------------------- | ------------------------------------------------------------------------------ |
-| TCP Connect Port Scan | `nmap -sT 10.10.67.57` | non-sudo users to scan ports with 3 way handshake.                             |
-| TCP SYN Port Scan     | `sudo nmap -sS <ip>`   | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
-| UDP Port Scan         | `sudo nmap -sU <ip>`   | unreliable port scan. Revives ICMP type 3 if port is closed                    |
-| All port scan         | `nmap -p- <ip>`        | scans all ports                                                                |
-| Limited port scan     | `nmap -p1-1023 <ip>`   | scan ports 1 to 1023                                                           |
-| Common port scan      | `nmap -F <ip>`         | 100 most common ports                                                          |
-| Consecutive scan      | `nmap -F -r <ip>`      | scan ports in consecutive order                                                |
-|                       | `nmap -T<0-5>`         |                                                                                |
+| Scan Type             | Example Command                   | Purpose                                                                        |
+| --------------------- | --------------------------------- | ------------------------------------------------------------------------------ |
+| TCP Connect Port Scan | `nmap -sT 10.10.67.57`            | non-sudo users to scan ports with 3 way handshake.                             |
+| TCP SYN Port Scan     | `sudo nmap -sS <ip>`              | sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+| UDP Port Scan         | `sudo nmap -sU <ip>`              | unreliable port scan. Revives ICMP type 3 if port is closed                    |
+| All port scan         | `nmap -p- <ip>`                   | scans all ports                                                                |
+| Limited port scan     | `nmap -p1-1023 <ip>`              | scan ports 1 to 1023                                                           |
+| Common port scan      | `nmap -F <ip>`                    | 100 most common ports                                                          |
+| Consecutive scan      | `nmap -F -r <ip>`                 | scan ports in consecutive order                                                |
+| Speed customisation   | `nmap -T<0-5> <ip>`               | `-T0` being the slowest and `-T5` the fastest                                  |
+|                       | `nmap --max-rate 50 <ip>`         |                                                                                |
+|                       | `nmap --min-rate 15 <ip>`         |                                                                                |
+|                       | `nmap --min-parallelism 100 <ip>` |                                                                                |
