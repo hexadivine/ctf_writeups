@@ -423,6 +423,35 @@ Nmap done: 1 IP address (1 host up) scanned in 8.40 seconds
 
 ## OS Detection
 
+Nmap can detect the Operating System (OS) based on its behaviour and any telltale signs in its responses. OS detection can be enabled using `-O`;
+
+```
+$ sudo nmap -sS -O 10.10.135.52
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-09-10 05:04 BST
+Nmap scan report for 10.10.135.52
+Host is up (0.00099s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:A0:E7:B5:B6:C5 (Unknown)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3.13
+OS details: Linux 3.13
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 3.91 seconds
+```
+
+## Nmap Scripting Engine
+
 
 
 ## Spoofing and Decoys
