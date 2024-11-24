@@ -1,15 +1,15 @@
 ![](a6b64823d42120e106cb7e89ceaa4817.png)
-## Introduction
+# Introduction
 
 `Nmap` is a tool used to scan networks and find out which devices are connected, what services they are running, and if they have any security vulnerabilities. It's like a digital map that helps identify and analyse devices and systems on a network.
 
 Below are some uses of nmap scan
 
-## Nmap Reverse-DNS Lookup
+# Nmap Reverse-DNS Lookup
 
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
 
-## Enumerating target
+# Enumerating target
 
 ```
 $ nmap -sL -n 10.10.12.13/29
@@ -29,10 +29,10 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-## Nmap Host Discovery Using
+# Nmap Host Discovery Using
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
-### ARP
+## ARP
 
 This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
 
@@ -62,7 +62,7 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
 
 ![](Pasted%20image%2020241123073028.png)
 
-### ICMP Echo
+## ICMP Echo
 
 This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
