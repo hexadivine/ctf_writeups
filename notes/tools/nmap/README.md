@@ -325,15 +325,25 @@ You can control the scan timing using `-T<0-5>`. `-T0` is the slowest (paranoid)
 
 Alternatively, you can choose to control the packet rate using `--min-rate <number>` and `--max-rate <number>`. For example, `--max-rate 10` or `--max-rate=10` ensures that your scanner is not sending more than ten packets per second.
 
-Moreover, you can control probing parallelization using `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`. For instance, `--min-parallelism=512` pushes Nmap to maintain at least 512 probes in parallel; these 512 probes are related to host discovery and open ports.
+Moreover, you can control probing parallelisation using `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`. For instance, `--min-parallelism=512` pushes Nmap to maintain at least 512 probes in parallel; these 512 probes are related to host discovery and open ports.
 
 ## Summary
 
-| Scan Type             | Example Command                  | Purpose                                                                        |
-| --------------------- | -------------------------------- | ------------------------------------------------------------------------------ |
-| TCP Connect Port Scan | `nmap -sT 10.10.67.57`           | Non-sudo users to scan ports with 3 way handshake.                             |
-| TCP SYN Port Scan     | `sudo nmap -sS 10.10.67.57`      | Sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
-| UDP Port Scan         | `sudo nmap -sU 10.10.67.57`      | Unreliable port scan. Revives ICMP type 3 if port is closed                    |
-| All port scan         | `sudo nmap -p- 10.10.67.57`      | scans all ports                                                                |
-| Limited port scan     | `sudo nmap -p1-1023 10.10.67.57` | scan ports 1 to 1023                                                           |
-|                       |                                  |                                                                                |
+| Scan Type             | Example Command           | Purpose                                                                        |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------------ |
+| TCP Connect Port Scan | `nmap -sT 10.10.67.57`    | Non-sudo users to scan ports with 3 way handshake.                             |
+| TCP SYN Port Scan     | `sudo nmap -sS <ip>`      | Sudo users can scan with incomplete handshake. Reduces noise. Increases speed. |
+| UDP Port Scan         | `sudo nmap -sU <ip>`      | Unreliable port scan. Revives ICMP type 3 if port is closed                    |
+|                       |                           |                                                                                |
+
+
+|Option|Purpose|
+|---|---|
+|`-p-`|all ports|
+|`-p1-1023`|scan ports 1 to 1023|
+|`-F`|100 most common ports|
+|`-r`|scan ports in consecutive order|
+|`-T<0-5>`|-T0 being the slowest and T5 the fastest|
+|`--max-rate 50`|rate <= 50 packets/sec|
+|`--min-rate 15`|rate >= 15 packets/sec|
+|`--min-parallelism 100`|at least 100 probes in parallel|
