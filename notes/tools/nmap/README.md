@@ -169,6 +169,26 @@ Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
 The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
 
 ![](Pasted%20image%2020241124085727.png)
+![](Pasted%20image%2020241124085740.png)
+
+```
+$ sudo nmap -sX 10.10.76.112
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:34 BST
+Nmap scan report for 10.10.76.112
+Host is up (0.00087s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
+```
 
 
 ## Nmap Host Discovery Using
