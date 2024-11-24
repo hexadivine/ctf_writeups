@@ -9,9 +9,31 @@ Below are some uses of nmap scan
 
 ### TCP SYN Scan
 
-
+Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it. SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server. Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
 
 ![](Pasted%20image%2020241123202502.png)
+
+```
+$ sudo nmap -sS 10.10.67.204
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:53 BST
+Nmap scan report for 10.10.67.204
+Host is up (0.0073s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
+```
+
+![](Pasted%20image%2020241124080807.png)
+
 ### TCP Connect Scan
 
 The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
@@ -240,7 +262,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds
 `-PA` performs tcp ack packet
 
 ![](Pasted%20image%2020241123193115.png)
-#### Nmap Host Discovery Using UDP
+### Nmap Host Discovery Using UDP
 
 In Nmap, a UDP Ping scan for host discovery sends UDP packets (typically to common ports like 53 or 161) to determine if a host is online. If the host is responsive, it may reply with a corresponding ICMP "Port Unreachable" message, indicating the host is reachable, while a lack of response suggests the host may be offline or the port is filtered.
 
