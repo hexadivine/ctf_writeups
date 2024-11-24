@@ -59,7 +59,29 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 
 ![](Pasted%20image%2020241124080807.png)
 
+### UDP Scan
 
+UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
+
+![](Pasted%20image%2020241124081432.png)
+![](Pasted%20image%2020241124081446.png)
+
+```
+$ sudo nmap -sU 10.10.104.145
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 09:54 BST
+Nmap scan report for 10.10.104.145
+Host is up (0.00061s latency).
+Not shown: 998 closed ports
+PORT    STATE         SERVICE
+68/udp  open|filtered dhcpc
+111/udp open          rpcbind
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
+```
+
+![](Pasted%20image%2020241124081500.png)
 ## Nmap Reverse-DNS Lookup
 
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
