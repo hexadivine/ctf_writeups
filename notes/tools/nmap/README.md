@@ -136,6 +136,40 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
 ```
 
+### FIN Scan
+
+The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
+
+![](Pasted%20image%2020241124085607.png)
+
+However, the target system should respond with an RST if the port is closed. Consequently, we will be able to know which ports are closed and use this knowledge to infer the ports that are open or filtered. It's worth noting some firewalls will 'silently' drop the traffic without sending an RST.
+
+![](Pasted%20image%2020241124085629.png)
+
+```
+$ sudo nmap -sF 10.10.76.112
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:32 BST
+Nmap scan report for 10.10.76.112
+Host is up (0.0018s latency).
+Not shown: 994 closed ports
+PORT    STATE         SERVICE
+22/tcp  open|filtered ssh
+25/tcp  open|filtered smtp
+80/tcp  open|filtered http
+110/tcp open|filtered pop3
+111/tcp open|filtered rpcbind
+143/tcp open|filtered imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
+```
+### Xmas Scan
+
+The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
+
+![](Pasted%20image%2020241124085727.png)
+
 
 ## Nmap Host Discovery Using
 
@@ -264,7 +298,7 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 
 ![](Pasted%20image%2020241123073235.png)
 
-### Nmap Host Discovery Using TCP SYN
+### TCP SYN
 
 We can send a packet with the SYN (Synchronise) flag set to a TCP port, 80 by default, and wait for a response. An open port should reply with a SYN/ACK (Acknowledge); a closed port would result in an RST (Reset).
 
@@ -289,7 +323,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 - `-PS` performs TCP SYN flag
 
 ![](Pasted%20image%2020241123073906.png)
-### Nmap Host Discovery Using TCP ACK
+### TCP ACK
 
 A TCP ACK Ping Nmap scan sends ACK (Acknowledgement) packets to a target, typically to determine whether a host is up and which ports are filtered, without establishing a full connection. It relies on the behaviour of firewalls or filtering devices, where unfiltered ports will respond with a RST (Reset) packet, while filtered ports will not respond.
 
@@ -315,7 +349,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds
 `-PA` performs tcp ack packet
 
 ![](Pasted%20image%2020241123193115.png)
-### Nmap Host Discovery Using UDP
+### UDP
 
 In Nmap, a UDP Ping scan for host discovery sends UDP packets (typically to common ports like 53 or 161) to determine if a host is online. If the host is responsive, it may reply with a corresponding ICMP "Port Unreachable" message, indicating the host is reachable, while a lack of response suggests the host may be offline or the port is filtered.
 
