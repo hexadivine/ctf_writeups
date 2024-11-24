@@ -5,10 +5,14 @@
 
 Below are some uses of nmap scan
 
-### 
+## Nmap Port Scan
+
+### TCP SYN Scan
+
+
 
 ![](Pasted%20image%2020241123202502.png)
-### Nmap TCP Connect Scan
+### TCP Connect Scan
 
 The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
 
@@ -34,11 +38,11 @@ Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
 
 ![](Pasted%20image%2020241123200014.png)
 
-### Nmap Reverse-DNS Lookup
+## Nmap Reverse-DNS Lookup
 
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
 
-### Enumerating target
+## Enumerating target
 
 ```
 $ nmap -sL -n 10.10.12.13/29
@@ -58,10 +62,10 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-### Nmap Host Discovery 
+## Nmap Host Discovery 
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
-#### Nmap host discovery using ARP
+### Nmap host discovery using ARP
 
 This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
 
@@ -91,7 +95,7 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
 
 ![](Pasted%20image%2020241123073028.png)
 
-#### Nmap Host Discovery Using ICMP Echo
+### Nmap Host Discovery Using ICMP Echo
 
 This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
@@ -133,7 +137,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 
 ![](Pasted%20image%2020241123073106.png)
 
-#### Nmap Host Discovery Using ICMP Timestamp
+### Nmap Host Discovery Using ICMP Timestamp
 
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
@@ -167,7 +171,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 
 ![](Pasted%20image%2020241123073205.png)
 
-#### Nmap Host Discovery Using ICMP Address Mask Request
+### Nmap Host Discovery Using ICMP Address Mask Request
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
@@ -185,7 +189,7 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 
 ![](Pasted%20image%2020241123073235.png)
 
-#### Nmap Host Discovery Using TCP SYN
+### Nmap Host Discovery Using TCP SYN
 
 We can send a packet with the SYN (Synchronise) flag set to a TCP port, 80 by default, and wait for a response. An open port should reply with a SYN/ACK (Acknowledge); a closed port would result in an RST (Reset).
 
@@ -210,7 +214,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 - `-PS` performs TCP SYN flag
 
 ![](Pasted%20image%2020241123073906.png)
-#### Nmap Host Discovery Using TCP ACK
+### Nmap Host Discovery Using TCP ACK
 
 A TCP ACK Ping Nmap scan sends ACK (Acknowledgement) packets to a target, typically to determine whether a host is up and which ports are filtered, without establishing a full connection. It relies on the behaviour of firewalls or filtering devices, where unfiltered ports will respond with a RST (Reset) packet, while filtered ports will not respond.
 
