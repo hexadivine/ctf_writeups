@@ -104,7 +104,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 
 ![](Pasted%20image%2020241123073106.png)
 
-### ICMP Timestamp
+## ICMP Timestamp
 
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
@@ -138,7 +138,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 
 ![](Pasted%20image%2020241123073205.png)
 
-### ICMP Address Mask Request
+## ICMP Address Mask Request
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
@@ -156,7 +156,7 @@ Nmap done: 256 IP addresses (0 hosts up) scanned in 52.17 seconds
 
 ![](Pasted%20image%2020241123073235.png)
 
-### TCP SYN
+## TCP SYN
 
 We can send a packet with the SYN (Synchronise) flag set to a TCP port, 80 by default, and wait for a response. An open port should reply with a SYN/ACK (Acknowledge); a closed port would result in an RST (Reset).
 
@@ -181,7 +181,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 - `-PS` performs TCP SYN flag
 
 ![](Pasted%20image%2020241123073906.png)
-### TCP ACK
+## TCP ACK
 
 A TCP ACK Ping Nmap scan sends ACK (Acknowledgement) packets to a target, typically to determine whether a host is up and which ports are filtered, without establishing a full connection. It relies on the behaviour of firewalls or filtering devices, where unfiltered ports will respond with a RST (Reset) packet, while filtered ports will not respond.
 
@@ -207,7 +207,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 29.89 seconds
 `-PA` performs tcp ack packet
 
 ![](Pasted%20image%2020241123193115.png)
-### UDP
+## UDP
 
 In Nmap, a UDP Ping scan for host discovery sends UDP packets (typically to common ports like 53 or 161) to determine if a host is online. If the host is responsive, it may reply with a corresponding ICMP "Port Unreachable" message, indicating the host is reachable, while a lack of response suggests the host may be offline or the port is filtered.
 
@@ -230,9 +230,9 @@ Host is up (0.11s latency).
 Nmap done: 256 IP addresses (5 hosts up) scanned in 9.20 seconds
 ```
 
-## Nmap Port Scan
+# Nmap Port Scan
 
-### TCP Connect Scan
+## TCP Connect Scan
 
 The `-sT` option in Nmap performs a TCP Connect scan, where Nmap attempts to complete the TCP handshake with the target system to determine if the port is open. This method is less stealthy than other scans but is useful when the user lacks raw socket privileges, as it relies on the operating system's own networking functions.
 
@@ -257,7 +257,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.40 seconds
 ```
 
 ![](Pasted%20image%2020241123200014.png)
-### TCP SYN Scan
+## TCP SYN Scan
 
 Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it. SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server. Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
 
@@ -283,7 +283,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
 ```
 
 ![](Pasted%20image%2020241124080807.png)
-### UDP Scan
+## UDP Scan
 
 UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment. We cannot guarantee that a service listening on a UDP port would respond to our packets. However, if a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned. You can select UDP scan using the `-sU` option
 
@@ -307,7 +307,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1085.05 seconds
 
 ![](Pasted%20image%2020241124081500.png)
 
-### Null Scan
+## Null Scan
 
 The null scan does not set any flag; all six flag bits are set to zero. You can choose this scan using the `-sN` option. A TCP packet with no flags set will not trigger any response when it reaches an open port, as shown in the figure below. Therefore, from Nmap’s perspective, a lack of reply in a null scan indicates that either the port is open or a firewall is blocking the packet.
 
@@ -336,7 +336,7 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 96.50 seconds
 ```
 
-### FIN Scan
+## FIN Scan
 
 The FIN scan sends a TCP packet with the FIN flag set. You can choose this scan type using the `-sF` option. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
 
@@ -364,7 +364,7 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 96.52 seconds
 ```
-### Xmas Scan
+## Xmas Scan
 
 The Xmas scan gets its name after Christmas tree lights. An Xmas scan sets the FIN, PSH, and URG flags simultaneously. You can select Xmas scan with the option -sX. Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered. The following two figures show the case when the TCP port is open and the case when the TCP port is closed.
 
@@ -389,13 +389,13 @@ MAC Address: 02:45:BF:8A:2D:6B (Unknown)
 
 Nmap done: 1 IP address (1 host up) scanned in 84.85 seconds
 ```
-### Custom scan
+## Custom scan
 
 If you want to experiment with a new TCP flag combination beyond the built-in TCP scan types, you can do so using `--scanflags`. For instance, if you want to set SYN, RST, and FIN simultaneously, you can do so using `--scanflags RSTSYNFIN`. As shown in the figure below, if you develop your custom scan, you need to know how the different ports will behave to interpret the results in different scenarios correctly.
 
 ![](Pasted%20image%2020241124091422.png)
 
-## Service Detection
+# Service Detection
 
 Adding `-sV` to your Nmap command will collect and determine service and version information for the open ports. You can control the intensity with `--version-intensity LEVEL` where the level ranges between 0, the lightest, and 9, the most complete. `-sV --version-light` has an intensity of 2, while `-sV --version-all` has an intensity of 9.
 
@@ -421,7 +421,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 8.40 seconds
 ```
 
-## OS Detection
+# OS Detection
 
 Nmap can detect the Operating System (OS) based on its behaviour and any telltale signs in its responses. OS detection can be enabled using `-O`;
 
@@ -450,7 +450,7 @@ OS detection performed. Please report any incorrect results at https://nmap.org/
 Nmap done: 1 IP address (1 host up) scanned in 3.91 seconds
 ```
 
-## Nmap Scripting Engine (NSE)
+# Nmap Scripting Engine (NSE)
 
 Nmap provides support for scripts using the Lua language. Nmap default installation contain close to 600 scripts stored at `/usr/share/nmap/scripts`.
 
@@ -536,7 +536,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.78 seconds
 ```
 
 
-## Spoofing and Decoys
+# Spoofing and Decoys
 
 The following figure shows the attacker launching the command `nmap -S <spoofed ip> 10.10.76.112`. Consequently, Nmap will craft all the packets using the provided source IP address `SPOOFED_IP`. The target machine will respond to the incoming packets sending the replies to the destination IP address `SPOOFED_IP`. For this scan to work and give accurate results, the attacker needs to monitor the network traffic to analyse the replies.
 
@@ -546,7 +546,7 @@ You can launch a decoy scan by specifying a specific or random IP address after 
 
 ![](Pasted%20image%2020241124092055.png)
 
-## Fine-Tuning Scope and Performance
+# Fine-Tuning Scope and Performance
 
 You can specify the ports you want to scan instead of the default 1000 ports. Specifying the ports is intuitive by now. Let’s see some examples:
 
