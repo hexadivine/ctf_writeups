@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🧑‍🔬 whoami](README.md)
+* [🥷 whoami](README.md)
 
 ## 🚶 CTF Walkthroughs
 
