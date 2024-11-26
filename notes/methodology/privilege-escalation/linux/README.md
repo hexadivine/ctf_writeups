@@ -339,4 +339,30 @@ The Kernel exploit methodology is simple;
 
 ## [sudo -l]()
 
-`sudo` used to run commands with root access. `sudo -l` shows  list of commands that a user can run as a root user (generally without any passwords). Some programs can be exploited 
+`sudo` used to run commands with root access. `sudo -l` shows  list of commands that a user can run as a root user (generally without any passwords). Some programs can be exploited to gain root shell access. Check out [gtfobins](https://gtfobins.github.io/) which contains many such exploits.
+
+Below is a simple example of privilege escalation. 
+
+```
+$ id
+
+uid=1001(karen) gid=1001(karen) groups=1001(karen)
+```
+
+let's check `sudo -l`
+
+```
+$ sudo -l
+Matching Defaults entries for karen
+    on ip-10-10-79-2:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/
+local/bin\:/usr/sbin\:/usr/bin\:/sbin\
+:/bin\:/snap/bin
+
+User karen may run the following
+        commands on ip-10-10-79-2:
+    (ALL) NOPASSWD: /usr/bin/find
+    (ALL) NOPASSWD: /usr/bin/less
+    (ALL) NOPASSWD: /usr/bin/nano
+```
