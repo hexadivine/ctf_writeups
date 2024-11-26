@@ -53,7 +53,7 @@ $ cat /etc/issue
 Ubuntu 14.04 LTS \n \l
 ```
 
-## ps Command
+## [ps Command]()
 
 `ps` show processes for the current shell.
 
@@ -72,7 +72,7 @@ The “ps” command provides a few useful options.
 ![](https://i.imgur.com/xsbohSd.png)  
 
 - `ps aux`: The `aux` option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
-## env
+## [[env]]
 
 The `env` command will show environmental variables.
   
