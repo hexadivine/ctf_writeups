@@ -1,5 +1,4 @@
-
-![](Pasted%20image%2020241126174453.png)
+![](7303ba648ef3f3f899a55c7b19195add-1.png)
 
 # [Introduction]()
 
@@ -312,8 +311,7 @@ Below are some useful examples for the “find” command.
 - `find / -perm -222 -type d`: Find world-writeable folders
 - `find / -perm -o w -type d`: Find world-writeable folders
 
-use  `2>/dev/null` to hide error messages, in first case it is  
-`find . -name flag1.txt 2>/dev/null`
+use  `2>/dev/null` to hide error messages, in first case it is  `find . -name flag1.txt 2>/dev/null`
 
 # [Automated Enumeration Tools]()
 
