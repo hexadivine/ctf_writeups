@@ -325,3 +325,15 @@ Several tools can help you save time during the enumeration process. These tools
 - **Linux Smart Enumeration:** [https://github.com/diego-treitos/linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
 - **Linux Priv Checker:** [https://github.com/linted/linuxprivchecker](https://github.com/linted/linuxprivchecker)
 
+# [Examples of various privilege escalation]()
+
+Below are some examples of common privilege escalation.
+
+## [Kernel Exploit]()
+
+The Kernel exploit methodology is simple;
+
+1. Identify the kernel version
+2. Search and find an exploit code for the kernel version of the target system
+3. Run the exploit
+
