@@ -2,7 +2,7 @@
 
 *  [👋 whoami](README.md)
 
-## 🪜 CTF Walkthroughs
+## 🚶 CTF Walkthroughs
 
 - [🔭 overview](writeups/overview.md)
 - [🏁 hack the box](writeups/hack-the-box)
