@@ -1,7 +1,7 @@
 ![](banner.png)
 ###### [link](https://app.hackthebox.com/machines/Sea)
 
-# Recon
+# [Recon]()
 
 - nmap scan
 
@@ -38,7 +38,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.55 seconds
 
 ![](Pasted%20image%2020241021172620.png)
 
-# Vulnerability Discovery
+# [Vulnerability Discovery]()
 
 - no vulnerability in ssh version
 - no vulnerability in apache version
@@ -46,7 +46,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.55 seconds
 
 ![](Pasted%20image%2020241021172808.png)
 
-# Recon 
+# [Recon]() 
 
 - Brut forcing files and dirs
 - Eventually found something
@@ -111,12 +111,12 @@ Includes animations.
 3.2.0
 ```
 
-# Vulnerability Discovery
+# [Vulnerability Discovery]()
 
 - Searching vulnerability for WonderCMS bike theme v 3.2.0 
 - Vulnerability found - https://github.com/prodigiousMind/CVE-2023-41425
 
-# Exploit
+# [Exploit]()
 
 - not able to exploit it...TBD...
 
