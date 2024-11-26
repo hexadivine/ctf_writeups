@@ -80,7 +80,7 @@ The `env` command will show environmental variables.
 
 The PATH variable may have a compiler or a scripting language (e.g. Python) that could be used to run code on the target system or leveraged for privilege escalation.
 
-### Id
+## Id
 
 The `id` command will provide a general overview of the user’s privilege level and group memberships. It is worth remembering that the `id` command can also be used to obtain the same information for another user as seen below.
 
@@ -143,4 +143,25 @@ saned:x:108:115::/home/saned:/bin/false
 matt:x:1000:1000:matt,,,:/home/matt:/bin/bash
 karen:x:1001:1001::/home/karen:
 ```
+
+## history
+
+Looking at earlier commands with the `history` command can give us some idea about the target system and, albeit rarely, have stored information such as passwords or usernames.
+
+## ifconfig
+
+The target system may be a pivoting point to another network. The `ifconfig` command will give us information about the network interfaces of the system. The example below shows the target system has three interfaces (eth0, tun0, and tun1). Our attacking machine can reach the eth0 interface but can not directly access the two other networks.
+
+![](https://i.imgur.com/hcdZnwK.png)
+
+This can be confirmed using the `ip route` command to see which network routes exist.
+
+![](https://i.imgur.com/PSrmz5O.png)
+## netstat
+
+Following an initial check for existing interfaces and network routes, it is worth looking into existing communications. The `netstat` command can be used with several different options to gather information on existing connections.
+
+- `netstat -a`: shows all listening ports and established connections.
+- `netstat -at` or `netstat -au` can also be used to list TCP or UDP protocols respectively.
+- `netstat -l`: list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol (below)
 
