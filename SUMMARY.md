@@ -18,7 +18,7 @@
 	* 🔍 reconnaissance
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
-	* [🐛 vulnerability discovery & exploit](notes/methodology/vulnerability discovery & exploit/README.md)
+	* [🐛 vulnerability discovery & exploit](<notes/methodology/vulnerability-discovery-&-exploit/README.md>)
 	* 📈 privilege escalation
 		* [🪟 linux](<notes/methodology/privilege-escalation/linux/README.md>)
 		* [🐧 windows](<notes/methodology/privilege-escalation/windows/README.md>)
