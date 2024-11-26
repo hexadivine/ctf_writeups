@@ -1,6 +1,6 @@
 # Table of contents
 
-*  [👋 aboutme](README.md)
+*  [👋 whoami](README.md)
 
 ## 🪜 CTF Walkthroughs
 
