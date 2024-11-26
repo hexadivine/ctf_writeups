@@ -1,7 +1,7 @@
 ![](banner.png)
 ###### [link](https://tryhackme.com/r/room/relevant)
 
-# Recon
+# [Recon]()
 
 - nmap scan
 
@@ -112,7 +112,7 @@ Bill - Juw4nnaM4n420696969!$$$
 - Tried password to smb and rdp but didn't work.
 -  looking for vulnerabilities
 
-# Vulnerability Discovery
+# [Vulnerability Discovery]()
 
 - using nmap scripts for vulnerability scanning
 
@@ -163,7 +163,7 @@ Nmap done: 1 IP address (1 host up) scanned in 111.02 seconds
 
 - Back to ReCoN..!
 
-# Recon
+# [Recon]()
 
 - Doing full port scan
 
@@ -213,14 +213,14 @@ X-Powered-By: ASP.NET
 Date: Mon, 21 Oct 2024 13:35:33 GMT
 ```
 
-# Vulnerability Discovery
+# [Vulnerability Discovery]()
 
 - I have write access to /nt4wrksv smb folder so I can upload ASP rev shell (server running asp) and get connection
 
-# Exploit
+# [Exploit]()
 
 - Create asp payload
 
-# Personal Leanings
+# [Personal Leanings]()
 
 - nmap script for vuln scan is very powerful
