@@ -165,3 +165,79 @@ Following an initial check for existing interfaces and network routes, it is wor
 - `netstat -at` or `netstat -au` can also be used to list TCP or UDP protocols respectively.
 - `netstat -l`: list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol (below)
 
+```
+$ netstat -l
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 *:ssh                   *:*                     LISTEN     
+tcp        0      0 localhost:ipp           *:*                     LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+tcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN     
+udp        0      0 *:bootpc                *:*                                
+udp        0      0 *:ipp                   *:*                                
+udp        0      0 *:mdns                  *:*                                
+udp        0      0 *:24810                 *:*                                
+udp        0      0 *:49486                 *:*                                
+udp6       0      0 [::]:38942              [::]:*                             
+udp6       0      0 [::]:mdns               [::]:*                             
+udp6       0      0 [::]:35201              [::]:*                             
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     9884     /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     9484     /var/run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10521    /var/run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9883     @/tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     10702    @/tmp/dbus-E3WLb7aKEy
+unix  2      [ ACC ]     STREAM     LISTENING     10750    @/tmp/dbus-lkX1e3FTf3
+unix  2      [ ACC ]     STREAM     LISTENING     9770     /var/lib/amazon/ssm/ipc/termination
+unix  2      [ ACC ]     SEQPACKET  LISTENING     7512     /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     11360    /run/user/112/pulse/native
+unix  2      [ ACC ]     STREAM     LISTENING     7101     @/com/ubuntu/upstart
+unix  2      [ ACC ]     STREAM     LISTENING     7803     /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     10971    @/com/ubuntu/upstart-session/112/1354
+unix  2      [ ACC ]     STREAM     LISTENING     9769     /var/lib/amazon/ssm/ipc/health
+unix  2      [ ACC ]     STREAM     LISTENING     7607     /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7879     /var/run/sdp
+```
+
+`netstat -s`: list network usage statistics by protocol (below) This can also be used with the `-t` or `-u` options to limit the output to a specific protocol.
+
+```
+$ netstat -s
+
+Ip:
+    1103 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    1098 incoming packets delivered
+    1107 requests sent out
+Icmp:
+    1 ICMP messages received
+    0 input ICMP message failed.
+    ICMP input histogram:
+        destination unreachable: 1
+    0 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+IcmpMsg:
+        InType3: 1
+Tcp:
+    86 active connections openings
+    6 passive connection openings
+    54 failed connection attempts
+    0 connection resets received
+    2 connections established
+    1063 segments received
+    1020 segments send out
+    16 segments retransmited
+    0 bad segments received.
+    54 resets sent
+Udp:
+    107 packets received
+    0 packets to unknown port received.
+    0 packet receive errors
+    142 packets sent
+```
+
+- `netstat -tp`: list connections with the service name and PID information.
