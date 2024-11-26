@@ -19,6 +19,8 @@
 		- [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		- [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
 	- [🐛 vulnerability discovery & exploit](notes/methodology/vulnerability%20discovery%20&%20exploit/README.md)
+	- privilege escalation
+		- [README](notes/methodology/privilege%20escalation/windows/README.md)
 
 - 🐞 common exploits
 	- [💉 sql injection](notes/common-exploits/sql-injection/README.md)
