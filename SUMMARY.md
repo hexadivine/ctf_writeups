@@ -20,8 +20,8 @@
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
 	* [🐛 vulnerability discovery & exploit](<notes/methodology/vulnerability-discovery-&-exploit/README.md>)
 	* 📈 privilege escalation
-		* [🪟 linux](<notes/methodology/privilege-escalation/linux/README.md>)
-		* [🐧 windows](<notes/methodology/privilege-escalation/windows/README.md>)
+		* [🐧 linux](<notes/methodology/privilege-escalation/linux/README.md>)
+		* [🪟 windows](<notes/methodology/privilege-escalation/windows/README.md>)
 * 🐞 common exploits
 	* [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	* [💉 command injection](notes/common-exploits/command-injection/README.md)
