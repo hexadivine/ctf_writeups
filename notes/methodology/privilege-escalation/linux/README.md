@@ -241,3 +241,51 @@ Udp:
 ```
 
 - `netstat -tp`: list connections with the service name and PID information.
+
+![](Pasted%20image%2020241126182005.png)
+
+- `netstat -i`: Shows interface statistics. We see below that “eth0” and “tun0” are more active than “tun1”.
+
+```
+$ netstat -i
+
+Kernel Interface table
+Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       9001 0      1275      0      0 0          1329      0      0      0 BMRU
+lo        65536 0       127      0      0 0           127      0      0      0 LRU
+```
+
+- `netstat -ano` which could be broken down as follows;
+	- `-a`: Display all sockets
+	- `-n`: Do not resolve names
+	- `-o`: Display timers
+```
+$ netstat -ano
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       Timer
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 10.10.197.63:33588      169.254.169.254:80      TIME_WAIT   timewait (0.00/0/0)
+tcp        0      0 10.10.197.63:22         10.100.1.234:55868      ESTABLISHED keepalive (6283.53/0/0)
+tcp        0      1 10.10.197.63:40244      91.189.91.83:80         SYN_SENT    on (25.38/5/0)
+tcp        0      1 10.10.197.63:51670      91.189.91.81:80         SYN_SENT    on (25.38/5/0)
+tcp        0      0 10.10.197.63:22         10.100.1.234:55852      ESTABLISHED keepalive (6283.53/0/0)
+tcp6       0      0 :::22                   :::*                    LISTEN      off (0.00/0/0)
+tcp6       0      0 ::1:631                 :::*                    LISTEN      off (0.00/0/0)
+tcp6       1      0 ::1:53631               ::1:631                 CLOSE_WAIT  off (0.00/0/0)
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           off (0.00/0/0)
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           off (0.00/0/0)
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           off (0.00/0/0)
+udp        0      0 0.0.0.0:24810           0.0.0.0:*                           off (0.00/0/0)
+udp        0      0 0.0.0.0:49486           0.0.0.0:*                           off (0.00/0/0)
+udp6       0      0 :::38942                :::*                                off (0.00/0/0)
+udp6       0      0 :::5353                 :::*                                off (0.00/0/0)
+udp6       0      0 :::35201                :::*                                off (0.00/0/0)
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     9884     /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     9484     /var/run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10521    /var/run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9883     @/tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     10702    @/tmp/dbus-E3WLb7aKEy
+```
