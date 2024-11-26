@@ -1,7 +1,7 @@
 
 ![](Pasted%20image%2020241126174453.png)
 
-# Introduction
+# [Introduction]()
 
 At it's core, Privilege Escalation usually involves going from a lower permission account to a higher permission one. More technically, it's the exploitation of a vulnerability, design flaw, or configuration oversight in an operating system or application to gain unauthorised access to resources that are usually restricted from the users.
 
@@ -314,5 +314,7 @@ Below are some useful examples for the “find” command.
 
 use  `2>/dev/null` to hide error messages, in first case it is  
 `find . -name flag1.txt 2>/dev/null`
+
+
 
 
