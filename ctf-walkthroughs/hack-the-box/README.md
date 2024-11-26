@@ -1,2 +1,0 @@
-# 🏁 hack the box
-

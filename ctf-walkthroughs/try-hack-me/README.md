@@ -1,2 +1,0 @@
-# 🏁 try hack me
-
