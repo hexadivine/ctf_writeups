@@ -337,4 +337,6 @@ The Kernel exploit methodology is simple;
 2. Search and find an exploit code for the kernel version of the target system
 3. Run the exploit
 
+## [sudo -l]()
 
+`sudo` used to run commands with root access. `sudo -l` shows  list of commands that a user can run as a root user (generally without any passwords). Some programs can be exploited 
