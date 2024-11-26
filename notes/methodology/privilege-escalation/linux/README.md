@@ -5,11 +5,11 @@
 
 At it's core, Privilege Escalation usually involves going from a lower permission account to a higher permission one. More technically, it's the exploitation of a vulnerability, design flaw, or configuration oversight in an operating system or application to gain unauthorised access to resources that are usually restricted from the users.
 
-# Enumeration
+# [Enumeration]()
 
 Enumeration is the first step you have to take once you gain access to any system.
 
-## hostname
+## [hostname]()
 
 The `hostname` command will return the hostname of the target machine. Although this value can easily be changed or have a relatively meaningless string (e.g. Ubuntu-3487340239), in some cases, it can provide information about the target system’s role within the corporate network (e.g. SQL-PROD-01 for a production SQL server).
 
@@ -19,7 +19,7 @@ $ hostname
 wade7363
 ```
 
-## uname -a
+## [uname -a]()
 
 Will print system information giving us additional detail about the kernel used by the system. This will be useful when searching for any potential kernel vulnerabilities that could lead to privilege escalation.
 
@@ -30,7 +30,7 @@ Linux wade7363 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x
 86_64 x86_64 x86_64 GNU/Linux
 ```
 
-## /proc/version
+## [/proc/version]()
 
 The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.
 
@@ -43,7 +43,7 @@ Linux version 3.13.0-24-generic (buildd@panlong) (gcc version 4.8.2 (Ubuntu 4.
 8.2-19ubuntu1) ) #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014
 ```
 
-## /etc/issue
+## [/etc/issue]()
 
 Systems can also be identified by looking at the `/etc/issue` file. This file usually contains some information about the operating system but can easily be customised or changed. While on the subject, any file containing system information can be customised or changed. For a clearer understanding of the system, it is always good to look at all of these.
 
