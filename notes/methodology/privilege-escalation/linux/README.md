@@ -55,7 +55,7 @@ Ubuntu 14.04 LTS \n \l
 
 ## ps Command
 
-The `ps` command is an effective way to see the running processes on a Linux system. Typing `ps` on your terminal will show processes for the current shell.
+`ps` show processes for the current shell.
 
 The output of the `ps` (Process Status) will show the following;
 
@@ -72,3 +72,11 @@ The “ps” command provides a few useful options.
 ![](https://i.imgur.com/xsbohSd.png)  
 
 - `ps aux`: The `aux` option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
+## env
+
+The `env` command will show environmental variables.
+  
+![](https://i.imgur.com/LWdJ8Fw.png)
+
+The PATH variable may have a compiler or a scripting language (e.g. Python) that could be used to run code on the target system or leveraged for privilege escalation.
+
