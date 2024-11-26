@@ -14,10 +14,11 @@
 
 ## 📖 Notes
 
-- 🚶  methodology
+- 🖥️ methodology
 	- 🔍 reconnaissance
 		- [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		- [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
+	- vulnerability discovery & exploit
 - 🐞 common exploits
 	- [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	- [💉 command injection](notes/common-exploits/command-injection/README.md)
