@@ -72,7 +72,7 @@ The “ps” command provides a few useful options.
 ![](https://i.imgur.com/xsbohSd.png)  
 
 - `ps aux`: The `aux` option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
-## [[env]]
+## [env]()
 
 The `env` command will show environmental variables.
   
@@ -80,13 +80,13 @@ The `env` command will show environmental variables.
 
 The PATH variable may have a compiler or a scripting language (e.g. Python) that could be used to run code on the target system or leveraged for privilege escalation.
 
-## Id
+## [Id]()
 
 The `id` command will provide a general overview of the user’s privilege level and group memberships. It is worth remembering that the `id` command can also be used to obtain the same information for another user as seen below.
 
 ![](https://i.imgur.com/YzfJliG.png)
 
-## /etc/passwd
+## [/etc/passwd]()
 
 Reading the `/etc/passwd` file can be an easy way to discover users on the system.
 
@@ -144,11 +144,11 @@ matt:x:1000:1000:matt,,,:/home/matt:/bin/bash
 karen:x:1001:1001::/home/karen:
 ```
 
-## history
+## [history]()
 
 Looking at earlier commands with the `history` command can give us some idea about the target system and, albeit rarely, have stored information such as passwords or usernames.
 
-## ifconfig
+## [ifconfig]()
 
 The target system may be a pivoting point to another network. The `ifconfig` command will give us information about the network interfaces of the system. The example below shows the target system has three interfaces (eth0, tun0, and tun1). Our attacking machine can reach the eth0 interface but can not directly access the two other networks.
 
@@ -157,7 +157,7 @@ The target system may be a pivoting point to another network. The `ifconfig` co
 This can be confirmed using the `ip route` command to see which network routes exist.
 
 ![](https://i.imgur.com/PSrmz5O.png)
-## netstat
+## [netstat]()
 
 Following an initial check for existing interfaces and network routes, it is worth looking into existing communications. The `netstat` command can be used with several different options to gather information on existing connections.
 
@@ -290,7 +290,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     9883     @/tmp/.X11-unix/X0
 unix  2      [ ACC ]     STREAM     LISTENING     10702    @/tmp/dbus-E3WLb7aKEy
 ```
 
-## find Command
+## [find Command]()
 
 Below are some useful examples for the “find” command.
 

@@ -1,9 +1,9 @@
 ![](8f20f6a9ac029fba68066a06cb17611e.png)
-## Introduction
+## [Introduction]()
 
 **Passive recon** involves gathering information without directly interacting with the target system, often using publicly available sources like websites, social media, and domain records.
 
-## whois
+## [whois]()
 
 The `whois` command is used to query domain registration information, providing details about the domain owner, registrar, and registration dates.
 
@@ -36,7 +36,7 @@ URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
 For more information on Whois status codes, please visit https://icann.org/epp
 ```
 
-## nslookup
+## [nslookup]()
 
 `nslookup` (Name Server Lookup) is  used for querying DNS (Domain Name System) servers to retrieve domain name or IP address information. It allows users to check and troubleshoot DNS records, such as A records (IP addresses), MX records (mail servers), and others.
 
@@ -78,7 +78,7 @@ tryhackme.com	mail exchanger = 10 alt3.aspmx.l.google.com.
 tryhackme.com	mail exchanger = 5 alt2.aspmx.l.google.com.
 ```
 
-## dig
+## [dig]()
 
 `dig` (Domain Information Groper) is used to query DNS servers. It provides more detailed and customised results compared to `nslookup`. `dig` allows users to query specific record types, set timeouts, and perform reverse lookups.
 
@@ -105,14 +105,14 @@ thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
 ;; MSG SIZE  rcvd: 90
 ```
 
-## DNSDumpster
+## [DNSDumpster]()
 
 [DNSDumpster](https://dnsdumpster.com/) is an online tool that helps gather DNS records and details about a domain, including subdomains, IP addresses, and associated infrastructure.
 
 ![](Pasted%20image%2020241122170212.png)
 ![](Pasted%20image%2020241122170249.png)
 
-## Shodan
+## [Shodan]()
 
 [Shodan](https://www.shodan.io/) is a search engine that allows users to discover internet-connected devices and services, providing insights into their vulnerabilities and security status.
 

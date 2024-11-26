@@ -1,5 +1,5 @@
 ![](Pasted%20image%2020241121153341.png)
-## Introduction
+## [Introduction]()
 
 Burp suit is used to test web & mobile apps. It allows us to view, and edit http/https traffic.
 Some features include:
@@ -32,7 +32,7 @@ Some features include:
 
 
 
-## References
+## [References]()
 
 - <https://portswigger.net/burp/documentation/desktop/tools/proxy>
 - <https://portswigger.net/burp/documentation/desktop/tools/intruder>

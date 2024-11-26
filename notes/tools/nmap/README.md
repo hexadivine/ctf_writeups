@@ -1,15 +1,15 @@
 ![](a6b64823d42120e106cb7e89ceaa4817.png)
-# Introduction
+# [Introduction]()
 
 `Nmap` is a tool used to scan networks and find out which devices are connected, what services they are running, and if they have any security vulnerabilities. It's like a digital map that helps identify and analyse devices and systems on a network.
 
 Below are some uses of nmap scan
 
-# Nmap Reverse-DNS Lookup
+# [Nmap Reverse-DNS Lookup]()
 
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
 
-# Enumerating target
+# [Enumerating target]()
 
 ```
 $ nmap -sL -n 10.10.12.13/29
@@ -29,10 +29,10 @@ Nmap done: 8 IP addresses (0 hosts up) scanned in 0.00 seconds
 - `-sL`: tells nmap to simply list the targets **without** actually scanning them, meaning it will resolve and display the host-names and IP addresses of the specified range.
 - `-n`: tells nmap not to perform DNS resolution
 
-# Nmap Host Discovery Using
+# [Nmap Host Discovery Using]()
 
 `nmap` perform host discovery using `-sn` flag. By default it uses ping request.
-## ARP
+## [ARP]()
 
 This scan will send ARP request packets to every IP address on the subnet. We expect live hosts to reply.
 
@@ -62,7 +62,7 @@ Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
 
 ![](Pasted%20image%2020241123073028.png)
 
-## ICMP Echo
+## [ICMP Echo]()
 
 This scan will send ICMP echo packets to every IP address on the subnet. Again, we expect live hosts to reply.
 
@@ -104,7 +104,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 2.11 seconds
 
 ![](Pasted%20image%2020241123073106.png)
 
-## ICMP Timestamp
+## [ICMP Timestamp]()
 
 Because ICMP echo requests tend to be blocked, you might also consider ICMP Timestamp or ICMP Address Mask requests to tell if a system is online.
 
@@ -138,7 +138,7 @@ Nmap done: 256 IP addresses (8 hosts up) scanned in 10.93 seconds
 
 ![](Pasted%20image%2020241123073205.png)
 
-## ICMP Address Mask Request
+## [ICMP Address Mask Request]()
 
 Similarly, Nmap uses address mask queries (ICMP Type 17) and checks whether it gets an address mask reply (ICMP Type 18).
 
@@ -181,7 +181,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 17.38 seconds
 - `-PS` performs TCP SYN flag
 
 ![](Pasted%20image%2020241123073906.png)
-## TCP ACK
+## [TCP ACK]()
 
 A TCP ACK Ping Nmap scan sends ACK (Acknowledgement) packets to a target, typically to determine whether a host is up and which ports are filtered, without establishing a full connection. It relies on the behaviour of firewalls or filtering devices, where unfiltered ports will respond with a RST (Reset) packet, while filtered ports will not respond.
 
