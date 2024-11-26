@@ -353,16 +353,16 @@ let's check `sudo -l`
 
 ```
 $ sudo -l
-Matching Defaults entries for karen
-    on ip-10-10-79-2:
+Matching Defaults entries for karen on ip-10-10-79-2:
     env_reset, mail_badpass,
-    secure_path=/usr/local/sbin\:/usr/
-local/bin\:/usr/sbin\:/usr/bin\:/sbin\
-:/bin\:/snap/bin
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/
+bin\:/snap/bin
 
-User karen may run the following
-        commands on ip-10-10-79-2:
+User karen may run the following commands on ip-10-10-79-2:
     (ALL) NOPASSWD: /usr/bin/find
     (ALL) NOPASSWD: /usr/bin/less
     (ALL) NOPASSWD: /usr/bin/nano
 ```
+
+`sudo -l` reveals that karen can run `find`, `less` and `nano` as root. After searching how to use find command to gain root access on [gtfobins](https://gtfobins.github.io/gtfobins/find/#sudo), below command can give access to root shell.
+
