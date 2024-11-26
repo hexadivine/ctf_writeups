@@ -40,14 +40,14 @@ For more information on Whois status codes, please visit https://icann.org/epp
 
 `nslookup` (Name Server Lookup) is  used for querying DNS (Domain Name System) servers to retrieve domain name or IP address information. It allows users to check and troubleshoot DNS records, such as A records (IP addresses), MX records (mail servers), and others.
 
-|Query type|Result|
-|---|---|
-|A|IPv4 Addresses|
-|AAAA|IPv6 Addresses|
-|CNAME|Canonical Name|
-|MX|Mail Servers|
-|SOA|Start of Authority|
-|TXT|TXT Records|
+| Query type |       Result       |
+| :--------: | :----------------: |
+|     A      |   IPv4 Addresses   |
+|    AAAA    |   IPv6 Addresses   |
+|   CNAME    |   Canonical Name   |
+|     MX     |    Mail Servers    |
+|    SOA     | Start of Authority |
+|    TXT     |    TXT Records     |
 
 ```
 $ nslookup -type=A tryhackme.com 1.1.1.1
