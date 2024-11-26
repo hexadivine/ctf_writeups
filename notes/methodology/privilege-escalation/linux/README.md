@@ -307,4 +307,12 @@ Below are some useful examples for the “find” command.
 - `find / -cmin -60`: find files changed within the last hour (60 minutes)
 - `find / -amin -60`: find files accesses within the last hour (60 minutes)
 - `find / -size 50M`: find files with a 50 MB size
+- `find / -size +50M`: find files with a size above 50MB; `-50M` for below.
+- `find / -writable -type d` : Find world-writeable folders
+- `find / -perm -222 -type d`: Find world-writeable folders
+- `find / -perm -o w -type d`: Find world-writeable folders
+
+use  `2>/dev/null` to hide error messages, in first case it is  
+`find . -name flag1.txt 2>/dev/null`
+
 
