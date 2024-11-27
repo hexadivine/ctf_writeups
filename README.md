@@ -84,7 +84,7 @@
 
 ### Currently I'm
 
-* Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
+* Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen) and writing walkthrougs.
 * Participating in global ![CTF competitions](https://img.shields.io/badge/CTF%20competitions-black?logo=hack)
 * Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
@@ -109,14 +109,14 @@ rolling out of change requests  from production and non-production servers.
 
 {% tab title="Student Intern @ Cognizant" %} 
 
-- Built and deployed **Splunk architecture** to **fetch, store, and visualise** machine data on **AWS EC2 instances**.  
-- Learnt Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
+- **Task:** Built and deployed Splunk architecture to fetch, store, and visualise machine data on **AWS EC2 instances**.  
+- **Skills gained:** Splunk, Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
 
 {% endtab %}
 
 {% endtabs %}
 
-## Education
+### Education
 
 {% tabs %}
 
@@ -126,7 +126,10 @@ rolling out of change requests  from production and non-production servers.
 
 {% endtab %}
 
-{% tab title="Graduation" %} Here are the instructions for macOS {% endtab %}
+{% tab title="Graduation" %} 
+
+
+{% endtab %}
 
 {% endtabs %}
 
