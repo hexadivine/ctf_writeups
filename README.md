@@ -102,7 +102,6 @@
 
 </details>
 
-
 {% tabs %}
 
 {% tab title="Programmer Analyst @ Cognizant" %} 
