@@ -102,25 +102,29 @@
 
 </details>
 
+### Experience
+
 {% tabs %}
 
 {% tab title="Programmer Analyst @ Cognizant" %} 
 
-### Innovation Team
-- **Task** : Implement automation solution and make release management process efficient
-- **Skills required**: Node JS | Python | Bash | Jira
+#### Innovation Team
 
-### Core Team
-• **Planned** and provided support for **implementation**, **verification** and  
-**rolling out** of **297 change requests**  
-• from **production and non-production** servers of **30 product teams**  
-• out of which 294 changes closed successfully and 3 unsuccessful  
-changes were **rolled out successfully.**  
-(Jira | Service Now | Planning | Team-Management)
+- **Task:** Implement automation solution and make release management process efficient
+- **Skills required:** Node JS, Python, Bash, Jira
+
+#### Core Team
+
+- **Task:** Plan and provide support for implementation, verification and  
+rolling out of change requests  from production and non-production servers.
+- **Skills required:** Jira, Service Now, Release Management
 
 {% endtab %}
 
-{% tab title="OSX" %} Here are the instructions for macOS {% endtab %}
+{% tab title="Student Intern @ Cognizant" %} 
+
+
+{% endtab %}
 
 {% tab title="Linux" %} Here are the instructions for Linux {% endtab %}
 
