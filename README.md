@@ -108,6 +108,8 @@
 
 {% tab title="Student Intern @ Cognizant" %} 
 
+
+
 - **Task:** Built and deployed Splunk architecture to fetch, store, and visualise machine data on AWS EC2 instances.  
 - **Skills gained:** Splunk, Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
 
