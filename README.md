@@ -82,51 +82,52 @@
 
 </div>
 
-### Currently I'm
+### [Currently I'm]()
 
 * Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen) and writing walkthrougs.
 * Participating in global ![CTF competitions](https://img.shields.io/badge/CTF%20competitions-black?logo=hack)
 * Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
-### Experience
+### [Experience]()
 
 {% tabs %}
 
 {% tab title="Programmer Analyst @ Cognizant" %} 
 
-#### Innovation Team
+#### [Innovation Team]()
 
 - **Task:** Implement automation solution and make release management process efficient
 - **Skills required:** Node JS, Python, Bash, Jira
 
-#### Core Team
+#### [Core Team]()
 
-- **Task:** Plan and provide support for implementation, verification and  rolling out of change requests () from production  and non-production servers.
+- **Task:** Plan and provide support for implementation, verification and  rolling out of change requests (if necessary) from production  and non-production servers.
 - **Skills required:** Jira, Service Now, Release Management Skills
 
 {% endtab %}
 
 {% tab title="Student Intern @ Cognizant" %} 
 
-- **Task:** Built and deployed Splunk architecture to fetch, store, and visualise machine data on **AWS EC2 instances**.  
+- **Task:** Built and deployed Splunk architecture to fetch, store, and visualise machine data on AWS EC2 instances.  
 - **Skills gained:** Splunk, Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
 
 {% endtab %}
 
 {% endtabs %}
 
-### Education
+### [Education]()
 
 {% tabs %}
 
-{% tab title="Post-graduation" %}
+{% tab title="Masters in IT" %}
 
-
+- Pursuing Master in IT (Extension) degree from [UTS](https://www.uts.edu.au/)
 
 {% endtab %}
 
-{% tab title="Graduation" %} 
+{% tab title="Bachelors in CS" %} 
 
+- Completed Bachelors in CS from MIT AOE
 
 {% endtab %}
 
