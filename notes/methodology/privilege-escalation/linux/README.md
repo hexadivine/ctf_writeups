@@ -476,3 +476,77 @@ lxd:!:18796::::::
 karen:$6$VjcrKz/6S8rhV4I7$yboTb0MExqpMXW0hjEJgqLWs/jGPJA7N/fEoPMuYLY1w16FwL7ECCbQWJqYLGpy.Zscna9GILCSaNLJdBP1p8/:18796:0:99999:7:::
 ```
 
+## Capabilities
+
+In Linux, **capabilities** are fine-grained permissions that allow executables to perform specific privileged actions without full root access. They provide a way to delegate certain privileges to non-root processes.
+
+### Types of Linux Capabilities
+
+1. **CAP_CHOWN**: Change file ownership.
+2. **CAP_DAC_OVERRIDE**: Bypass file read, write, and execute permission checks.
+3. **CAP_NET_BIND_SERVICE**: Bind to network ports below 1024.
+4. **CAP_SYS_ADMIN**: Perform a wide range of administrative tasks (e.g., mount/unmount filesystems).
+5. **CAP_NET_RAW**: Use raw sockets.
+6. **CAP_SYS_TIME**: Change the system clock.
+7. **CAP_SETUID:** Change its user ID
+
+To enumerate files with such capabilities use below command.
+
+```
+$ getcap -r / 2>/dev/null
+
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_
+bind_service,cap_net_admin+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/mtr-packet = cap_net_raw+ep
+/usr/bin/ping = cap_net_raw+ep
+/home/karen/vim = cap_setuid+ep
+/home/ubuntu/view = cap_setuid+ep
+```
+
+[GTFObins](https://gtfobins.github.io/#+capabilities) has a good list of binaries that can be leveraged for privilege escalation if we find any set capabilities.
+
+![](Pasted%20image%2020241127150857.png)
+
+In this case `vim` can be exploited to gain escalated privilege
+
+![](Pasted%20image%2020241127151334.png)
+![](Pasted%20image%2020241127151354.png)
+
+## Cron Jobs
+
+Cron jobs are used to run scripts or binaries at specific times. By default, they run with the privilege of their owners and not the current user. The idea is quite simple; if there is a scheduled task that runs with root privileges and we can change the script that will be run, then our script will run with root privileges.
+
+Any user can read the file keeping system-wide cron jobs under `/etc/crontab`
+
+```
+$ cat /etc/crontab
+
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 ** * *root    cd / && run-parts --report /etc/cron.hourly
+25 6* * *roottest -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6* * 7roottest -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 61 * *roottest -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+* * * * *  root /antivirus.sh
+* * * * *  root antivirus.sh
+* * * * *  root /home/karen/backup.sh
+* * * * *  root /tmp/test.py
+```
+
