@@ -107,13 +107,8 @@
 {% tab title="Programmer Analyst @ Cognizant" %} 
 
 ### Innovation Team
-• **Task** : Automation and making release management process efficient  
-• Integrated **Jira** and **Service-Now** to **automate manual release  
-management tasks** by **30%** using **Node JS** and **REST APIs.**  
-• Built Dashboards & Structures in **Jira** using **JQLs** and **Rich Filters** for  
-the enterprise to monitor and manage changes, increasing release  
-management efficiency exponentially.  
-( Node JS | Python | Bash | Jira)
+- **Task** : Implement automation solution and make release management process efficient
+- **Skills required**: Node JS | Python | Bash | Jira
 
 ### Core Team
 • **Planned** and provided support for **implementation**, **verification** and  
