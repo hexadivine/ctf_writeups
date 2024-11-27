@@ -82,7 +82,7 @@
 
 </div>
 
-**CURRENTLY I'M**
+### CURRENTLY I'M
 
 * Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
 * Participating in global ![CTF competitions](https://img.shields.io/badge/CTF%20competitions-black?logo=hack)
@@ -110,7 +110,22 @@
 
 {% tab title="Programmer Analyst @ Cognizant" %} 
 
+# Innovation Team
+• **Task** : Automation and making release management process efficient  
+• Integrated **Jira** and **Service-Now** to **automate manual release  
+management tasks** by **30%** using **Node JS** and **REST APIs.**  
+• Built Dashboards & Structures in **Jira** using **JQLs** and **Rich Filters** for  
+the enterprise to monitor and manage changes, increasing release  
+management efficiency exponentially.  
+( Node JS | Python | Bash | Jira)
 
+# CORE TEAM
+• **Planned** and provided support for **implementation**, **verification** and  
+**rolling out** of **297 change requests**  
+• from **production and non-production** servers of **30 product teams**  
+• out of which 294 changes closed successfully and 3 unsuccessful  
+changes were **rolled out successfully.**  
+(Jira | Service Now | Planning | Team-Management)
 
 {% endtab %}
 
