@@ -94,12 +94,12 @@
 
 {% tab title="Programmer Analyst @ Cognizant" %} 
 
-#### [Innovation Team]()
+#### Innovation Team
 
 - **Task:** Implement automation solution and make release management process efficient
 - **Skills required:** Node JS, Python, Bash, Jira
 
-#### [Core Team]()
+#### Core Team
 
 - **Task:** Plan and provide support for implementation, verification and  rolling out of change requests (if necessary) from production  and non-production servers.
 - **Skills required:** Jira, Service Now, Release Management Skills
@@ -127,7 +127,7 @@
 
 {% tab title="Bachelors in CS" %} 
 
-- Completed Bachelors in CS from MIT AOE
+- Completed Bachelors in CS degree from [MIT AOE](https://mitaoe.ac.in/) in July 2021 with CGPA 8.17
 
 {% endtab %}
 
