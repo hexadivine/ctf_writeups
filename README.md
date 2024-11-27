@@ -108,9 +108,9 @@
 
 {% tab title="Student Intern @ Cognizant" %} 
 
+#### Student Intern
 
-
-- **Task:** Built and deployed Splunk architecture to fetch, store, and visualise machine data on AWS EC2 instances.  
+- **Task:** Build and deploy Splunk architecture to fetch, store, and visualise machine data on AWS EC2 instances.  
 - **Skills gained:** Splunk, Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
 
 {% endtab %}
@@ -136,6 +136,8 @@
 {% endtabs %}
 
 ### [Skills]()
+
+Currently I am gathering required skills for Red Teaming from TryHackMe and HackTheBox. Below list includes skills related to web development.
 
 <details>
 
