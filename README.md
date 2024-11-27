@@ -85,6 +85,7 @@
 **CURRENTLY I'M**
 
 * Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
+* Participating global ![CTF competitions](https://img.shields.io/badge/CTF-competitions-black?logo=hack)
 * Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
 <details>
