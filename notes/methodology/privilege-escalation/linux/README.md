@@ -374,3 +374,5 @@ Similarly `less` can be exploited as explained [here](https://gtfobins.github.io
 
 ## [SUID]()
 
+SUID (Set-user Identification) and SGID (Set-group Identification) allow files to be executed with the permission level of the file owner or the group owner, respectively.
+
