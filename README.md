@@ -82,6 +82,21 @@
 
 </div>
 
+
+<details>
+
+<summary>☰ About me</summary>
+
+* 🔭 I like Web Development and Cybersecurity.
+* 🎯 Specifically interested in MERN Stack and Pentesting.
+* 🌱 Learning all about JavaScript, Python and Offensive Security.
+* 🤝 Looking for:
+  * Junior roles in the field of Cyber-security.
+  * Collaboration on Open Source Projects in Web Development.
+* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
+
+</details>
+
 ### [Currently I'm]()
 
 * Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen) and writing walkthrougs.
@@ -160,28 +175,3 @@ Database
 [![SQL](https://img.shields.io/badge/SQL-003B57.svg?logo=sql\&logoColor=white)](https://github.com/search?q=user%3Ahexadivine+language%3Asql) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?logo=mongodb\&logoColor=white)](https://github.com/search?q=user%3Ahexadivine+language%3Amongodb)
 
 </details>
-
-### [Extras]()
-
-<details>
-
-<summary>☰ Links</summary>
-
-- [LinkedIn](https://www.linkedin.com/in/hrushikeshdolas)
-
-</details>
-
-<details>
-
-<summary>☰ More</summary>
-
-* 🔭 I like Web Development and Cybersecurity.
-* 🎯 Specifically interested in MERN Stack and Pentesting.
-* 🌱 Learning all about JavaScript, Python and Offensive Security.
-* 🤝 Looking for:
-  * Junior roles in the field of Cyber-security.
-  * Collaboration on Open Source Projects in Web Development.
-* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
-
-</details>
-
