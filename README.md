@@ -101,8 +101,7 @@
 
 #### Core Team
 
-- **Task:** Plan and provide support for implementation, verification and  
-rolling out of change requests  from production and non-production servers.
+- **Task:** Plan and provide support for implementation, verification and  rolling out of change requests () from production  and non-production servers.
 - **Skills required:** Jira, Service Now, Release Management Skills
 
 {% endtab %}
