@@ -645,3 +645,35 @@ uid=0(root) gid=0(root) groups=0(root),1001(karen)
 ```
 
 
+## [NFS]()
+
+NFS (Network File Sharing) configuration is kept in the `/etc/exports` file. This file is created during the NFS server installation and can usually be read by users.  The critical element for this privilege escalation vector is the `no_root_squash` option. By default, NFS will change the root user to `nfsnobody` and strip any file from operating with root privileges. **If the `no_root_squash` option is present** on a writable share, we can **create an executable with SUID bit** set and run it on the target system.
+
+```
+$ cat /etc/exports
+
+# /etc/exports: the access control list for filesystems which may be exported
+#		to NFS clients.  See exports(5).
+#
+# Example for NFSv2 and NFSv3:
+# /srv/homes       hostname1(rw,sync,no_subtree_check) hostname2(ro,sync,no_subtree_check)
+#
+# Example for NFSv4:
+# /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
+# /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)
+#
+/home/backup *(rw,sync,insecure,no_root_squash,no_subtree_check)
+/tmp *(rw,sync,insecure,no_root_squash,no_subtree_check)
+/home/ubuntu/sharedfolder *(rw,sync,insecure,no_root_squash,no_subtree_check)
+```
+
+We will start by enumerating mountable shares from our attacking machine.
+
+```
+┌─[lnxuser@lnxhost]─[~]
+└──╼ $showmount -e 10.10.102.151 
+Export list for 10.10.102.151:
+/home/ubuntu/sharedfolder *
+/tmp                      *
+/home/backup              *
+```
