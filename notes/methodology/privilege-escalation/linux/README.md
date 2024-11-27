@@ -585,3 +585,9 @@ uid=1001(karen) gid=1001(karen) euid=0(root) groups=1001(karen)
 
 `PATH` is the environmental variable. If a folder for which user has write permission is located in the path, you could potentially hijack an application to run a script. PATH in Linux is an environmental variable that tells the operating system where to search for executable.
 
+```
+$ echo $PATH
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+```
+
