@@ -554,6 +554,7 @@ In above case, backup.sh file is writable allow us to enter `nc` code which will
 
 ```
 $ ls -l /home/karen/backup.sh
+
 -rw-r--r-- 1 karen karen 77 Jun 20  2021 /home/karen/backup.sh
 ```
 
