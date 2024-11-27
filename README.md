@@ -85,21 +85,40 @@
 **CURRENTLY I'M**
 
 * Solving CTFs on ![TryHackMe](https://img.shields.io/badge/TryHackMe-red?logo=hack) and ![](https://img.shields.io/badge/HackTheBox-darkgreen)
-* Participating global ![CTF competitions](https://img.shields.io/badge/CTF-competitions-black?logo=hack)
+* Participating in global ![CTF competitions](https://img.shields.io/badge/CTF%20competitions-black?logo=hack)
 * Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
 <details>
 
-<summary>☰ BIO</summary>
+<summary>☰ More</summary>
 
 * 🔭 I like Web Development and Cybersecurity.
 * 🎯 Specifically interested in MERN Stack and Pentesting.
-* 🌱 Learning all about ReactJS and Offensive Security.
+* 🌱 Learning all about JavaScript, Python and Offensive Security.
 * 🤝 Looking for:
-  * Junior roles in the field of Cybersecurity.
+  * Junior roles in the field of Cyber-security.
   * Collaboration on Open Source Projects in Web Development.
-* ✉️ Ping me about Javascript and NodeJS.
 * 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
+
+</details>
+
+<details>
+
+<summary>☰ Experience</summary>
+
+{% tabs %}
+
+{% tab title="Programmer Analyst @ Cognizant" %} 
+
+
+
+{% endtab %}
+
+{% tab title="OSX" %} Here are the instructions for macOS {% endtab %}
+
+{% tab title="Linux" %} Here are the instructions for Linux {% endtab %}
+
+{% endtabs %}
 
 </details>
 
