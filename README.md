@@ -88,20 +88,6 @@
 * Participating in global ![CTF competitions](https://img.shields.io/badge/CTF%20competitions-black?logo=hack)
 * Building projects using ![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?) ![Express](https://img.shields.io/badge/Express-darkorange?) ![React](https://img.shields.io/badge/ReactJS-darkblue?) ![NodeJS](https://img.shields.io/badge/Nodes-darkyellow?)
 
-<details>
-
-<summary>☰ More</summary>
-
-* 🔭 I like Web Development and Cybersecurity.
-* 🎯 Specifically interested in MERN Stack and Pentesting.
-* 🌱 Learning all about JavaScript, Python and Offensive Security.
-* 🤝 Looking for:
-  * Junior roles in the field of Cyber-security.
-  * Collaboration on Open Source Projects in Web Development.
-* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
-
-</details>
-
 ### Experience
 
 {% tabs %}
@@ -130,6 +116,19 @@ rolling out of change requests  from production and non-production servers.
 
 {% endtabs %}
 
+## Education
+
+{% tabs %}
+
+{% tab title="Post-graduation" %}
+
+
+
+{% endtab %}
+
+{% tab title="Graduation" %} Here are the instructions for macOS {% endtab %}
+
+{% endtabs %}
 
 
 <details>
@@ -161,3 +160,18 @@ Database
 - [LinkedIn](https://www.linkedin.com/in/hrushikeshdolas)
 
 </details>
+
+<details>
+
+<summary>☰ More</summary>
+
+* 🔭 I like Web Development and Cybersecurity.
+* 🎯 Specifically interested in MERN Stack and Pentesting.
+* 🌱 Learning all about JavaScript, Python and Offensive Security.
+* 🤝 Looking for:
+  * Junior roles in the field of Cyber-security.
+  * Collaboration on Open Source Projects in Web Development.
+* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
+
+</details>
+
