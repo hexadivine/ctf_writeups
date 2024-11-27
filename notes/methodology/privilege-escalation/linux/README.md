@@ -550,3 +550,10 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 * * * * *  root /tmp/test.py
 ```
 
+In above case, backup.sh file is writable allow us to enter `nc` code which will run as root, providing root reverse shell.
+
+```
+$ ls -l /home/karen/backup.sh
+-rw-r--r-- 1 karen karen 77 Jun 20  2021 /home/karen/backup.sh
+```
+
