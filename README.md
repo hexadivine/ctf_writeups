@@ -111,7 +111,7 @@
 
 #### Innovation Team
 
-- **Task:** Implement automation solution and make release management process efficient
+- **Task:** Implement automation solutions and make release management process efficient
 - **Skills required:** Node JS, Python, Bash, Jira
 
 #### Core Team
