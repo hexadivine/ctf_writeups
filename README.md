@@ -117,16 +117,16 @@
 
 - **Task:** Plan and provide support for implementation, verification and  
 rolling out of change requests  from production and non-production servers.
-- **Skills required:** Jira, Service Now, Release Management
+- **Skills required:** Jira, Service Now, Release Management Skills
 
 {% endtab %}
 
 {% tab title="Student Intern @ Cognizant" %} 
 
+- Built and deployed **Splunk architecture** to **fetch, store, and visualise** machine data on **AWS EC2 instances**.  
+- Learnt Dev-Ops tools, Linux & Windows Server Administration, Cloud, CI/CD, AWS Fundamentals
 
 {% endtab %}
-
-{% tab title="Linux" %} Here are the instructions for Linux {% endtab %}
 
 {% endtabs %}
 
