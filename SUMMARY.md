@@ -23,6 +23,8 @@
 		* [🐧 linux](<notes/methodology/privilege-escalation/linux/README.md>)
 		* [🪟 windows](<notes/methodology/privilege-escalation/windows/README.md>)
 * 🐞 common exploits
+	* [🔓 cryptographic failures](notes/common-exploits/cryptographic-failures/README.md)
+	* [😶‍🌫️ insecure direct object reference](notes/common-exploits/insecure-direct-object-reference/README.md)
 	* [💉 sql injection](notes/common-exploits/sql-injection/README.md)
 	* [💉 command injection](notes/common-exploits/command-injection/README.md)
 	* [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
