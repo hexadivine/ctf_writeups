@@ -23,6 +23,7 @@
 		* [🐧 linux](<notes/methodology/privilege-escalation/linux/README.md>)
 		* [🪟 windows](<notes/methodology/privilege-escalation/windows/README.md>)
 * 🐞 common exploits
+	* [🕹️ remote code execution](notes/common-exploits/remote-code-execution/README.md)
 	* [🍪 data integrity failures - jwt](notes/common-exploits/data-integrity-failures---jwt/README.md)
 	* [🔓 cryptographic failures](notes/common-exploits/cryptographic-failures/README.md)
 	* [😶‍🌫️ insecure direct object reference](notes/common-exploits/insecure-direct-object-reference/README.md)
