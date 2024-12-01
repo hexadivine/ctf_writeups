@@ -12,6 +12,16 @@
       </tr>
    </thead>
    <tbody>
+   	 <tr>
+         <td></td>
+         <td>
+            <p><strong>Cap</strong> </p>
+            <p>Linux | Easy<br>Completed (1st Dec 2024)</p>
+         </td>
+         <td></td>
+         <td><a href="hack-the-box/cap/Pasted%20image%2020241201195858.png">Pasted image 20241111191207.png</a></td>
+         <td><a href="hack-the-box/cap/">cap</a></td>
+      </tr>
 	 <tr>
          <td></td>
          <td>
