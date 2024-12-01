@@ -60,7 +60,7 @@ Calling `makeInviteCode` function gives below response.
 }
 ```
 
-Data contains encrypted message with `rot13`.
+Data contains encoded message with `rot13`.
 
 ```
 ┌──[hexadivine@hackthebox]─[~]
