@@ -280,3 +280,19 @@ root@2million:~/CVE-2023-0386-master# find / -name root.txt 2>/dev/null
 root@2million:~/CVE-2023-0386-master# cat /root/root.txt
 c8d69b79ff310ddbc9c0bf42bf28f---
 ```
+
+# [Alternate Privilege Escalation]()
+
+The version of the `GLIBC` library on TwoMillion is `2.35`
+
+```
+admin@2million:~$ ldd --version
+ldd (Ubuntu GLIBC 2.35-0ubuntu3.1) 2.35
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+```
+
+Found `CVE-2023-4911` exploit for `GLIBC 2.35` and the [poc](https://github.com/NishanthAnand21/CVE-2023-4911-PoC?tab=readme-ov-file)
+
