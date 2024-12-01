@@ -4,13 +4,14 @@
 
 ## 🚶 CTF Walkthroughs
 
-* [🔭 overview](CTF-Walkthroughs/overview.md)
+* [🔭 overview](ctf-walkthroughs/overview.md)
 * 🏁 hack the box
-	* [🐧 greenhorn](CTF-Walkthroughs/hack-the-box/greenhorn/README.md)
-	* [🐧 sightless](CTF-Walkthroughs/hack-the-box/sightless/README.md)
-	* [🐧 sea](CTF-Walkthroughs/hack-the-box/sea/README.md)
+	* [🐧 two million](ctf-walkthroughs/hack-the-box/two-million/README.md)
+	* [🐧 greenhorn](ctf-walkthroughs/hack-the-box/greenhorn/README.md)
+	* [🐧 sightless](ctf-walkthroughs/hack-the-box/sightless/README.md)
+	* [🐧 sea](ctf-walkthroughs/hack-the-box/sea/README.md)
 * 🏁 try hack me
-	* [🐧 relevant](CTF-Walkthroughs/try-hack-me/relevant/README.md)
+	* [🐧 relevant](ctf-walkthroughs/try-hack-me/relevant/README.md)
 
 ## 📖 Notes
 
