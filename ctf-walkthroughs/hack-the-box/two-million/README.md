@@ -135,9 +135,14 @@ Need to update missing parameter `is_admin` and updating this parameter to allow
 ![](Pasted%20image%2020241201140707.png)
 ![](Pasted%20image%2020241201140725.png)
 
-Checking it we are now admin or not
+Checking it we are now admin or not. Below response suggest that we are indeed admin.
 
 ![](Pasted%20image%2020241201141100.png)
 
-Above response suggest that we are indeed admin.
+Now that we are admin, we can access `/api/v1/admin/vpn/generate` to generate user specific vpn file.
+
+![](Pasted%20image%2020241201142411.png)
+
+This is important because to generate vpn file the server will use bash command and we can try to inject our own command after `;` 
+
 
