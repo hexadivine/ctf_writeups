@@ -12,6 +12,16 @@
       </tr>
    </thead>
    <tbody>
+	 <tr>
+         <td></td>
+         <td>
+            <p><strong>Two Million</strong> </p>
+            <p>Linux | Easy<br>Completed (1st Dec 2024)</p>
+         </td>
+         <td></td>
+         <td><a href="hack-the-box/two-million/Pasted%20image%2020241201171446.png">Pasted image 20241111191207.png</a></td>
+         <td><a href="hack-the-box/two-million/">two million</a></td>
+      </tr>
       <tr>
          <td></td>
          <td>

@@ -1,4 +1,4 @@
-
+![](Pasted%20image%2020241201171446.png)
 # [Enumeration]()
 
 Scanning open ports of given IP - `10.10.11.221` @ `2million.htb`
@@ -257,6 +257,26 @@ I'm know you're working as fast as you can to do the DB migration. While we're p
 HTB Godfather
 ```
 
-Searching `OverlayFS / FUSE exploit` found [this](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/) article explaining `CVE-2023-0386`
+Searching `OverlayFS / FUSE exploit` found [this](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/) article explaining `CVE-2023-0386`. The github exploit is [here](https://github.com/sxlmnwb/CVE-2023-0386)
 
+# [Privilege Escalation]()
 
+Downloading [exploit zip](https://github.com/sxlmnwb/CVE-2023-0386/archive/refs/heads/master.zip)file to target system. Following below instructions.
+
+![](Pasted%20image%2020241201170611.png)
+
+![](Pasted%20image%2020241201170815.png)
+![](Pasted%20image%2020241201170936.png)
+
+This gives the root permissions. 
+
+# [CTRF]()
+
+Finding the `root.txt` file and capturing the root flag.
+
+```
+root@2million:~/CVE-2023-0386-master# find / -name root.txt 2>/dev/null
+/root/root.txt
+root@2million:~/CVE-2023-0386-master# cat /root/root.txt
+c8d69b79ff310ddbc9c0bf42bf28f---
+```
