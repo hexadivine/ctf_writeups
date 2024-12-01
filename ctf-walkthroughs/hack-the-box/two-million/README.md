@@ -103,3 +103,41 @@ Registering and logging in with the invite code `MI3MS-ONB8J-JPIXH-73VWR`
 
 ![](Pasted%20image%2020241201134041.png)
 
+Exploration helped find the <http://2million.htb/api> endpoint is publicly exposed.
+
+![](Pasted%20image%2020241201135737.png)
+
+This suggest to visit there might be `/api/v1` endpoint. Using Burp-suite to intercept and repeat the request.
+
+![](Pasted%20image%2020241201140017.png)
+![](Pasted%20image%2020241201140057.png)
+
+Below section looks interesting. 
+
+```json
+"admin":{"GET":{"\/api\/v1\/admin\/auth":"Check if user is admin"},"POST":{"\/api\/v1\/admin\/vpn\/generate":"Generate VPN for specific user"},"PUT":{"\/api\/v1\/admin\/settings\/update":"Update user settings"}}
+```
+
+Sending PUT request to `/api/v1/admin/settings/update` to update user settings
+
+![](Pasted%20image%2020241201140405.png)
+
+Need to update content type. In this case it's more likely `application/json`.
+
+![](Pasted%20image%2020241201140520.png)
+
+Need to update missing parameter `email`
+
+![](Pasted%20image%2020241201140620.png)
+
+Need to update missing parameter `is_admin` and updating this parameter to allow admin access.
+
+![](Pasted%20image%2020241201140707.png)
+![](Pasted%20image%2020241201140725.png)
+
+Checking it we are now admin or not
+
+![](Pasted%20image%2020241201141100.png)
+
+Above response suggest that we are indeed admin.
+
