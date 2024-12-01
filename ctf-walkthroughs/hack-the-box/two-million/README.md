@@ -142,7 +142,16 @@ Checking it we are now admin or not. Below response suggest that we are indeed a
 Now that we are admin, we can access `/api/v1/admin/vpn/generate` to generate user specific vpn file.
 
 ![](Pasted%20image%2020241201142411.png)
+![](Pasted%20image%2020241201143529.png)
+![](Pasted%20image%2020241201143613.png)
 
-This is important because to generate vpn file the server will use bash command and we can try to inject our own command after `;` 
+Below response shows the ovpn file. This is using `cat` command to view the file. We can exploit this to perform `command injection` exploit.
 
+![](Pasted%20image%2020241201143656.png)
+
+# Exploitation
+
+Inserting `a; ls #` payload to `username` parameter to perform command injection exploit.
+
+![](Pasted%20image%2020241201143342.png)
 
