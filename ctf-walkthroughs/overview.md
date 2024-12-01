@@ -12,32 +12,26 @@
       </tr>
    </thead>
    <tbody>
-   	 <tr>
+      <tr>
          <td></td>
-         <td>
-            <p><strong>Cap</strong> </p>
-            <p>Linux | Easy<br>Completed (1st Dec 2024)</p>
-         </td>
+         <td><strong>Cap</strong>
+         <br>Linux | Easy<br>Completed (1st Dec 2024)</td>
          <td></td>
          <td><a href="hack-the-box/cap/Pasted%20image%2020241201195858.png">Pasted image 20241111191207.png</a></td>
          <td><a href="hack-the-box/cap/">cap</a></td>
       </tr>
-	 <tr>
+      <tr>
          <td></td>
-         <td>
-            <p><strong>Two Million</strong> </p>
-            <p>Linux | Easy<br>Completed (1st Dec 2024)</p>
-         </td>
+         <td><strong>Two Million</strong>
+         <br>Linux | Easy<br>Completed (1st Dec 2024)</td>
          <td></td>
          <td><a href="hack-the-box/two-million/Pasted%20image%2020241201171446.png">Pasted image 20241111191207.png</a></td>
          <td><a href="hack-the-box/two-million/">two million</a></td>
       </tr>
       <tr>
          <td></td>
-         <td>
-            <p><strong>Greenhorn</strong> </p>
-            <p>Linux | Easy<br>Completed (9th Nov 2024)</p>
-         </td>
+         <td><strong>Greenhorn</strong>
+         <br>Linux | Easy<br>Completed (9th Nov 2024)</td>
          <td></td>
          <td><a href="hack-the-box/greenhorn/Pasted image 20241111191207.png">Pasted image 20241111191207.png</a></td>
          <td><a href="hack-the-box/greenhorn/">greenhorn</a></td>
@@ -68,4 +62,5 @@
       </tr>
    </tbody>
 </table>
+
 
