@@ -6,6 +6,7 @@
 
 * [🔭 overview](ctf-walkthroughs/overview.md)
 * 🏁 hack the box
+	* [🐧 evilcups](ctf-walkthroughs/hack-the-box/evilcups/README.md)
 	* [🐧 cap](ctf-walkthroughs/hack-the-box/cap/README.md)
 	* [🐧 two million](ctf-walkthroughs/hack-the-box/two-million/README.md)
 	* [🐧 greenhorn](ctf-walkthroughs/hack-the-box/greenhorn/README.md)
