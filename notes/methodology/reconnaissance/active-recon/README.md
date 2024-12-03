@@ -175,3 +175,9 @@ Check this website [here](https://crt.sh/)
 ![](Pasted%20image%2020241203192001.png)
 
 
+## Burp suite - site map
+
+Burp suite helps get the sitemap by crawling through the website. This shows routing handled by the server. More on burp suite [here](https://hexadivine.gitbook.io/hrushikeshdolas/notes/tools/burp-suite).
+
+![](Pasted%20image%2020241203203042.png)
+
