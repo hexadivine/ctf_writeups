@@ -3,6 +3,28 @@
 
 **Passive recon** involves gathering information without directly interacting with the target system, often using publicly available sources like websites, social media, and domain records.
 
+## [Search engines]()
+
+- Check out [advanced operations search list](https://github.com/cipher387/Advanced-search-operators-list)  for google dorks and more
+
+## [Basic Google dorks]()
+
+- **"keyword"**: Searches for an exact phrase.
+- **site:domain**: Limits search results to a specific website or domain (e.g., `site:example.com`).
+- **intitle:keyword**: Finds pages with a specific keyword in the title.
+- **inurl:keyword**: Finds pages with a specific keyword in the URL.
+- **intext:keyword**: Searches for a specific keyword in the text of the webpage (e.g., `intext:"confidential data"`).
+- **filetype:extension**: Finds files of a particular type (e.g., `filetype:pdf confidential`).
+- **AND, OR**: Combines multiple search conditions (e.g., `intitle:"index of" AND filetype:pdf`).
+- \*: Wildcard operator used to replace unknown words (e.g., `intitle:"index of *" inurl:password`).
+- **cache:URL**: Finds the cached version of a web page.
+## [Specialized Search Engines]()
+
+- [Shodan](https://www.shodan.io), a search engine for devices connected to the Internet. check out [shodan search examples](https://www.shodan.io/search/examples)
+- [Censys](https://search.censys.io/)focuses on Internet-connected hosts, websites, certificates, and other Internet assets. check out [search queries](https://support.censys.io/hc/en-us/categories/25499474122004-Censys-Search-Language)
+- [VirusTotal](https://www.virustotal.com/) is an online website that provides a virus-scanning service for files using multiple antivirus engines
+- [Have I Been Pwned](https://haveibeenpwned.com/) (HIBP) tells an email address has appeared in a leaked data breach.
+
 ## [whois]()
 
 The `whois` command is used to query domain registration information, providing details about the domain owner, registrar, and registration dates.
@@ -112,14 +134,11 @@ thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
 ![](Pasted%20image%2020241122170212.png)
 ![](Pasted%20image%2020241122170249.png)
 
-## [Shodan]()
+## [Vulnerabilities and Exploits]()
 
-[Shodan](https://www.shodan.io/) is a search engine that allows users to discover internet-connected devices and services, providing insights into their vulnerabilities and security status.
-
-![](Pasted%20image%2020241122170549.png)
-
-
-# [OSINT]()
+- use [CVE Program](https://www.cve.org/) or [National Vulnerability Database](https://nvd.nist.gov/) (NVD) for info about CVEs
+- [Exploit Database](https://www.exploit-db.com/). lists exploit codes
+- [GitHub](https://github.com), can contain many tools related to CVEs, along with proof-of-concept (PoC) and exploit codes.
 
 ## [Email recon]()
 
