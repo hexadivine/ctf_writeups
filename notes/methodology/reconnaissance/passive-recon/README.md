@@ -135,3 +135,8 @@ Emails of employees can be searched using [clearbit](https://chromewebstore.goog
 
 ![](Pasted%20image%2020241203190241.png)![](Pasted%20image%2020241203190610.png)
 
+## [Website build with info]()
+
+<https://builtwith.com/instagram.com> shows tech-stack, framework and how the site is uses other resources to achieve various goals.
+
+![](Pasted%20image%2020241203201728.png)
