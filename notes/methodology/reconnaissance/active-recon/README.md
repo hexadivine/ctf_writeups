@@ -125,7 +125,7 @@ Nmap done: 1 IP address (1 host up) scanned in 12.10 seconds
 
 ### [sublist3r]()
 
-
+If there is an error (`[!] Error: Virustotal probably now is blocking our requests`) remove the `virustotal` class \[[ref](https://github.com/aboul3la/Sublist3r/issues/343)]
 
 ```
 ┌──[hexadivine@hackthebox]─[~]
@@ -151,6 +151,20 @@ Nmap done: 1 IP address (1 host up) scanned in 12.10 seconds
 [-] Searching now in ThreatCrowd..
 [-] Searching now in SSL Certificates..
 [-] Searching now in PassiveDNS..
+
+[-] Total Unique Subdomains Found: 356
+www.tesla.com
+CitiApiEncProdv4.tesla.com
+CitiApiEncSandboxv4.tesla.com
+CitiApiSslProdv4.tesla.com
+CitiApiSslSandboxv4.tesla.com
+CitiBankStatementSHA512.tesla.com
+.
+[many results in between]
+.
+www-uat2.tesla.com
+www45.tesla.com
+xmail.tesla.com
 ```
 
 ## [crt.sh]()
@@ -159,4 +173,5 @@ Check this website [here](https://crt.sh/)
 
 ![](Pasted%20image%2020241203191947.png)
 ![](Pasted%20image%2020241203192001.png)
+
 
