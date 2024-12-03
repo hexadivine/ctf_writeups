@@ -121,4 +121,14 @@ thmlabs.com.		300	IN	TXT	"THM{a5b83929888ed36acb0272971e438d78}"
 
 # [OSINT]()
 
+## [Email recon]()
+
+Emails of employees can be searched using [clearbit](https://chromewebstore.google.com/detail/clearbit-connect-free-ver/pmnhcgfcafcnkbengdcanjablaabjplo)
+
+![](Pasted%20image%2020241203183559.png)
+
+
+[hunter.io](https://hunter.io/verify/hexadivine@gmail.com) can help verify the email address. With employee email you can find email of other employees.
+
+![](Pasted%20image%2020241203183939.png)
 
