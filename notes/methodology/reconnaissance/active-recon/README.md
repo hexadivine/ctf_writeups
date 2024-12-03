@@ -4,7 +4,8 @@
 
 **Active recon** requires you to interact with target to gather the information. This contact can be a phone call or a visit to the target company under some pretence to gather more information, usually as part of social engineering. Alternatively, it can be a direct connection to the target system, whether visiting their website or checking if their firewall has an SSH port open. Think of it like you are closely inspecting windows and door locks. Hence, it is essential to remember not to engage in active reconnaissance work before getting signed legal authorisation from the client.
 
-## [Web-browser]()
+## [Common Tools]()
+### [Web-browser]()
 
 There are also plenty of addons for Firefox and Chrome that can help in penetration testing. Here are a few examples:
 
@@ -13,7 +14,7 @@ There are also plenty of addons for Firefox and Chrome that can help in penetrat
 - **User-Agent Switcher and Manager** gives you the ability to pretend to be accessing the web-page from a different operating system or different web browser. In other words, you can pretend to be browsing a site using an iPhone when in fact, you are accessing it from Mozilla Firefox. You can download User-Agent Switcher and Manager for Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher).
 - **Wappalyzer** provides insights about the technologies used on the visited websites. Such extension is handy, primarily when you collect all this information while browsing the website like any other user. A screenshot of Wappalyzer is shown below. You can find Wappalyzer for Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer).
 
-## [ping]()
+### [ping]()
 
 `ping` is used to check network connectivity. It sends an ICMP Echo packet to a remote system. If the remote system is online, and the ping packet was correctly routed and not blocked by any firewall, the remote system should send back an ICMP Echo Reply. Similarly, the ping reply should reach the first system if appropriately routed and not blocked by any firewall.
 
@@ -32,7 +33,7 @@ PING 10.10.62.190 (10.10.62.190) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.396/0.475/0.636/0.086 m
 ```
 
-## [Traceroute]() 
+### [Traceroute]() 
 
 `Traceroute` is a network diagnostic tool that shows the path data takes from one device to another over the internet, identifying each hop and measuring the time it takes to reach each point.
 
@@ -52,7 +53,7 @@ traceroute to google.com (142.250.76.174), 30 hops max, 60 byte packets
 10  bom12s09-in-f14.1e100.net (142.250.76.174)  32.646 ms  32.942 ms  33.265 ms
 ```
 
-## [telnet]()
+### [telnet]()
 
 `telnet` uses the TELNET protocol for remote administration. The default port used by telnet is 23. From a security perspective, `telnet` sends all the data, including usernames and passwords, in clear text. Sending in clear text makes it easy for anyone, who has access to the communication channel, to steal the login credentials.
 
@@ -76,7 +77,7 @@ ETag: "611b9990-363"
 Accept-Ranges: bytes
 ```
 
-## [netcat]()
+### [netcat]()
 
 `Netcat` (nc) is a versatile networking tool used for reading from and writing to network connections, useful for troubleshooting, security testing, and creating network-based applications.
 
@@ -98,7 +99,7 @@ Accept-Ranges: bytes
 ...
 ```
 
-## [nmap]() 
+### [nmap]() 
 
 `Nmap` (Network Mapper) is an open-source tool used for network discovery and security auditing. It can scan networks to detect devices, open ports, services, and potential vulnerabilities. More on nmap [here](https://hexadivine.gitbook.io/hd/notes/tools/nmap)
 
@@ -119,3 +120,43 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.10 seconds
 
 ```
+
+## [Discover subdomain]()
+
+### [sublist3r]()
+
+
+
+```
+┌──[hexadivine@hackthebox]─[~]
+└──╼ $ sublist3r -d tesla.com
+
+                 ____        _     _ _     _   _____
+                / ___| _   _| |__ | (_)___| |_|___ / _ __
+                \___ \| | | | '_ \| | / __| __| |_ \| '__|
+                 ___) | |_| | |_) | | \__ \ |_ ___) | |
+                |____/ \__,_|_.__/|_|_|___/\__|____/|_|
+
+                # Coded By Ahmed Aboul-Ela - @aboul3la
+    
+[-] Enumerating subdomains now for tesla.com
+[-] Searching now in Baidu..
+[-] Searching now in Yahoo..
+[-] Searching now in Google..
+[-] Searching now in Bing..
+[-] Searching now in Ask..
+[-] Searching now in Netcraft..
+[-] Searching now in DNSdumpster..
+[-] Searching now in Virustotal..
+[-] Searching now in ThreatCrowd..
+[-] Searching now in SSL Certificates..
+[-] Searching now in PassiveDNS..
+```
+
+## [crt.sh]()
+
+Check this website [here](https://crt.sh/)
+
+![](Pasted%20image%2020241203191947.png)
+![](Pasted%20image%2020241203192001.png)
+

@@ -127,8 +127,11 @@ Emails of employees can be searched using [clearbit](https://chromewebstore.goog
 
 ![](Pasted%20image%2020241203183559.png)
 
-
 [hunter.io](https://hunter.io/verify/hexadivine@gmail.com) can help verify the email address. With employee email you can find email of other employees.
 
 ![](Pasted%20image%2020241203183939.png)
+
+<https://dehashed.com/>  shows compromised data (including email, username, name, address..etc.); however this is not free.
+
+![](Pasted%20image%2020241203190241.png)![](Pasted%20image%2020241203190610.png)
 
