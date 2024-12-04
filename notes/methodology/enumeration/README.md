@@ -180,3 +180,32 @@ rhosts => 192.168.0.102
 
 ### SMBClient
 
+```
+┌──[hexadivine@linux]─[~]
+└──╼ $ smbclient -L \\\\192.168.0.102
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	IPC$            IPC       IPC Service (Samba Server)
+	ADMIN$          IPC       IPC Service (Samba Server)
+Reconnecting with SMB1 for workgroup listing.
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+
+	Server               Comment
+	---------            -------
+	KIOPTRIX             Samba Server
+
+	Workgroup            Master
+	---------            -------
+	MYGROUP              KIOPTRIX
+┌──[hexadivine@linux]─[~]
+└──╼ $ smbclient \\\\192.168.0.102\\IPC$
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+Try "help" to get a list of possible commands.
+smb: \> ls
+NT_STATUS_NETWORK_ACCESS_DENIED listing \*
+```
