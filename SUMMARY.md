@@ -18,15 +18,16 @@
 ## 📖 Notes
 
 * 🪜 methodology
-	* 🔍 reconnaissance
+	*  🕵️ reconnaissance
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
+	* [🔍 ennumaration](notes/methodology/ennumaration/README.md)
 	* [🐛 vulnerability discovery & exploit](<notes/methodology/vulnerability-discovery-&-exploit/README.md>)
 	* 📈 privilege escalation
 		* [🐧 linux](<notes/methodology/privilege-escalation/linux/README.md>)
 		* [🪟 windows](<notes/methodology/privilege-escalation/windows/README.md>)
 * 🐞 common exploits
-	* [🕹️ file upload vulnerability](notes/common-exploits/remote-code-execution/README.md)
+	* [🗃️ file upload vulnerability](notes/common-exploits/file-upload-vulnerability/README.md)
 	* [🕹️ remote code execution](notes/common-exploits/remote-code-execution/README.md)
 	* [🍪 data integrity failures - jwt](notes/common-exploits/data-integrity-failures---jwt/README.md)
 	* [🔓 cryptographic failures](notes/common-exploits/cryptographic-failures/README.md)

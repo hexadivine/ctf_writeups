@@ -159,3 +159,56 @@ Emails of employees can be searched using [clearbit](https://chromewebstore.goog
 <https://builtwith.com/instagram.com> shows tech-stack, framework and how the site is uses other resources to achieve various goals.
 
 ![](Pasted%20image%2020241203201728.png)
+
+## [Discover subdomain]()
+
+### [sublist3r]()
+
+If there is an error (`[!] Error: Virustotal probably now is blocking our requests`) remove the `virustotal` class \[[ref](https://github.com/aboul3la/Sublist3r/issues/343)]
+
+```
+┌──[hexadivine@hackthebox]─[~]
+└──╼ $ sublist3r -d tesla.com
+
+                 ____        _     _ _     _   _____
+                / ___| _   _| |__ | (_)___| |_|___ / _ __
+                \___ \| | | | '_ \| | / __| __| |_ \| '__|
+                 ___) | |_| | |_) | | \__ \ |_ ___) | |
+                |____/ \__,_|_.__/|_|_|___/\__|____/|_|
+
+                # Coded By Ahmed Aboul-Ela - @aboul3la
+    
+[-] Enumerating subdomains now for tesla.com
+[-] Searching now in Baidu..
+[-] Searching now in Yahoo..
+[-] Searching now in Google..
+[-] Searching now in Bing..
+[-] Searching now in Ask..
+[-] Searching now in Netcraft..
+[-] Searching now in DNSdumpster..
+[-] Searching now in Virustotal..
+[-] Searching now in ThreatCrowd..
+[-] Searching now in SSL Certificates..
+[-] Searching now in PassiveDNS..
+
+[-] Total Unique Subdomains Found: 356
+www.tesla.com
+CitiApiEncProdv4.tesla.com
+CitiApiEncSandboxv4.tesla.com
+CitiApiSslProdv4.tesla.com
+CitiApiSslSandboxv4.tesla.com
+CitiBankStatementSHA512.tesla.com
+.
+[many results in between]
+.
+www-uat2.tesla.com
+www45.tesla.com
+xmail.tesla.com
+```
+
+## [crt.sh]()
+
+Check this website [here](https://crt.sh/)
+
+![](Pasted%20image%2020241203191947.png)
+![](Pasted%20image%2020241203192001.png)
