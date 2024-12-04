@@ -151,9 +151,9 @@ usage                   [Status: 301, Size: 293, Words: 19, Lines: 10, Duration:
 :: Progress: [20469/20469] :: Job [1/1] :: 4545 req/sec :: Duration: [0:00:06] :: Errors: 0 ::
 ```
 
-## Enumerating SMB
+## [Enumerating SMB]()
 
-### Version discovery
+### [Version discovery]()
 
 ```
 [msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_version) >> options
