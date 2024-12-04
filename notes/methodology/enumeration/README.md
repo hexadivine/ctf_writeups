@@ -153,5 +153,30 @@ usage                   [Status: 301, Size: 293, Words: 19, Lines: 10, Duration:
 
 ## Enumerating SMB
 
+### Version discovery
 
+```
+[msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_version) >> options
+
+Module options (auxiliary/scanner/smb/smb_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   RHOSTS                    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+
+
+View the full module info with the info, or info -d command.
+
+[msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_version) >> set rhosts 192.168.0.102
+rhosts => 192.168.0.102
+[msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_version) >> run
+
+[*] 192.168.0.102:139     - SMB Detected (versions:) (preferred dialect:) (signatures:optional)
+[*] 192.168.0.102:139     -   Host could not be identified: Unix (Samba 2.2.1a)
+[*] 192.168.0.102:        - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+```
+
+### SMBClient
 
