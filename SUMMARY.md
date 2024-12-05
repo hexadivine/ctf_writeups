@@ -23,10 +23,11 @@
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
 	* [🔍 ennumaration](notes/methodology/enumeration/README.md)
 	* [🐛 vulnerability discovery](<notes/methodology/vulnerability-scanning/README.md>)
-	* 📈 privilege escalation
+	* [🔓 exploitation](notes/methodology/exploitation/README.md)
+	* [📈 privilege escalation](notes/methodology/privilege-escalation)
 		* [🐧 linux](<notes/methodology/privilege-escalation/linux/README.md>)
 		* [🪟 windows](<notes/methodology/privilege-escalation/windows/README.md>)
-* 🐞 common exploits
+* [🐞 common exploits](notes/common-exploits/)
 	* [🗃️ file upload vulnerability](notes/common-exploits/file-upload-vulnerability/README.md)
 	* [🕹️ remote code execution](notes/common-exploits/remote-code-execution/README.md)
 	* [🍪 data integrity failures - jwt](notes/common-exploits/data-integrity-failures---jwt/README.md)
@@ -37,5 +38,6 @@
 	* [❌ cross site scripting - xss](notes/common-exploits/cross-site-scripting-xss/README.md)
 	* [🌐 server side request forgery - ssrf](notes/common-exploits/server-side-request-forgery-ssrf/README.md)
 * 🛠️ tools
+	* [🔁 hydra](notes/tools/hydra/README.md)
 	* [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
 	* [🔍 nmap](notes/tools/nmap/README.md)
