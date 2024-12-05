@@ -178,7 +178,7 @@ rhosts => 192.168.0.102
 [*] Auxiliary module execution completed
 ```
 
-### SMBClient
+### [SMBClient]()
 
 ```
 ┌──[hexadivine@linux]─[~]
