@@ -5,20 +5,20 @@
 ## 🚶 CTF Walkthroughs
 
 * [🔭 overview](ctf-walkthroughs/overview.md)
-* 🏁 hack the box
+* [🏁 hack the box](ctf-walkthroughs/hack-the-box)
 	* [🐧 evilcups](ctf-walkthroughs/hack-the-box/evilcups/README.md)
 	* [🐧 cap](ctf-walkthroughs/hack-the-box/cap/README.md)
 	* [🐧 two million](ctf-walkthroughs/hack-the-box/two-million/README.md)
 	* [🐧 greenhorn](ctf-walkthroughs/hack-the-box/greenhorn/README.md)
 	* [🐧 sightless](ctf-walkthroughs/hack-the-box/sightless/README.md)
 	* [🐧 sea](ctf-walkthroughs/hack-the-box/sea/README.md)
-* 🏁 try hack me
+* [🏁 try hack me](notes/methodology/reconnaissance)
 	* [🐧 relevant](ctf-walkthroughs/try-hack-me/relevant/README.md)
 
 ## 📖 Notes
 
-* 🪜 methodology
-	*  🕵️ reconnaissance
+* [🪜 methodology](notes/methodology)
+	*  [🕵️ reconnaissance](notes/methodology/reconnaissance)
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
 	* [🔍 ennumaration](notes/methodology/enumeration/README.md)
