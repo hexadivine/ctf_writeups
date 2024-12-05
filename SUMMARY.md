@@ -21,7 +21,7 @@
 	*  [🕵️ reconnaissance](notes/methodology/reconnaissance)
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
-	* [🔍 ennumaration](notes/methodology/enumeration/README.md)
+	* [🔍 enumeration](notes/methodology/enumeration/README.md)
 	* [🐛 vulnerability scanning](<notes/methodology/vulnerability-scanning/README.md>)
 	* [🔓 exploitation](notes/methodology/exploitation/README.md)
 		*  [🐞 common exploits](notes/common-exploits/)
