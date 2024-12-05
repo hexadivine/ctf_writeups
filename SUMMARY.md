@@ -17,7 +17,7 @@
 
 ## 📖 Notes
 
-* [🪜 methodology](notes/methodology)
+* 🪜 methodology
 	*  [🕵️ reconnaissance](notes/methodology/reconnaissance)
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
 		* [⚡ active recon](notes/methodology/reconnaissance/active-recon/README.md)
