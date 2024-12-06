@@ -15,7 +15,7 @@
 	 <tr>
          <td></td>
          <td><strong>Capture The Present</strong>
-         <br>CTF Competition</td>
+         <td>CTF Competition <br>06 Dec, 09:00</td>
          <td></td>
          <td><a href="ctf-events/capture-the-present/assets/Pasted%20image%2020241206164932.png">Pasted image 20241111191207.png</a></td>
          <td><a href="ctf-events/capture-the-present/README.md">Capture The Present</a></td>
