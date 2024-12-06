@@ -12,8 +12,10 @@
 	* [🐧 greenhorn](ctf-walkthroughs/hack-the-box/greenhorn/README.md)
 	* [🐧 sightless](ctf-walkthroughs/hack-the-box/sightless/README.md)
 	* [🐧 sea](ctf-walkthroughs/hack-the-box/sea/README.md)
-* [🏁 try hack me](notes/methodology/reconnaissance)
+* [🏁 try hack me](ctf-walkthroughs/try-hack-me)
 	* [🐧 relevant](ctf-walkthroughs/try-hack-me/relevant/README.md)
+* [🏁 ctf events](ctf-walkthroughs/ctf-events)
+	* [🏳️ capture the present](ctf-walkthroughs/ctf-events/capture-the-present/README.md)
 
 ## 📖 Notes
 
@@ -25,6 +27,7 @@
 	* [🐛 vulnerability scanning](<notes/methodology/vulnerability-scanning/README.md>)
 	* [🔓 exploitation](notes/methodology/exploitation/README.md)
 		*  [🐞 common exploits](notes/common-exploits/)
+			* [💠 xml external entity - xxe ](notes/methodology/exploitation/common-exploits/xml-external-entity-xxe/README.md)
 			* [🗃️ file upload vulnerability](notes/methodology/exploitation/common-exploits/file-upload-vulnerability/README.md)
 			* [🕹️ remote code execution](notes/methodology/exploitation/common-exploits/remote-code-execution/README.md)
 			* [🍪 data integrity failures - jwt](notes/methodology/exploitation/common-exploits/data-integrity-failures---jwt/README.md)
