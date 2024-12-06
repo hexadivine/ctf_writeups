@@ -75,7 +75,9 @@ https://karyathal.htb/wp-content/231/
 
 And found the flag `HTB{0bfusc4t1ng_th3_Str1ngs_1s_n0t_3n0ugh}`
 
-## Merging rivers
+{% endtab %}
+
+{% tab title="Merging rivers" %} 
 
 We have noticed lately that some Pages in our Knowledge base have been altered and reflected bad practices! We have checked our Confluence users but we didn't find anything out of place... However, we did have a network capture somewhere that might be of help! Can you help us out by finding how the attacker managed to get access to our Knowledge base? Hopefully when found, we can fix it so it wont happen again!
 
@@ -101,4 +103,6 @@ After decoding the `jwt.private.key` I found the flag.
 └──╼ $ echo SFRCe0FuMHRoM3JfZDR5XzRuMHRoM3JfYzBuZmx1M25jM19SQzMhIX0= | base64 -d
 HTB{An0th3r_d4y_4n0th3r_c0nflu3nc3_RC3!!}
 ```
+
+{% endtab %}
 
