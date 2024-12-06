@@ -93,7 +93,7 @@
 * 🤝 Looking for:
   * Junior roles in the field of Cyber-security.
   * Collaboration on Open Source Projects in Web Development.
-* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-hexadivine@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-hrushikeshdolas-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
+* 🙋‍♂️ Reach out to me via: [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:hexadivine@gmail.com) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0a66c2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/hrushikeshdolas/)
 
 </details>
 
