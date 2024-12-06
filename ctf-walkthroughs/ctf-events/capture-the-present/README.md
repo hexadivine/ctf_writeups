@@ -352,7 +352,7 @@ When admin bot visited the site our payload redirected the cookies to public htt
 
 ![](assets/Pasted%20image%2020241203012535.png)
 
-The flag is - `HTB{m0r3_th4n_ju5t_al3rts}
+The flag is -  `HTB{m0r3_th4n_ju5t_al3rts}`
 
 {% endtab %}
 
