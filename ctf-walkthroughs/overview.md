@@ -17,7 +17,7 @@
          <td>
 	         <strong>Capture The Present</strong>
 	         <br>CTF Competition 
-	         <br>06 Dec, 09:00
+	         <br>04 Dec, 03:00
 		</td>
          <td></td>
          <td><a href="ctf-events/capture-the-present/assets/Pasted%20image%2020241206164932.png">Pasted image 20241111191207.png</a></td>
