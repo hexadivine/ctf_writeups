@@ -1,15 +1,17 @@
-
+![](assets/Pasted%20image%2020241206164932.png)
 # Forensics
 
-## Glowup
+{% tabs %}
+
+{% tab title="Glowup" %} 
 
 We managed to retrieve some artifacts from a recent phishing incident. To further investigate the attack we need to analyse the provided document. Examine it and find out what the next steps of the malware are.
 
-### Solution
+### Approach
 
 Checking provided zip file. After extracting it I found artifacts.js file.
 
-![](Pasted%20image%2020241202135134.png)
+![](assets/Pasted%20image%2020241202135134.png)
 
 ```javascript
 var urls = ["loqKjo3E0dGTl4yfl5mMkYuO0JaKnNGJjtOXkJ2Si5qbjdGJlZ2Jx87MzsvR", "loqKjo3E0dGZm5HTl4rQloqc0Z2NjdGPzYTNkpSRzcfK0baqvIXOnJiLjZ3Kis+QmaGKls2hrYqMz5CZjaHPjaGQzoqhzZDOi5mWgw==", "loqKjo3E0dGdn4ybm4zQloqc0YmO052RkIqbkIrRzpCEjo6Gj8rH0Q==", "loqKjo3E0dGZm5HTl4rQloqc0Z2NjdGPzYTNkpSRzcfK0Q==", "loqKjsTR0YmJidCdnJCQm4mNmpeMm52K0JaKnNGJkYyajoybjY3Ry5LPlY6GysvR", "loqKjo3E0dGVn4yHn4qWn5LQloqc0YmO052RkIqbkIrRzM3P0Q=="],
@@ -99,3 +101,4 @@ After decoding the `jwt.private.key` I found the flag.
 └──╼ $ echo SFRCe0FuMHRoM3JfZDR5XzRuMHRoM3JfYzBuZmx1M25jM19SQzMhIX0= | base64 -d
 HTB{An0th3r_d4y_4n0th3r_c0nflu3nc3_RC3!!}
 ```
+
