@@ -6,7 +6,7 @@ An ancient treasure has been located deep underground in a complex network of ca
 
 Extracted provided zip file
 
-![](Pasted%20image%2020241202142030.png)
+![](../assets/Pasted%20image%2020241202142030.png)
 
 Checking file.
 
