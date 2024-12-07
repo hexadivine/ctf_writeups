@@ -63,7 +63,7 @@ In Active Directory (AD), a trust is a relationship established between two doma
 
 ![](assets/Pasted%20image%2020241207171611.png)
 
-### Objects
+### [Objects]()
 
 An **object** is a distinct entity or resource that is stored within the directory and has a specific set of attributes. These objects can represent users, computers, groups, printers, organizational units (OUs), and more. Each object in Active Directory has a unique **distinguished name (DN)**, which helps to identify it within the directory.
 
