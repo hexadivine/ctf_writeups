@@ -15,15 +15,9 @@
 <img src="https://img.shields.io/badge/-M-FFD700" alt="M">
 
  
-
-<img src="https://img.shields.io/badge/--000000" alt="">
-
- 
-
 <img src="https://img.shields.io/badge/-H-006400" alt="H">
 
  
-
 <img src="https://img.shields.io/badge/-R-00008B" alt="R">
 
  
@@ -57,9 +51,6 @@
 
 <img src="https://img.shields.io/badge/-H-00CED1" alt="H">
  
-
-<img src="https://img.shields.io/badge/--000000" alt="">
-
  
 
 <img src="https://img.shields.io/badge/-D-FA8072" alt="D">

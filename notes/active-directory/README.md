@@ -31,3 +31,9 @@ This includes components such as partitions, schema, domains, domain trees, fore
 It's a like a blueprint. Defines every type of schema that can be stored in the directory. Enforces rules regarding object creation and configuration.
 
 ![](assets/Pasted%20image%2020241207133435.png)
+
+### [Domains]()
+
+
+
+![](assets/Pasted%20image%2020241207133800.png)
