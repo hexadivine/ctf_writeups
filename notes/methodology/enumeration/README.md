@@ -112,7 +112,9 @@ Nmap done: 1 IP address (1 host up) scanned in 19.50 seconds
 
 ![](assets/Pasted%20image%2020241204200831.png)
 
-### [Fuff - dir/files/subdomains bruteforce]()
+### [Fuff]()
+
+#### [Bruteforce directories]()
 
 This is used to burteforce the directories/files/subdomains. Use FUZZ keyword as a placeholder for words from wordlist. (`-w`)
 
@@ -151,6 +153,40 @@ usage                   [Status: 301, Size: 293, Words: 19, Lines: 10, Duration:
 :: Progress: [20469/20469] :: Job [1/1] :: 4545 req/sec :: Duration: [0:00:06] :: Errors: 0 ::
 ```
 
+#### [Bruteforce subdomains]()
+
+```
+┌──[hexadivine@linux]─[~]
+└──╼ $ ffuf -c -u http://linkvortex.htb -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -H 'HOST: FUZZ.linkvortex.htb' -fc 301
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://linkvortex.htb
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
+ :: Header           : Host: FUZZ.linkvortex.htb
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response status: 301
+________________________________________________
+
+dev                     [Status: 200, Size: 2538, Words: 670, Lines: 116, Duration: 205ms]
+:: Progress: [4989/4989] :: Job [1/1] :: 294 req/sec :: Duration: [0:00:19] :: Errors: 0 ::
+```
+
+- `-H "HOST: FUZZ.linkvortex.htb"`: This option sets a custom header for the fuzzing requests. The `HOST` header is being set to `FUZZ.linkvortex.htb`, where `FUZZ` will be replaced with each word from the specified wordlist during the fuzzing process.
+- `-fc 301`: This option tells `ffuf` to filter the results based on the status code. In this case, it will only display results where the status code is not `301`, which indicates a permanent redirect.
 ## [Enumerating SMB]()
 
 ### [Version discovery]()
