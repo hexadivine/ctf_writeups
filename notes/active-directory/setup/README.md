@@ -184,4 +184,12 @@ Updated object
 ![](assets/Pasted%20image%2020241213163040.png)
 ![](assets/Pasted%20image%2020241213163134.png)
 
-- After creating the group policy right click on newly created policy i.e. 
+- After creating the group policy right click on newly created policy in this case Disable windows defender and click edit
+
+![](assets/Pasted%20image%2020241213163355.png)
+![](assets/Pasted%20image%2020241213163427.png)
+
+- Select Microsoft Defender Antivirus under windows Components.
+
+![](assets/Pasted%20image%2020241213163522.png)
+![](assets/Pasted%20image%2020241213163641.png)
