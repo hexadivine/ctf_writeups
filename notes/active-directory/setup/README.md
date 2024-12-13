@@ -249,3 +249,5 @@ Updated object
 - Click on join this device to a local active directory domain.
 
 ![](assets/Pasted%20image%2020241213180745.png)
+
+
