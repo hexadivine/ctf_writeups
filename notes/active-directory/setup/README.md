@@ -3,7 +3,8 @@
 
 - Download [windows server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022), [windows enterprise](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and virtual box.
 
-# [Setup Windows Server 2022]()
+# [Installation]()
+## [Windows Server 2022]()
 
 - While creating windows server 2022 on virtual box click on skip unattended installation to manually install.
 
@@ -67,7 +68,7 @@
 
 - Lastly, reboot the server.
 
-# [Setup User Machines]()
+## [User Machines]()
 
 - Similar to windows server, while creating Screenshot at 2024-12-13 12-37-00virtual box for windows enterprise click on skip unattended installation and follow below 
 
@@ -90,4 +91,6 @@
 ![](assets/Pasted%20image%2020241213130713.png)
 
 - Perform same process for another user as we need 2 users.
+
+# [User, Groups & Policies]()
 
