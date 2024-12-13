@@ -219,6 +219,16 @@ Updated object
 
 - As this is enforced, any User/Computer who joins the domain will fetch this policy and apply it.
 
+## [Use static IP]()
+
+- Update the ip for windows server to static ip.
+
+![](assets/Pasted%20image%2020241213172442.png)
+![](assets/Pasted%20image%2020241213172539.png)
+
+- Click change adapter options and click on properties
+
+![](assets/Pasted%20image%2020241213172643.png)
 
 
 # [Setup users]()
