@@ -44,3 +44,5 @@
 	* [🔁 hydra](notes/tools/hydra/README.md)
 	* [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
 	* [🔍 nmap](notes/tools/nmap/README.md)
+- [📚 active directory](notes/active-directory/README.md)
+	- 

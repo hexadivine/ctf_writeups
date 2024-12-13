@@ -5,7 +5,7 @@
 
 {% tab title="Glowup" %} 
 
-We managed to retrieve some artifacts from a recent phishing incident. To further investigate the attack we need to analyse the provided document. Examine it and find out what the next steps of the malware are.
+We managed to retrieve some artifacts from a recent phishing incident. To further investigate the attack we need to analyse the provided document. Examine it and find out what the next steps of the malware are.  
 
 ## [Approach]()
 
