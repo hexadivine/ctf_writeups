@@ -240,3 +240,5 @@ Updated object
 
 - Follow same process as above to update static ip for both users.
 
+## [Join to AD]()
+
