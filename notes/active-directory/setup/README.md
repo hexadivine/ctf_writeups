@@ -4,6 +4,13 @@
 # [Requirements]()
 
 - Download [windows server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022), [windows enterprise](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and virtual box.
+- It is required to have these vms: server, and 2 windows enterprise on same network hence creating NAT Network. 
+- Run below command in linux to create natnetwork.
+
+```
+VBoxManage natnetwork add --netname natnet1 --network "192.168.15.0/24" --enable --dhcp on
+```
+
 
 # [Installation]()
 ## [Windows Server 2022]()
