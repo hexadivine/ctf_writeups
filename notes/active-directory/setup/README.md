@@ -11,6 +11,9 @@
 VBoxManage natnetwork add --netname natnet1 --network "192.168.15.0/24" --enable --dhcp on
 ```
 
+- For each vm network setting set adaptor to NAT Network.
+
+![](assets/Pasted%20image%2020241213171817.png)
 
 # [Installation]()
 ## [Windows Server 2022]()
@@ -215,6 +218,8 @@ Updated object
 ![](assets/Pasted%20image%2020241213164140.png)
 
 - As this is enforced, any User/Computer who joins the domain will fetch this policy and apply it.
+
+
 
 # [Setup users]()
 
