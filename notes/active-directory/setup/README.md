@@ -193,3 +193,17 @@ Updated object
 
 ![](assets/Pasted%20image%2020241213163522.png)
 ![](assets/Pasted%20image%2020241213163641.png)
+
+- Double click on Turn off microsoft defender antivirus > select enable > apply
+
+![](assets/Pasted%20image%2020241213163815.png)
+![](assets/Pasted%20image%2020241213163911.png)
+
+- After this close editor and enforce the policy
+
+![](assets/Pasted%20image%2020241213164043.png)
+
+- After clicking enforced check Enforced column to the right table it should say yes.
+
+![](assets/Pasted%20image%2020241213164140.png)
+
