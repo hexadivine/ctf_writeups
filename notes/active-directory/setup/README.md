@@ -94,3 +94,14 @@
 
 # [User, Groups & Policies]()
 
+- Bootup windows server vm
+- Go to tools > Active Directory Users and Computers
+
+![](assets/Pasted%20image%2020241213135346.png)
+![](assets/Pasted%20image%2020241213135442.png)
+
+- Create a new organisational unit for groups, and move all 'security groups' to Groups OU.
+
+![](assets/Pasted%20image%2020241213135546.png)
+![](assets/Pasted%20image%2020241213135615.png)
+![](assets/Pasted%20image%2020241213135741.png)
