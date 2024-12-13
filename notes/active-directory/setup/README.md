@@ -189,7 +189,7 @@ Updated object
 ![](assets/Pasted%20image%2020241213163355.png)
 ![](assets/Pasted%20image%2020241213163427.png)
 
-- Select Microsoft Defender Antivirus under windows Components.
+- Select Microsoft Defender Antivirus under Windows Components.
 
 ![](assets/Pasted%20image%2020241213163522.png)
 ![](assets/Pasted%20image%2020241213163641.png)
@@ -206,4 +206,6 @@ Updated object
 - After clicking enforced check Enforced column to the right table it should say yes.
 
 ![](assets/Pasted%20image%2020241213164140.png)
+
+- As this is enforced, any User/Computer who joins the domain will fetch this policy and apply it.
 
