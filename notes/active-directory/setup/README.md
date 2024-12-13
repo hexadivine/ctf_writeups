@@ -84,7 +84,7 @@
 ![](assets/Pasted%20image%2020241213130400.png)
 ![](assets/Pasted%20image%2020241213130444.png)
 
- - click on 'Domain join instead', set up name, password, security question
+ - Click on 'Domain join instead', set up name, password, security question
 
 ![](assets/Pasted%20image%2020241213130002.png)
 ![](assets/Pasted%20image%2020241213130608.png)
@@ -95,6 +95,9 @@
 # [User, Groups & Policies]()
 
 - Bootup windows server vm
+
+## [Create group and move security groups]()
+
 - Go to tools > Active Directory Users and Computers
 
 ![](assets/Pasted%20image%2020241213135346.png)
@@ -106,4 +109,5 @@
 ![](assets/Pasted%20image%2020241213135615.png)
 ![](assets/Pasted%20image%2020241213135741.png)
 ![](assets/Pasted%20image%2020241213135829.png)
+
 
