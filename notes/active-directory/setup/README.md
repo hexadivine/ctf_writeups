@@ -152,6 +152,14 @@
 
 ## [SQL Server setup]()
 
-```
 
+
+```
+C:\Users\Administrator>setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
+
+Checking domain DC=marval,DC=local
+
+Registering ServicePrincipalNames for CN=SQL Service,CN=Users,DC=marval,DC=local
+	MARVAL/SQLService.MARVAL.local:60111
+Updated object
 ```
