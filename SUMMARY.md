@@ -19,6 +19,8 @@
 
 ## 📖 Notes
 
+- [📚 active directory](notes/active-directory/README.md)
+	- [⚙️ setup](notes/active-directory/setup/README.md)
 * 🪜 methodology
 	*  🕵️ reconnaissance
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
@@ -44,5 +46,3 @@
 	* [🔁 hydra](notes/tools/hydra/README.md)
 	* [👩‍👦‍👦 burp suite](notes/tools/burp-suite/README.md)
 	* [🔍 nmap](notes/tools/nmap/README.md)
-- [📚 active directory](notes/active-directory/README.md)
-	- [se](notes/active-directory/setup/README.md)
