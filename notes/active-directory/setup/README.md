@@ -94,7 +94,7 @@
 
 - Perform same process for another user as we need 2 users.
 
-# [User, Groups, Services & Policies]()
+# [Windows server setup]()
 
 - Bootup windows server vm
 
