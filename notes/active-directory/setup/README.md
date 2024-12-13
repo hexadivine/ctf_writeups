@@ -1,4 +1,6 @@
 
+![](assets/Pasted%20image%2020241213153707.png)
+
 # [Requirements]()
 
 - Download [windows server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022), [windows enterprise](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and virtual box.
@@ -135,3 +137,4 @@
 - Perform same steps for user Steven Rogers
 
 ![](assets/Pasted%20image%2020241213153053.png)
+
