@@ -123,3 +123,6 @@
 - Perform same settings to create Peter Parker user and SQL Service user.
 
 ![](assets/Pasted%20image%2020241213141629.png)
+![](assets/Pasted%20image%2020241213141902.png)
+
+
