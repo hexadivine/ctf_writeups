@@ -173,7 +173,15 @@ Updated object
 
 ## [Group policy setup]()
 
-- For this lab we will This policy will be pushed to entire domain.
+- For this lab we will disable Microsoft firewall to launch various attacks (not safe). This policy will be pushed to entire domain.
 
 ![](assets/Pasted%20image%2020241213162224.png)
 ![](assets/Pasted%20image%2020241213162653.png)
+
+- Right click on domain (i.e. marvel.local) and select first option.
+
+![](assets/Pasted%20image%2020241213162920.png)
+![](assets/Pasted%20image%2020241213163040.png)
+![](assets/Pasted%20image%2020241213163134.png)
+
+- After creating the group policy right click on newly created policy i.e. 
