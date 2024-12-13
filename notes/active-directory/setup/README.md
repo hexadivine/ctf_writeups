@@ -67,3 +67,6 @@
 
 - Lastly, reboot the server.
 
+# [Setup User Machines]()
+
+- Similar to windows server, while creating virtual box for windows enterprise click on skip 
