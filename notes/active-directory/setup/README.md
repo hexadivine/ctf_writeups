@@ -110,4 +110,12 @@
 ![](assets/Pasted%20image%2020241213135741.png)
 ![](assets/Pasted%20image%2020241213135829.png)
 
+## [Create new users and service]()
+
+- In this scenario, we are copying administrator user settings to create new users for simplicity (**which is a big no no as administrator has multiple elevated accesses**)
+- Right click on administrator and click on copy.
+
+![](assets/Pasted%20image%2020241213141029.png)
+![](assets/Pasted%20image%2020241213141130.png)
+![](assets/Pasted%20image%2020241213141230.png)
 
