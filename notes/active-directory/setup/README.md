@@ -72,3 +72,7 @@
 - Similar to windows server, while creating Screenshot at 2024-12-13 12-37-00virtual box for windows enterprise click on skip unattended installation and follow below 
 
 ![](assets/Pasted%20image%2020241213123946.png)
+![](assets/Pasted%20image%2020241213125146.png)
+![](assets/Pasted%20image%2020241213125211.png)
+![](assets/Pasted%20image%2020241213125238.png)
+![](assets/Pasted%20image%2020241213125258.png)
