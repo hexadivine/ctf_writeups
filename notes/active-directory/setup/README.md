@@ -236,3 +236,7 @@ Updated object
 ![](assets/Pasted%20image%2020241213173000.png)
 # [Setup users]()
 
+## [Use static IP]()
+
+- Follow same process as above to update static ip for both users.
+
