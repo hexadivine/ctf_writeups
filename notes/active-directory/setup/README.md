@@ -226,10 +226,13 @@ Updated object
 ![](assets/Pasted%20image%2020241213172442.png)
 ![](assets/Pasted%20image%2020241213172539.png)
 
-- Click change adapter options and click on properties
+- Click change adapter options and click on properties > select ipv4 > properties
 
 ![](assets/Pasted%20image%2020241213172643.png)
+![](assets/Pasted%20image%2020241213172757.png)
 
+- Setting the IP to `192.168.15.4` making it static.
 
+![](assets/Pasted%20image%2020241213173000.png)
 # [Setup users]()
 
