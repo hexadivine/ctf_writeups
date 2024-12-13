@@ -125,4 +125,7 @@
 ![](assets/Pasted%20image%2020241213141629.png)
 ![](assets/Pasted%20image%2020241213141902.png)
 
+- Now create 2 low level users
+- Right click > new > user
 
+![](assets/Pasted%20image%2020241213152535.png)
