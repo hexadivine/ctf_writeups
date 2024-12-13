@@ -118,4 +118,8 @@
 ![](assets/Pasted%20image%2020241213141029.png)
 ![](assets/Pasted%20image%2020241213141130.png)
 ![](assets/Pasted%20image%2020241213141230.png)
+![](assets/Pasted%20image%2020241213141247.png)
 
+- Perform same settings to create Peter Parker user and SQL Service user.
+
+![](assets/Pasted%20image%2020241213141629.png)
