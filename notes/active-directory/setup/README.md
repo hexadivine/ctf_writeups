@@ -173,4 +173,7 @@ Updated object
 
 ## [Group policy setup]()
 
+- For this lab we will This policy will be pushed to entire domain.
+
 ![](assets/Pasted%20image%2020241213162224.png)
+![](assets/Pasted%20image%2020241213162653.png)
