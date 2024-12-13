@@ -1,0 +1,251 @@
+
+![](assets/Pasted%20image%2020241213153707.png)
+
+# [Requirements]()
+
+- Download [windows server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022), [windows enterprise](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and virtual box.
+- It is required to have these vms: server, and 2 windows enterprise on same network hence creating NAT Network. 
+- Run below command in linux to create natnetwork.
+
+```
+VBoxManage natnetwork add --netname natnet1 --network "192.168.15.0/24" --enable --dhcp on
+```
+
+- For each vm network setting set adaptor to NAT Network.
+
+![](assets/Pasted%20image%2020241213171817.png)
+
+# [Installation]()
+## [Windows Server 2022]()
+
+- While creating windows server 2022 on virtual box click on skip unattended installation to manually install.
+
+![](assets/Pasted%20image%2020241209173217.png)
+
+- After successful install of windows server 2022 it should look like below.
+
+![](assets/Pasted%20image%2020241209173529.png)
+
+- Click on add roles and features.
+
+![](assets/Pasted%20image%2020241209173638.png)
+- Follow below steps to install ADDS (Active Directory Domain Services)
+
+![](assets/Pasted%20image%2020241209173737.png)
+![](assets/Pasted%20image%2020241209173805.png)
+![](assets/Pasted%20image%2020241209174229.png)
+![](assets/Pasted%20image%2020241209174447.png)
+![](assets/Pasted%20image%2020241209174528.png)
+![](assets/Pasted%20image%2020241209174620.png)
+![](assets/Pasted%20image%2020241209174645.png)
+![](assets/Pasted%20image%2020241209174718.png)
+![](assets/Pasted%20image%2020241209174731.png)
+![](assets/Pasted%20image%2020241209183239.png)
+
+- After that click on promote this server to domain controller. Here we need to create a new forest and set up a password for DSRM.
+
+![](assets/Pasted%20image%2020241209183715.png)
+![](assets/Pasted%20image%2020241209183925.png)
+![](assets/Pasted%20image%2020241209184325.png)
+![](assets/Pasted%20image%2020241209184359.png)
+![](assets/Pasted%20image%2020241209184433.png)
+![](assets/Pasted%20image%2020241209184511.png)
+![](assets/Pasted%20image%2020241209184642.png)
+![](assets/Pasted%20image%2020241209184745.png)
+![](assets/Pasted%20image%2020241209184933.png)
+
+- After reboot login in to MARVEL/Administrator and use the administrator password set while creating the winserver 2022. 
+- After this we will set the certificate services. Used to verify identities on DS and set up secure LDAP. Follow same process Manage > Add roles and features > (next)x3 > 
+
+![](assets/Pasted%20image%2020241209190016.png)
+![](assets/Pasted%20image%2020241209190031.png)
+
+- After keeping default and press next 3 times and install.
+
+![](assets/Pasted%20image%2020241209190145.png)
+![](assets/Pasted%20image%2020241209190155.png)
+![](assets/Pasted%20image%2020241209190242.png)
+
+- Click on configure AD certificate services on destination server.
+
+![](assets/Pasted%20image%2020241209190341.png)
+![](assets/Pasted%20image%2020241209190422.png)
+![](assets/Pasted%20image%2020241209190432.png)![](assets/Pasted%20image%2020241209190505.png)
+![](assets/Pasted%20image%2020241209190546.png)
+![](assets/Pasted%20image%2020241209190600.png)
+![](assets/Pasted%20image%2020241209190611.png)
+![](assets/Pasted%20image%2020241209190627.png)
+![](assets/Pasted%20image%2020241209190637.png)
+![](assets/Pasted%20image%2020241209190654.png)
+
+- Lastly, reboot the server.
+
+## [User Machines]()
+
+- Similar to windows server, while creating Screenshot at 2024-12-13 12-37-00virtual box for windows enterprise click on skip unattended installation and follow below 
+
+![](assets/Pasted%20image%2020241213123946.png)
+![](assets/Pasted%20image%2020241213125146.png)
+![](assets/Pasted%20image%2020241213125211.png)
+![](assets/Pasted%20image%2020241213125238.png)
+![](assets/Pasted%20image%2020241213125258.png)
+
+- After this perform basic setup
+
+![](assets/Pasted%20image%2020241213130339.png)
+![](assets/Pasted%20image%2020241213130400.png)
+![](assets/Pasted%20image%2020241213130444.png)
+
+ - Click on 'Domain join instead', set up name, password, security question
+
+![](assets/Pasted%20image%2020241213130002.png)
+![](assets/Pasted%20image%2020241213130608.png)
+![](assets/Pasted%20image%2020241213130713.png)
+
+- Perform same process for another user as we need 2 users.
+
+# [Windows server setup]()
+
+- Bootup windows server vm
+
+## [Create group and move security groups]()
+
+- Go to tools > Active Directory Users and Computers
+
+![](assets/Pasted%20image%2020241213135346.png)
+![](assets/Pasted%20image%2020241213135442.png)
+
+- Create a new organisational unit for groups, and move all 'security groups' to Groups OU.
+
+![](assets/Pasted%20image%2020241213135546.png)
+![](assets/Pasted%20image%2020241213135615.png)
+![](assets/Pasted%20image%2020241213135741.png)
+![](assets/Pasted%20image%2020241213135829.png)
+
+## [Create new users and service]()
+
+- In this scenario, we are copying administrator user settings to create new users for simplicity (**which is a big no no as administrator has multiple elevated accesses**)
+- Right click on administrator and click on copy.
+
+![](assets/Pasted%20image%2020241213141029.png)
+![](assets/Pasted%20image%2020241213141130.png)
+![](assets/Pasted%20image%2020241213141230.png)
+![](assets/Pasted%20image%2020241213141247.png)
+
+- Perform same settings to create Peter Parker user and SQL Service user.
+
+![](assets/Pasted%20image%2020241213141629.png)
+![](assets/Pasted%20image%2020241213141902.png)
+
+- Now create 2 low level users
+- Right click > new > user
+
+![](assets/Pasted%20image%2020241213152535.png)![](assets/Pasted%20image%2020241213152850.png)
+![](assets/Pasted%20image%2020241213152942.png)
+![](assets/Pasted%20image%2020241213152959.png)
+
+- Perform same steps for user Steven Rogers
+
+![](assets/Pasted%20image%2020241213153053.png)
+
+## [File shares]()
+
+- Go to File and storage services > shares > Tasks > New share
+
+![](assets/Pasted%20image%2020241213154213.png)![](assets/Pasted%20image%2020241213154251.png)
+![](assets/Pasted%20image%2020241213154401.png)
+![](assets/Pasted%20image%2020241213154433.png)
+![](assets/Pasted%20image%2020241213154451.png)
+![](assets/Pasted%20image%2020241213154530.png)
+![](assets/Pasted%20image%2020241213154550.png)
+![](assets/Pasted%20image%2020241213154630.png)
+
+## [SQL Service setup]()
+
+The `setspn` command is used to manage Service Principal Names for accounts in Active Directory. SPNs are unique identifiers for services running on servers, allowing clients to authenticate to those services using Kerberos authentication.
+
+```
+C:\Users\Administrator>setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
+
+Checking domain DC=marval,DC=local
+
+Registering ServicePrincipalNames for CN=SQL Service,CN=Users,DC=marval,DC=local
+	MARVAL/SQLService.MARVAL.local:60111
+Updated object
+```
+
+- `-a`: This option is used to add a new SPN.
+- `MARVAL/SQLService.MARVAL.local:60111`: This specifies the SPN being added. It follows the format `serviceclass/hostname:port`, where:
+    - **serviceclass**: Indicates the type of service (e.g., MARVAL).
+    - **hostname**: The fully qualified domain name (FQDN) of the server hosting the service.
+    - **port**: The port number on which the service is listening (in this case, 60111).
+- `AVENGERS\SQLService`: This is the account (user or computer) to which the SPN is being assigned
+
+## [Group policy setup]()
+
+- For this lab we will disable Microsoft firewall to launch various attacks (not safe). This policy will be pushed to entire domain.
+
+![](assets/Pasted%20image%2020241213162224.png)
+![](assets/Pasted%20image%2020241213162653.png)
+
+- Right click on domain (i.e. marvel.local) and select first option.
+
+![](assets/Pasted%20image%2020241213162920.png)
+![](assets/Pasted%20image%2020241213163040.png)
+![](assets/Pasted%20image%2020241213163134.png)
+
+- After creating the group policy right click on newly created policy in this case Disable windows defender and click edit
+
+![](assets/Pasted%20image%2020241213163355.png)
+![](assets/Pasted%20image%2020241213163427.png)
+
+- Select Microsoft Defender Antivirus under Windows Components.
+
+![](assets/Pasted%20image%2020241213163522.png)
+![](assets/Pasted%20image%2020241213163641.png)
+
+- Double click on Turn off microsoft defender antivirus > select enable > apply
+
+![](assets/Pasted%20image%2020241213163815.png)
+![](assets/Pasted%20image%2020241213163911.png)
+
+- After this close editor and enforce the policy
+
+![](assets/Pasted%20image%2020241213164043.png)
+
+- After clicking enforced check Enforced column to the right table it should say yes.
+
+![](assets/Pasted%20image%2020241213164140.png)
+
+- As this is enforced, any User/Computer who joins the domain will fetch this policy and apply it.
+
+## [Use static IP]()
+
+- Update the ip for windows server to static ip.
+
+![](assets/Pasted%20image%2020241213172442.png)
+![](assets/Pasted%20image%2020241213172539.png)
+
+- Click change adapter options and click on properties > select ipv4 > properties
+
+![](assets/Pasted%20image%2020241213172643.png)
+![](assets/Pasted%20image%2020241213172757.png)
+
+- Setting the IP to `192.168.15.4` making it static.
+
+![](assets/Pasted%20image%2020241213173000.png)
+# [Setup users]()
+
+## [Use static IP]()
+
+- Follow same process as above to update static ip for both users.
+
+## [Join to AD]()
+
+- Search 'domain' in windows search. Open Access work or school and click on connect.
+
+![](assets/Pasted%20image%2020241213180553.png)![](assets/Pasted%20image%2020241213180659.png)
+
+- Click on join this device to a local active directory domain.
+
+![](assets/Pasted%20image%2020241213180745.png)
