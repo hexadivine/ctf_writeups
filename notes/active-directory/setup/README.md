@@ -150,9 +150,9 @@
 ![](assets/Pasted%20image%2020241213154550.png)
 ![](assets/Pasted%20image%2020241213154630.png)
 
-## [SQL Server setup]()
+## [SQL Service setup]()
 
-
+The `setspn` command is used to manage Service Principal Names for accounts in Active Directory. SPNs are unique identifiers for services running on servers, allowing clients to authenticate to those services using Kerberos authentication.
 
 ```
 C:\Users\Administrator>setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
@@ -163,3 +163,14 @@ Registering ServicePrincipalNames for CN=SQL Service,CN=Users,DC=marval,DC=local
 	MARVAL/SQLService.MARVAL.local:60111
 Updated object
 ```
+
+- `-a`: This option is used to add a new SPN.
+- `MARVAL/SQLService.MARVAL.local:60111`: This specifies the SPN being added. It follows the format `serviceclass/hostname:port`, where:
+    - **serviceclass**: Indicates the type of service (e.g., MARVAL).
+    - **hostname**: The fully qualified domain name (FQDN) of the server hosting the service.
+    - **port**: The port number on which the service is listening (in this case, 60111).
+- `AVENGERS\SQLService`: This is the account (user or computer) to which the SPN is being assigned
+
+## [Group policy setup]()
+
+![](assets/Pasted%20image%2020241213162224.png)
