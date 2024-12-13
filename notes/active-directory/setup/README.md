@@ -76,3 +76,7 @@
 ![](assets/Pasted%20image%2020241213125211.png)
 ![](assets/Pasted%20image%2020241213125238.png)
 ![](assets/Pasted%20image%2020241213125258.png)
+
+- After this perform basic setup and click on 'Domain join instead'.
+
+![](assets/Pasted%20image%2020241213130002.png)
