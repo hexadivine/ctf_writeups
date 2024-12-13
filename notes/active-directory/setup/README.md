@@ -94,7 +94,7 @@
 
 - Perform same process for another user as we need 2 users.
 
-# [User, Groups & Policies]()
+# [User, Groups, Services & Policies]()
 
 - Bootup windows server vm
 
@@ -149,4 +149,6 @@
 ![](assets/Pasted%20image%2020241213154530.png)
 ![](assets/Pasted%20image%2020241213154550.png)
 ![](assets/Pasted%20image%2020241213154630.png)
+
+## [SQL Server setup]()
 
