@@ -69,4 +69,6 @@
 
 # [Setup User Machines]()
 
-- Similar to windows server, while creating virtual box for windows enterprise click on skip 
+- Similar to windows server, while creating Screenshot at 2024-12-13 12-37-00virtual box for windows enterprise click on skip unattended installation and follow below 
+
+![](assets/Pasted%20image%2020241213123946.png)
