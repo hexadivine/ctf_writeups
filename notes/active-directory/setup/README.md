@@ -142,4 +142,10 @@
 
 - Go to File and storage services > shares > Tasks > New share
 
-![](assets/Pasted%20image%2020241213154213.png)
+![](assets/Pasted%20image%2020241213154213.png)![](assets/Pasted%20image%2020241213154251.png)
+![](assets/Pasted%20image%2020241213154401.png)
+![](assets/Pasted%20image%2020241213154433.png)
+![](assets/Pasted%20image%2020241213154451.png)
+![](assets/Pasted%20image%2020241213154530.png)
+![](assets/Pasted%20image%2020241213154550.png)
+![](assets/Pasted%20image%2020241213154630.png)
