@@ -138,3 +138,8 @@
 
 ![](assets/Pasted%20image%2020241213153053.png)
 
+## [File shares]()
+
+- Go to File and storage services > shares > Tasks > New share
+
+![](assets/Pasted%20image%2020241213154213.png)
