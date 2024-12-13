@@ -128,4 +128,10 @@
 - Now create 2 low level users
 - Right click > new > user
 
-![](assets/Pasted%20image%2020241213152535.png)
+![](assets/Pasted%20image%2020241213152535.png)![](assets/Pasted%20image%2020241213152850.png)
+![](assets/Pasted%20image%2020241213152942.png)
+![](assets/Pasted%20image%2020241213152959.png)
+
+- Perform same steps for user Steven Rogers
+
+![](assets/Pasted%20image%2020241213153053.png)
