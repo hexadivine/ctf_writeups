@@ -52,6 +52,13 @@
 ![](assets/Pasted%20image%2020241215184953.png)
 ![](assets/Pasted%20image%2020241215185038.png)
 
+![](assets/Pasted%20image%2020241215185526.png)
+![](assets/Pasted%20image%2020241215185547.png)
+![](assets/Pasted%20image%2020241215185604.png)
+![](assets/Pasted%20image%2020241215185640.png)
+
+
+
 # [Setup]()
 
 ## [Windows server 2022 (DC)]()
