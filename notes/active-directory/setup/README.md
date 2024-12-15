@@ -276,6 +276,8 @@ setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
 
 ![](assets/Pasted%20image%2020241215204035.png)
 
+- Windows servers has been successfully setup.
+
 ## [Windows 10 Enterprise (Client)]()
 
 ### [Change adaptor settings]()
