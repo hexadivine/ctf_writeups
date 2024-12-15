@@ -181,6 +181,22 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215193632.png)
 ![](assets/Pasted%20image%2020241215193805.png)
 
+- Select `Security Groups` and move to `Groups` OU
+
+![](assets/Pasted%20image%2020241215193922.png)
+![](assets/Pasted%20image%2020241215194021.png)
+![](assets/Pasted%20image%2020241215194034.png)
+
+- Note: logo near Guest shows it is disabled.
+
+### [Create users]()
+
+- In this scenario we will copy administrator to create new
+- Right click on Administrator and click copy
+
+![](assets/Pasted%20image%2020241215194251.png)
+
+
 
 ## [Windows 10 Enterprise (Client)]()
 
