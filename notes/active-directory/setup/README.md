@@ -319,7 +319,7 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ### [Update local users and groups]()
 
-- Updating on `Spiderman` client
+- Update local groups and users on both `spiderman` and `ironman` VM
 
 ![](assets/Pasted%20image%2020241215224900.png)
 
@@ -368,3 +368,5 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ![](assets/Pasted%20image%2020241215234140.png)
 ![](assets/Pasted%20image%2020241215234206.png)
+
+- The setup is now completed.
