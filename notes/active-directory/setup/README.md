@@ -297,7 +297,15 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ### [Login to domain]()
 
-- Search for domain > connect > 
+- Search for domain > connect.
 
 ![](assets/Pasted%20image%2020241215211035.png)
 ![](assets/Pasted%20image%2020241215211139.png)
+![](assets/Pasted%20image%2020241215211214.png)
+
+- We will click on `Join this device to a local AD domain`
+
+![](assets/Pasted%20image%2020241215211324.png)
+![](assets/Pasted%20image%2020241215211405.png)
+![](assets/Pasted%20image%2020241215211436.png)
+
