@@ -230,7 +230,7 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215201600.png)
 ![](assets/Pasted%20image%2020241215201614.png)
 
-### [Register SQL Service]()
+### [Setup SPN]()
 
 The `setspn` command is used to manage Service Principal Names for accounts in Active Directory. SPNs are unique identifiers for services running on servers, allowing clients to authenticate to those services using Kerberos authentication.
 
@@ -246,6 +246,12 @@ setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
     - **hostname**: The fully qualified domain name (FQDN) of the server hosting the service.
     - **port**: The port number on which the service is listening (in this case, 60111).
 - `AVENGERS\SQLService`: This is the account (user or computer) to which the SPN is being assigned
+
+### [Setup Group Policy]()
+
+- For this lab we will disable Microsoft firewall to launch various attacks (not safe). This policy will be pushed to entire domain.
+
+![](assets/Pasted%20image%2020241215202742.png)
 
 ## [Windows 10 Enterprise (Client)]()
 
