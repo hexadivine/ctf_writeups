@@ -57,7 +57,13 @@
 ![](assets/Pasted%20image%2020241215185604.png)
 ![](assets/Pasted%20image%2020241215185640.png)
 
+- Click on `Domain join instead`
 
+![](assets/Pasted%20image%2020241215190036.png)
+![](assets/Pasted%20image%2020241215190122.png)
+![](assets/Pasted%20image%2020241215190220.png)
+![](assets/Pasted%20image%2020241215190241.png)
+![](assets/Pasted%20image%2020241215190315.png)
 
 # [Setup]()
 
