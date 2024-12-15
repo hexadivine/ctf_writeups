@@ -42,7 +42,15 @@
 
 ![](assets/Pasted%20image%2020241215184657.png)
 
+![](assets/Pasted%20image%2020241215184857.png)
+![](assets/Pasted%20image%2020241215184915.png)
+![](assets/Pasted%20image%2020241215184936.png)
 
+- Click on custom install
+
+![](assets/Pasted%20image%2020241215185009.png)
+![](assets/Pasted%20image%2020241215184953.png)
+![](assets/Pasted%20image%2020241215185038.png)
 
 # [Setup]()
 
