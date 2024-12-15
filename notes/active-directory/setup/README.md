@@ -79,3 +79,9 @@ Preferred DNS Server: 127.0.0.1
 
 ### [Setup AD DS]()
 
+- Click on manage > add roles and features.
+
+![](assets/Pasted%20image%2020241215181640.png)
+![](assets/Pasted%20image%2020241215181659.png)
+![](assets/Pasted%20image%2020241215181721.png)
+![](assets/Pasted%20image%2020241215181844.png)
