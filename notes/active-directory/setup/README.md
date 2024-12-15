@@ -114,6 +114,27 @@ Preferred DNS Server: 127.0.0.1
 
 ![](assets/Pasted%20image%2020241215183722.png)
 
-- Keep defaults and click next till you see below
+- Keep defaults and click next till you see below and click install.
 
 ![](assets/Pasted%20image%2020241215183846.png)
+![](assets/Pasted%20image%2020241215183910.png)
+
+- Click on Configure AD CS on the destination server.
+
+![](assets/Pasted%20image%2020241215183954.png)
+![](assets/Pasted%20image%2020241215184033.png)
+![](assets/Pasted%20image%2020241215184051.png)
+![](assets/Pasted%20image%2020241215184110.png)
+![](assets/Pasted%20image%2020241215184123.png)
+![](assets/Pasted%20image%2020241215184138.png)
+![](assets/Pasted%20image%2020241215184152.png)
+![](assets/Pasted%20image%2020241215184208.png)
+![](assets/Pasted%20image%2020241215184228.png)
+![](assets/Pasted%20image%2020241215184243.png)
+
+- Click on configure
+
+![](assets/Pasted%20image%2020241215184259.png)
+![](assets/Pasted%20image%2020241215184315.png)
+![](assets/Pasted%20image%2020241215184341.png)
+
