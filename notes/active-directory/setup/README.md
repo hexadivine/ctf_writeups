@@ -169,8 +169,17 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215184315.png)
 ![](assets/Pasted%20image%2020241215184341.png)
 
-### [Add groups OU]()
+### [Add Groups OU]()
 
+- First step we'll do is we will create `Groups` OU (organisational unit) and move all the security groups from `Users` to `Groups`
+- Click Tools > AD Users and computers.
+
+![](assets/Pasted%20image%2020241215193521.png)
+
+- Create new Organisational Unit called `Groups.
+
+![](assets/Pasted%20image%2020241215193632.png)
+![](assets/Pasted%20image%2020241215193805.png)
 
 
 ## [Windows 10 Enterprise (Client)]()
