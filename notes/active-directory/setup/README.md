@@ -210,6 +210,12 @@ Preferred DNS Server: 127.0.0.1
 
 ![](assets/Pasted%20image%2020241215200037.png)
 ![](assets/Pasted%20image%2020241215200245.png)
+![](assets/Pasted%20image%2020241215200411.png)
+
+### []()
+
+
+
 
 ## [Windows 10 Enterprise (Client)]()
 
