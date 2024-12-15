@@ -66,6 +66,7 @@
 ![](assets/Pasted%20image%2020241215190457.png)
 ![](assets/Pasted%20image%2020241215190513.png)
 
+- After this windows 10 will boot. Follow the same process to create new user named `Ironman`
 # [Setup]()
 
 ## [Windows server 2022 (DC)]()
@@ -167,4 +168,8 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215184259.png)
 ![](assets/Pasted%20image%2020241215184315.png)
 ![](assets/Pasted%20image%2020241215184341.png)
+
+## [Windows 10 Enterprise (Client)]()
+
+### [Change adaptor settings]()
 
