@@ -309,4 +309,10 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 ![](assets/Pasted%20image%2020241215211405.png)
 ![](assets/Pasted%20image%2020241215211436.png)
 
-- After this restart to `MARVEL\Administrator` account
+- After this restart the device and login to to `MARVEL\Administrator` account.
+
+![](assets/Pasted%20image%2020241215223655.png)
+
+- We can confirmed that the clients are connected from DC
+
+![](assets/Pasted%20image%2020241215223737.png)
