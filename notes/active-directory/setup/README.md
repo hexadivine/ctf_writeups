@@ -259,9 +259,16 @@ setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
 ![](assets/Pasted%20image%2020241215203138.png)
 ![](assets/Pasted%20image%2020241215203250.png)
 
-- Click on newly created GPO 
+- Right click on newly created GPO and click Edit
 
 ![](assets/Pasted%20image%2020241215203328.png)
+![](assets/Pasted%20image%2020241215203536.png)
+
+- Double click on `Turn off Microsoft Defender Antivirus` click ``
+
+![](assets/Pasted%20image%2020241215203739.png)
+![](assets/Pasted%20image%2020241215203841.png)
+
 
 
 ## [Windows 10 Enterprise (Client)]()
