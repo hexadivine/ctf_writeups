@@ -40,6 +40,8 @@
 
 ## [Windows server 2022]()
 
+### [Change PC name]()
+
 - setup the windows server name to `DC` (domain controller)
 
 ![](assets/Pasted%20image%2020241215174425.png)
@@ -52,6 +54,8 @@
 ![](assets/Pasted%20image%2020241215175739.png)
 ![](assets/Pasted%20image%2020241215175805.png)
 
+### [Setup adaptor]()
+
 - After clicking on change adaptor option right click on Ethernet and rename to `internal` for better understanding.
 
 ![](assets/Pasted%20image%2020241215175958.png)
@@ -60,3 +64,18 @@
 - After changing name update the properties by right click on `internal` adaptor > properties > Internet Protocol version 4 > properties
 
 ![](assets/Pasted%20image%2020241215180606.png)
+
+- Change the setting to below.
+
+```
+IP address: 192.168.0.2
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.0.1
+
+Preferred DNS Server: 127.0.0.1
+```
+
+![](assets/Pasted%20image%2020241215180851.png)
+
+### [Setup AD DS]()
+
