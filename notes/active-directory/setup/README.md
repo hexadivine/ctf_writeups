@@ -252,6 +252,17 @@ setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
 - For this lab we will disable Microsoft firewall to launch various attacks (not safe). This policy will be pushed to entire domain.
 
 ![](assets/Pasted%20image%2020241215202742.png)
+![](assets/Pasted%20image%2020241215202854.png)
+
+- Right click on domain and click Create a GPO in this domain...
+
+![](assets/Pasted%20image%2020241215203138.png)
+![](assets/Pasted%20image%2020241215203250.png)
+
+- Click on newly created GPO 
+
+![](assets/Pasted%20image%2020241215203328.png)
+
 
 ## [Windows 10 Enterprise (Client)]()
 
