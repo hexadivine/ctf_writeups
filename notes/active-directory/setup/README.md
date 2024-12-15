@@ -358,6 +358,11 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ### [Map network drive]()
 
-- Login to `spiderman`
+- Login to `.\spiderman`
 
-![](assets/Pasted%20image%2020241215233348.png)
+![](assets/Pasted%20image%2020241215233620.png)
+
+- Here we will map a network drive for further attack vectors.
+
+![](assets/Pasted%20image%2020241215234102.png)
+
