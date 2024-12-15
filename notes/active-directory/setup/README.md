@@ -366,3 +366,5 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ![](assets/Pasted%20image%2020241215234102.png)
 
+![](assets/Pasted%20image%2020241215234140.png)
+![](assets/Pasted%20image%2020241215234206.png)
