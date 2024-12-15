@@ -45,4 +45,6 @@
 ![](assets/Pasted%20image%2020241215174425.png)
 ![](assets/Pasted%20image%2020241215174511.png)
 ![](assets/Pasted%20image%2020241215174543.png)
+![](assets/Pasted%20image%2020241215175148.png)
 
+- After reboot 
