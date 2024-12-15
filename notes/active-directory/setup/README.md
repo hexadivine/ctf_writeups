@@ -105,3 +105,7 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215182655.png)
 ![](assets/Pasted%20image%2020241215182728.png)
 ![](assets/Pasted%20image%2020241215182750.png)
+![](assets/Pasted%20image%2020241215182930.png)
+![](assets/Pasted%20image%2020241215183115.png)
+
+
