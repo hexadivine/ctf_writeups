@@ -108,4 +108,12 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215182930.png)
 ![](assets/Pasted%20image%2020241215183115.png)
 
+### [Setup certificate services]()
 
+- manage > add roles > click next 3 times > select ADCS as shown below
+
+![](assets/Pasted%20image%2020241215183722.png)
+
+- Keep defaults and click next till you see below
+
+![](assets/Pasted%20image%2020241215183846.png)
