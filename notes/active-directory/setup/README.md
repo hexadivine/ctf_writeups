@@ -169,6 +169,9 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215184315.png)
 ![](assets/Pasted%20image%2020241215184341.png)
 
+### [Add groups OU]()
+
+
 
 ## [Windows 10 Enterprise (Client)]()
 
