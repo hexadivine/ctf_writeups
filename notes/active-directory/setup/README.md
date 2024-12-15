@@ -47,7 +47,7 @@
 ![](assets/Pasted%20image%2020241215174543.png)
 ![](assets/Pasted%20image%2020241215175148.png)
 
-- After reboot configure the adaptor to assign static IP
+- After reboot configure the adaptor to update the name and assign static IP
 
 ![](assets/Pasted%20image%2020241215175739.png)
 ![](assets/Pasted%20image%2020241215175805.png)
@@ -55,5 +55,8 @@
 - After clicking on change adaptor option right click on Ethernet and rename to `internal` for better understanding.
 
 ![](assets/Pasted%20image%2020241215175958.png)
+![](assets/Pasted%20image%2020241215180410.png)
 
-- After 
+- After changing name update the properties by right click on `internal` adaptor > properties > Internet Protocol version 4 > properties
+
+![](assets/Pasted%20image%2020241215180606.png)
