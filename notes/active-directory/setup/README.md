@@ -191,19 +191,22 @@ Preferred DNS Server: 127.0.0.1
 
 ### [Create users]()
 
-- In this scenario we will copy administrator to create new user and save some time. (This is a big **no no** as copied user will get all admin access which is dangarous.)
+- In this scenario we will copy administrator to create new user and save some time. (This is a big **no no** as copied user will get all admin access which is dangerous.)
 - Right click on Administrator and click copy
 
 ![](assets/Pasted%20image%2020241215194251.png)
 
-![](assets/Pasted%20image%2020241215194525.png)
-![](assets/Pasted%20image%2020241215194607.png)
-![](assets/Pasted%20image%2020241215194625.png)
+![](assets/Pasted%20image%2020241215195602.png)
+![](assets/Pasted%20image%2020241215195639.png)
+![](assets/Pasted%20image%2020241215195658.png)
 
 - Similarly we will create a new service user called `SQLService` by coping administrator.
 
 ![](assets/Pasted%20image%2020241215195020.png)
 ![](assets/Pasted%20image%2020241215195108.png)
+
+- After this we will create low privileged users
+
 
 
 ## [Windows 10 Enterprise (Client)]()
