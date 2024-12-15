@@ -31,3 +31,12 @@
 ![](assets/Pasted%20image%2020241215173702.png)
 
 - After successful install of windows server 2022 it should look like below.
+
+![](assets/Pasted%20image%2020241215174101.png)
+
+- Now the windows server 2022 has been successfully installed.
+
+# [Setup]()
+
+## [Windows server 2022]()
+
