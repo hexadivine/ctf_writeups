@@ -173,3 +173,16 @@ Preferred DNS Server: 127.0.0.1
 
 ### [Change adaptor settings]()
 
+- Follow the same process as mentioned above and change the IP to below
+
+```
+IP address: 192.168.0.3
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.0.1
+
+Preferred DNS Server: 192.168.0.2 (DC ip address)
+```
+
+![](assets/Pasted%20image%2020241215191533.png)
+![](assets/Pasted%20image%2020241215191751.png)
+
