@@ -316,3 +316,13 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 - We can confirmed that the clients are connected from DC
 
 ![](assets/Pasted%20image%2020241215223737.png)
+
+### [Update local users and groups]()
+
+- Updating on `Spiderman` client
+
+![](assets/Pasted%20image%2020241215224900.png)
+
+- Set password for Administrator
+
+![](assets/Pasted%20image%2020241215225025.png)
