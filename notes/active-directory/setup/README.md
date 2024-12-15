@@ -36,9 +36,17 @@
 
 - Now the windows server 2022 has been successfully installed.
 
+## [Windows 10 Enterprise]()
+
+- Similar to windows servers installation keep the skip unattended installation ticked and finish (make sure it has proper network configuration mentioned in the requirements section)
+
+![](assets/Pasted%20image%2020241215184657.png)
+
+
+
 # [Setup]()
 
-## [Windows server 2022]()
+## [Windows server 2022 (DC)]()
 
 ### [Change PC name]()
 
