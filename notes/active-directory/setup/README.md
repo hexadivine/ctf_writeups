@@ -97,4 +97,11 @@ Preferred DNS Server: 127.0.0.1
 
 - Click on promote this server to domain controller.
 
-
+![](assets/Pasted%20image%2020241215182404.png)
+![](assets/Pasted%20image%2020241215182506.png)
+![](assets/Pasted%20image%2020241215182526.png)
+![](assets/Pasted%20image%2020241215182604.png)
+![](assets/Pasted%20image%2020241215182635.png)
+![](assets/Pasted%20image%2020241215182655.png)
+![](assets/Pasted%20image%2020241215182728.png)
+![](assets/Pasted%20image%2020241215182750.png)
