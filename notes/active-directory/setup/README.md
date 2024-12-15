@@ -30,6 +30,4 @@
 ![](assets/Pasted%20image%2020241215172647.png)
 
 
-
 - After successful install of windows server 2022 it should look like below.
-
