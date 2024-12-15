@@ -84,4 +84,17 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215181640.png)
 ![](assets/Pasted%20image%2020241215181659.png)
 ![](assets/Pasted%20image%2020241215181721.png)
+
+- Click on Active Directory Domain Services and Add Features.
+
 ![](assets/Pasted%20image%2020241215181844.png)
+![](assets/Pasted%20image%2020241215181943.png)
+![](assets/Pasted%20image%2020241215182011.png)
+![](assets/Pasted%20image%2020241215182030.png)
+![](assets/Pasted%20image%2020241215182058.png)
+![](assets/Pasted%20image%2020241215182203.png)
+![](assets/Pasted%20image%2020241215182311.png)
+
+- Click on promote this server to domain controller.
+
+
