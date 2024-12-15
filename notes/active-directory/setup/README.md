@@ -309,3 +309,4 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 ![](assets/Pasted%20image%2020241215211405.png)
 ![](assets/Pasted%20image%2020241215211436.png)
 
+- After this restart to `MARVEL\Administrator` account
