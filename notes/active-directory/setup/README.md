@@ -212,9 +212,15 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215200245.png)
 ![](assets/Pasted%20image%2020241215200411.png)
 
-### []()
+- Finally it should look like below.
 
+![](assets/Pasted%20image%2020241215201016.png)
 
+### [Setup File share]()
+
+- Go to File and storage Services > Shares > Tasks > New Share
+
+![](assets/Pasted%20image%2020241215201336.png)
 
 
 ## [Windows 10 Enterprise (Client)]()
