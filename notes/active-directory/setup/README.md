@@ -341,7 +341,17 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ![](assets/Pasted%20image%2020241215230137.png)
 
-- After this click on ok to add the user to local admin group. You should see below. Next, click on apply.
+- After this click on ok to add the user to local admin group. 
+- Similarly add `tstark` to `spiderman` vm
 
-![](assets/Pasted%20image%2020241215230253.png)
+![](assets/Pasted%20image%2020241215232337.png)
+
+- You should see below. Next, click on apply.
+
+![](assets/Pasted%20image%2020241215232418.png)
+
+- In the `ironman` VM follow same process but in the `Administrator properties` window add only `tstark`.
+- It should look like below.
+
+
 
