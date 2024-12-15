@@ -51,3 +51,9 @@
 
 ![](assets/Pasted%20image%2020241215175739.png)
 ![](assets/Pasted%20image%2020241215175805.png)
+
+- After clicking on change adaptor option right click on Ethernet and rename to `internal` for better understanding.
+
+![](assets/Pasted%20image%2020241215175958.png)
+
+- After 
