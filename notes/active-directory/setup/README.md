@@ -337,5 +337,11 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 ![](assets/Pasted%20image%2020241215225954.png)
 ![](assets/Pasted%20image%2020241215230026.png)
 
-- Click on add and search for `pparker`
+- Click on add and search for `pparker` and click on check names. 
+
+![](assets/Pasted%20image%2020241215230137.png)
+
+- After this click on ok to add the user to local admin group. You should see below. Next, click on apply.
+
+![](assets/Pasted%20image%2020241215230253.png)
 
