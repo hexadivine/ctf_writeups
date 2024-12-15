@@ -205,9 +205,11 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215195020.png)
 ![](assets/Pasted%20image%2020241215195108.png)
 
-- After this we will create low privileged users
+- After this we will create low privileged users. 
+- Click New > User create `Tony Stark` and `Peter Parker`
 
-
+![](assets/Pasted%20image%2020241215200037.png)
+![](assets/Pasted%20image%2020241215200245.png)
 
 ## [Windows 10 Enterprise (Client)]()
 
