@@ -1,5 +1,4 @@
 
-![](assets/Pasted%20image%2020241213153707.png)
 
 # [Requirements]()
 
@@ -184,7 +183,7 @@ Updated object
 ## [Group policy setup]()
 
 - For this lab we will disable Microsoft firewall to launch various attacks (not safe). This policy will be pushed to entire domain.
-
+d
 ![](assets/Pasted%20image%2020241213162224.png)
 ![](assets/Pasted%20image%2020241213162653.png)
 
@@ -234,6 +233,9 @@ Updated object
 - Setting the IP to `192.168.15.4` making it static.
 
 ![](assets/Pasted%20image%2020241213173000.png)
+
+
+
 # [Setup users]()
 
 ## [Use static IP]()
