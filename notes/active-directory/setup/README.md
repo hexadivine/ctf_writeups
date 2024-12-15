@@ -191,13 +191,16 @@ Preferred DNS Server: 127.0.0.1
 
 ### [Create users]()
 
-- In this scenario we will copy administrator to create new
+- In this scenario we will copy administrator to create new user and save some time. (This is a big **no no** as copied user will get all admin access which is dangarous.)
 - Right click on Administrator and click copy
 
 ![](assets/Pasted%20image%2020241215194251.png)
 
+![](assets/Pasted%20image%2020241215194525.png)
+![](assets/Pasted%20image%2020241215194607.png)
+![](assets/Pasted%20image%2020241215194625.png)
 
-
+- Similarl
 ## [Windows 10 Enterprise (Client)]()
 
 ### [Change adaptor settings]()
