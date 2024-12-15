@@ -319,7 +319,11 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ### [Update local users and groups]()
 
-- Update local groups and users on both `spiderman` and `ironman` VM
+- Update local groups and users on both `spiderman` and `ironman` VM. For this; on `spiderman` VM, login to `MARVEL\Administrator` account.
+
+![](assets/VirtualBox_Spiderman_15_12_2024_23_53_28.png)
+
+- Search edit local user and groups
 
 ![](assets/Pasted%20image%2020241215224900.png)
 
@@ -342,7 +346,7 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 ![](assets/Pasted%20image%2020241215230137.png)
 
 - After this click on ok to add the user to local admin group. 
-- Similarly add `tstark` to `spiderman` vm
+- Similarly add `tstark` to `spiderman` vm (for further attack vectors)
 
 ![](assets/Pasted%20image%2020241215232337.png)
 
