@@ -47,4 +47,7 @@
 ![](assets/Pasted%20image%2020241215174543.png)
 ![](assets/Pasted%20image%2020241215175148.png)
 
-- After reboot 
+- After reboot configure the adaptor to assign static IP
+
+![](assets/Pasted%20image%2020241215175739.png)
+![](assets/Pasted%20image%2020241215175805.png)
