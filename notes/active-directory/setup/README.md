@@ -5,4 +5,12 @@
 
 ![](assets/Pasted%20image%2020241215170959.png)
 
-# Ins
+# [Installation]()
+## [Windows Server 2022]()
+
+- While creating windows server 2022 on virtual box click on skip unattended installation to manually install.
+
+![](assets/Pasted%20image%2020241215171549.png)
+
+- After successful install of windows server 2022 it should look like below.
+
