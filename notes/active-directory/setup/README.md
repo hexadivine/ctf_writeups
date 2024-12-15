@@ -40,3 +40,9 @@
 
 ## [Windows server 2022]()
 
+- setup the windows server name to `DC` (domain controller)
+
+![](assets/Pasted%20image%2020241215174425.png)
+![](assets/Pasted%20image%2020241215174511.png)
+![](assets/Pasted%20image%2020241215174543.png)
+
