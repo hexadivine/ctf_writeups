@@ -264,12 +264,17 @@ setspn -a MARVAL/SQLService.MARVAL.local:60111 AVENGERS\SQLService
 ![](assets/Pasted%20image%2020241215203328.png)
 ![](assets/Pasted%20image%2020241215203536.png)
 
-- Double click on `Turn off Microsoft Defender Antivirus` click ``
+- Double click on `Turn off Microsoft Defender Antivirus` click `enabled` and apply.
 
 ![](assets/Pasted%20image%2020241215203739.png)
 ![](assets/Pasted%20image%2020241215203841.png)
 
+- After this close and click on enforced
 
+![](assets/Pasted%20image%2020241215204000.png)
+![](assets/Pasted%20image%2020241215204018.png)
+
+![](assets/Pasted%20image%2020241215204035.png)
 
 ## [Windows 10 Enterprise (Client)]()
 
