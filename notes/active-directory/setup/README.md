@@ -200,7 +200,12 @@ Preferred DNS Server: 127.0.0.1
 ![](assets/Pasted%20image%2020241215194607.png)
 ![](assets/Pasted%20image%2020241215194625.png)
 
-- Similarl
+- Similarly we will create a new service user called `SQLService` by coping administrator.
+
+![](assets/Pasted%20image%2020241215195020.png)
+![](assets/Pasted%20image%2020241215195108.png)
+
+
 ## [Windows 10 Enterprise (Client)]()
 
 ### [Change adaptor settings]()
