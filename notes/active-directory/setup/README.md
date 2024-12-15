@@ -326,3 +326,8 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 - Set password for Administrator
 
 ![](assets/Pasted%20image%2020241215225025.png)
+![](assets/Pasted%20image%2020241215225300.png)
+
+- After setting the password double click on `Administrator` and on click on `Account is disabled` to unselect and apply (In best practice scenarios it should be disab)
+
+![](assets/Pasted%20image%2020241215225430.png)
