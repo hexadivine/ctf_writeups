@@ -354,11 +354,12 @@ Preferred DNS Server: 192.168.0.2 (DC ip address)
 
 ![](assets/Pasted%20image%2020241215232418.png)
 
-- In the `ironman` VM follow same process but in the `Administrator properties` window add only `tstark`.
-- It should look like below on `ironman` VM. (do not forget to change admin password and to enable it as shown for `spiderman` VM)
+- In the `ironman` VM follow same process (login to `MARVEL\Administrator` on `ironman` VM, change admin password and enable it as shown for `spiderman` VM) 
+
+- In the `Administrator Properties` window for `Ironman` VM add only `tstark`.
+- It should look like below on `ironman` VM.
 
 ![](assets/Pasted%20image%2020241215232638.png)
-
 
 ### [Map network drive]()
 
