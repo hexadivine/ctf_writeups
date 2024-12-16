@@ -162,3 +162,14 @@ Hardware.Mon.#1..: Temp: 50c Util: 15%
 ![](assets/Pasted%20image%2020241216174038.png)
 ![](assets/Pasted%20image%2020241216174131.png)
 ![](assets/Pasted%20image%2020241216174202.png)
+![](assets/Pasted%20image%2020241216174309.png)
+![](assets/Pasted%20image%2020241216174339.png)
+
+- Enforce in the end
+
+![](assets/Pasted%20image%2020241216174421.png)
+
+## [Alternative mitigation strategy]()
+
+- Require network access control
+- Require strong password. 
