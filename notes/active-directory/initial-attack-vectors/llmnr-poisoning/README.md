@@ -103,9 +103,25 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 ![](assets/Pasted%20image%2020241216170234.png)
 
 - **Hash cracking**: `netcat` is used to crack this hash.
+
 	- Store below hash in a file `/tmp/hash.txt`
+
 	```
 	Spiderman::SPIDERMAN:e543dc06b9c71270:E030F466B832DCAD158F57D76D63F0C0:010100000000000000C5922BDC4FDB011C74A358A0F56E4F000000000200080055004A005700320001001E00570049004E002D0051004D005500560053005200350030004C003900530004003400570049004E002D0051004D005500560053005200350030004C00390053002E0055004A00570032002E004C004F00430041004C000300140055004A00570032002E004C004F00430041004C000500140055004A00570032002E004C004F00430041004C000700080000C5922BDC4FDB0106000400020000000800300030000000000000000100000000200000B0E07A7178EDBF77E9F9390D34C3318E86BC82E2B2566F30B833781A1924405B0A0010000000000000000000000000000000000009001E0063006900660073002F00660069006C0065007300650072007600650072000000000000000000
+	
 	```
-	- Search for hash mode in netcat
-	- 
+	 
+	 - Find valid hash mode for netcat 
+
+```
+┌─[✗]─[hexadivine@parrot]─[/usr/share/wordlists]
+└──╼ $hashcat --help | grep  ntlm -i
+   5500 | NetNTLMv1 / NetNTLMv1+ESS                                  | Network Protocol
+  27000 | NetNTLMv1 / NetNTLMv1+ESS (NT)                             | Network Protocol
+   5600 | NetNTLMv2                                                  | Network Protocol
+  27100 | NetNTLMv2 (NT)                                             | Network Protocol
+   1000 | NTLM                                                       | Operating System
+
+```
+
+- 
