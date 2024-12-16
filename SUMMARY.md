@@ -21,6 +21,7 @@
 
 - [📚 active directory](notes/active-directory/README.md)
 	- [⚙️ setup](notes/active-directory/setup/README.md)
+	- [initial attack vector](notes/active-directory/initial-attack-vectors/README.md)
 * 🪜 methodology
 	*  🕵️ reconnaissance
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)
