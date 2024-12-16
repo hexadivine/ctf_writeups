@@ -26,3 +26,6 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 
 ![](assets/Pasted%20image%2020241216170234.png)
 
+## [Responder]()
+
+- Responder listens on client requests and respond saying it has the resource client is asking. 
