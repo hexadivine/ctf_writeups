@@ -15,6 +15,14 @@ In this attacker tricks a computer on a local network into sending sensitive inf
 ![](assets/Pasted%20image%2020241216165512.png)
 
 -  **Attacker responds**: An attacker intercepts this request and replies falsely: _"Yes, I am 'FileServer'—here’s my IP address!"_
+
+![](assets/Pasted%20image%2020241216165958.png)
+
 -  **Victim connects**: The victim connects to the attacker's machine, thinking it's the legitimate server.
+
+![](assets/Pasted%20image%2020241216170210.png)
+
 -  **Password hash theft**: During this connection attempt, the victim's computer automatically sends its credentials (in hashed form) to authenticate. The attacker can capture these password hashes and attempt to crack them offline.
+
+![](assets/Pasted%20image%2020241216170234.png)
 
