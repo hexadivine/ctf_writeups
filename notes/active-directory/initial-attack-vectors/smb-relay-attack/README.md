@@ -18,9 +18,64 @@ An SMB relay attack is a type of Man-in-the-Middle (MitM) attack that exploits t
 
 ## [Responder]()
 
--  Check if clients are vulnerable to SMB relay attack
+-  Check if clients are vulnerable to SMB relay attack (look for **message signing enabled but not required**)
 
+***Domain controller***
+```
+┌─[hexadivine@parrot]─[~]
+└──╼ $nmap -p445 -script=smb2-security-mode 192.168.0.2 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-17 20:58 IST
+Nmap scan report for 192.168.0.2 (192.168.0.2)
+Host is up (0.00057s latency).
 
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
+
+```
+
+***Cli***
+```
+┌─[hexadivine@parrot]─[~]
+└──╼ $nmap -p445 -script=smb2-security-mode 192.168.0.3 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-17 20:56 IST
+Nmap scan report for 192.168.0.3 (192.168.0.3)
+Host is up (0.00067s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
+```
+
+```
+┌─[hexadivine@parrot]─[~]
+└──╼ $nmap -p445 -script=smb2-security-mode 192.168.0.4 -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-17 20:58 IST
+Nmap scan report for 192.168.0.4 (192.168.0.4)
+Host is up (0.0011s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
+```
 
 - Configure the responder for this attack (turn off SMB and HTTP)
 
