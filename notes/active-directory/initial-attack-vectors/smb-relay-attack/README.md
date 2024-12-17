@@ -14,3 +14,15 @@ An SMB relay attack is a type of Man-in-the-Middle (MitM) attack that exploits t
 3. **Forward to Legitimate Server**: The attacker forwards the captured credentials to the legitimate server to authenticate as the victim.
 4. **Gain Unauthorised Access**: If the server accepts the relayed credentials, the attacker gains access to resources under the victim's permissions.
 
+# [Steps of SMB Relay Attack:]()
+
+## [Responder]()
+
+- Configure the responder for this attack (turn off SMB and HTTP)
+
+```
+sudo nano /etc/responder/Responder.conf
+```
+![](assets/Pasted%20image%2020241217204838.png)
+
+- 
