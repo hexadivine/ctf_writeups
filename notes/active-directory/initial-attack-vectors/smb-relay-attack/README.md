@@ -40,7 +40,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
 
 ```
 
-***Cli***
+***Client 1: Spiderman***
 ```
 ┌─[hexadivine@parrot]─[~]
 └──╼ $nmap -p445 -script=smb2-security-mode 192.168.0.3 -Pn
@@ -59,6 +59,7 @@ Host script results:
 Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
+***Client 2: Ironman***
 ```
 ┌─[hexadivine@parrot]─[~]
 └──╼ $nmap -p445 -script=smb2-security-mode 192.168.0.4 -Pn
@@ -159,3 +160,8 @@ sudo nano /etc/responder/Responder.conf
 
 ```
 
+- Add target IPs to the file
+
+![](assets/Pasted%20image%2020241217210326.png)
+
+- Start 
