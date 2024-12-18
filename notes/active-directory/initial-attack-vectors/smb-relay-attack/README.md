@@ -289,4 +289,10 @@ Type help for list of commands
 
 ## [Account tiering]()
 
-- pro: limit domain admins to specific tasks(e.g. only log onto servers with need )
+- pro: limit domain admins to specific tasks(e.g. only log onto servers with need for DA)
+- con: enforcing policy may be difficult
+
+## [Local admin restriction]()
+
+- pro: can prevent lateral movement
+- con: potential increase in amount of service desk tickets.
