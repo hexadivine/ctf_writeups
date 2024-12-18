@@ -273,6 +273,20 @@ Type help for list of commands
  who - returns the sessions currently connected at the target host (admin required)
  close - closes the current SMB Session
  exit - terminates the server process (and this session)
-
-
 ```
+
+# [Mitigation Strategies]()
+
+## [Enable SMB signing on all devices]()
+
+- pro: completely stops attack
+- con: can cause performance issues
+
+## [Disable NTLM authentication]()
+
+- pro: completely stops attack
+- con: if kerberos stops working, windows defaults back to NTLM
+
+## [Account tiering]()
+
+- pro: limit domain admins to specific tasks(e.g. only log onto servers with need )
