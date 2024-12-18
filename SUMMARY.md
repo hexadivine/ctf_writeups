@@ -6,7 +6,6 @@
 
 * [🔭 overview](ctf-walkthroughs/overview.md)
 * [🏁 hack the box](ctf-walkthroughs/hack-the-box)
-	* [🐧 evilcups](ctf-walkthroughs/hack-the-box/evilcups/README.md)
 	* [🐧 cap](ctf-walkthroughs/hack-the-box/cap/README.md)
 	* [🐧 two million](ctf-walkthroughs/hack-the-box/two-million/README.md)
 	* [🐧 greenhorn](ctf-walkthroughs/hack-the-box/greenhorn/README.md)
@@ -23,6 +22,7 @@
 	- [⚙️ setup](notes/active-directory/setup/README.md)
 	- [🪓 initial attack vector](notes/active-directory/initial-attack-vectors/README.md)
 		- [☠️ llmnr poisoning](notes/active-directory/initial-attack-vectors/llmnr-poisoning/README.md)
+		- [🔗 smb relay attack](notes/active-directory/initial-attack-vectors/smb-relay-attack/README.md)
 * 🪜 methodology
 	*  🕵️ reconnaissance
 		* [👀 passive recon](notes/methodology/reconnaissance/passive-recon/README.md)

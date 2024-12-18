@@ -152,7 +152,7 @@ Hardware.Mon.#1..: Temp: 50c Util: 15%
 
 ```
 
-# [Mitigation]()
+# [Mitigation Strategies]()
 
 ## [Group policy restriction]()
 
