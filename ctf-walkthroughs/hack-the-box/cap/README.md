@@ -1,5 +1,3 @@
-# cap
-
 ![](Pasted%20image%2020241201195858.png)
 
 # Enumeration
